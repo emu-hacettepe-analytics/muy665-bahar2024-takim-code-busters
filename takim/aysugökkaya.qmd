@@ -1,0 +1,69 @@
+---
+title: "Aysu Gökkaya"
+---
+
+![](/assets/images/aysu_photo_newsize.JPG){fig-align="left"} 
+
+# Education
+
+-   Electrical Engineering (B.Sc.), Kocaeli University, Turkey, 2016 - 2020.
+-   Enginerring Management (M.Sc.), Hacettepe University, Turkey, 2023 - Present.
+
+
+# Work Experience
+
+## Works
+
+__1.  Siemens Sanayi Ticaret A.Ş., Power System Software Test Engineer, 2021 - Present__
+
+• Working with an international team that works using SAFe (Scaled Agile Framework) methodology 
+on a web-based project (PSS®Cloud) in Turkey as a power system test engineer    
+• Preparing test cases with my electrical domain knowledge   
+• Worked on writing automated test using Test Complete (Python based). My main responsibility was 
+improving quality of product and it is significantly improved.   
+• Created CI/CD automation with Jenkins. Test suites scheduled from Jenkins and triggering nightly 
+and automatically. My responsible was catching fully automation in project.   
+• AWS experiences (EC2, S3, AppStream, Cost Management etc.)   
+• Non-Functional Test (Load, Performance, API etc.) with Ready API and Postman.    
+• Worked on Jira & Confluence as administrator for Grid Simulation group. My responsibility was 
+migration to new plugins, creation spaces for new projects, giving permissions. 
+
+__2.  Siemens Sanayi Ticaret A.Ş., Power System Consulting , 2019 - 2021 (Part-time)__
+
+•Worked as an electrical engineer 2 years in Power System Consulting department.   
+•Modelled power systems with power system tools like PSS®SINCAL, ETAP, PowerWorld   
+• Run load flow, short circuit, and protection coordination analysis mostly on industrial facilities and 
+distribution networks and evaluate the analysis results   
+• Organized the power system data set received and follow up the data 
+validation/correction/completion process, organized reports. 
+
+# Volunteer Experience 
+
+- Kocaeli Unıversity Electrical Engineering Reunion/ Coordinator, 2016-2020   
+- IEEE Kocaeli University Student Branch, 2016-2020   
+- Scouting and Guiding Federation of Turkey, 2008-2016   
+- Mustafa Kemal Anatolian-Teacher High School Comenius Exchange Program/ Helsinki, 2014  
+
+# Projects
+
+1.  Thesis: Energy Storage Application in Photovoltaic Systems    
+
+
+# Qualifications
+
+- Power System Simulation Applications: PSS®SINCAL, PSS®E, AutoCAD 
+- Programming language: Python, Git , R , Quarto
+- Test Automation Tools: Test Complete, Jenkins, Ready API, Postman   
+- Test Management Tools: Jira, Confluence   
+- Other: AWS   
+- Certifications: ISTQB® Foundation Level
+
+
+# Hobbies
+
+- Scuba Diver (NASDS Advanced Open Water Scuba Diver) 
+- Basketball Referee (Basketball Federation of Turkey) 
+- Tennis
+- Travelling  
+
+
