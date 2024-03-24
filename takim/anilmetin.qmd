@@ -1,0 +1,45 @@
+---
+title: "Anıl Metin"
+---
+
+![](/assets/images/vesikalik.jpeg){fig-align="center"}
+
+# Education
+
+-   Bachelor, Mechanical Engineering, Bilkent Üniversity, Türkiye, 2012 - 2019.
+-   Graduate, Industrial Engineering, Hacettepe Üniversity, Türkiye, 2024 - ongoing.
+
+# Work Experience
+
+## Works
+
+1.  İpek Savunma, Mechanical Engineer, 2020
+
+2.  Noksel, Sales Engineer, 2021
+
+3.  STM, Systems Engineer, 2021 - ongoing
+
+## Internship
+
+1.  Ford Otosan, Intern Mechanical Engineer, 2016
+
+2.  Med Makina, Intern Mechanical Engineer, 2017
+
+# Projects
+
+1.  Tractor Bonnet Fatigue Testing Machine, Türk Traktör, 2019
+
+Within the scope of Bilkent University Mechanical Engineering Department's Graduation Project, our
+team manufactured the Bonnet Fatigue Testing Machine for Türk Traktör. Our team worked hard to
+met all the requirements of the project and requests from the company. After a long period of design,
+analysis and hardwork we manufactured the prototype of the system. The company immediately
+started to use our prototype for their bonnet fatigue testing purposes.
+
+
+# Abilities
+
+R, Quarto, Git, Python, Solidworks, MatLab
+
+# Interests
+
+Fantasy Basketball
