@@ -1,21 +1,20 @@
 ---
-title: "Edin_Džeko"
+title: "azrabozkurt"
 ---
 
 ![](/assets/images/vesikalik.jpeg){fig-align="center"}
 
 # Eğitim
 
--   Lisans, ................................., .................................... Üniversitesi, Türkiye, 20xx - 20xx.
--   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 20xx - devam ediyor.
+-   Lisans, Gazi Üniversitesi, Türkiye, 2012 - 2019.
+-   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 2023 - devam ediyor.
 
 # İş Deneyimi
 
 ## İşler
 
-1.  Firma xxx, pozisyon xx, yıl xxx
+1.  Firma Mefa Endustri, pozisyon Proje Muhendisi, yıl 2021 - devam ediyor
 
-2.  Firma yyy, pozisyon yyy, yıl yyy
 
 ## Stajlar
 
@@ -29,7 +28,7 @@ title: "Edin_Džeko"
 
 # Yayınlar
 
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Öztürk, D. (2022) “İHA Yönlendirmesi için Keşif Misyonu: Zaman Bağımlı Ödülleri ve Çoklu Bağlantıları Olan Çok Amaçlı Oryantiring Problemi”, Computers & Operations Research, 145: 105882
+1.  simdilik yok
 
 # Yetkinlikler
 
