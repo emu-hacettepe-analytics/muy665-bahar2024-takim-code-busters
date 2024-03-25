@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Code Busters",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nAysu Gökkaya\n—\n—\n—\n—\n—"
+    "text": "Takım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\n—\n—"
   },
   {
     "objectID": "portfolyo.html",
@@ -240,7 +240,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nAysu Gökkaya\nDušan Tadić\nFrederico Rodrigues de Paula Santos\nSebastian Szymański\n\n\n\n\n\n Back to top",
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nSebastian Szymański\nSebastian Szymański\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Takım Üyeleri"
     ]
@@ -596,15 +596,43 @@
   {
     "objectID": "takim/azrabozkurt.html#işler",
     "href": "takim/azrabozkurt.html#işler",
-    "title": "azrabozkurt",
+    "title": "Azra Bozkurt",
     "section": "İşler",
     "text": "İşler\n\nFirma Mefa Endustri, pozisyon Proje Muhendisi, yıl 2021 - devam ediyor"
   },
   {
     "objectID": "takim/azrabozkurt.html#stajlar",
     "href": "takim/azrabozkurt.html#stajlar",
-    "title": "azrabozkurt",
+    "title": "Azra Bozkurt",
     "section": "Stajlar",
     "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/burakçayır.html#işler",
+    "href": "takim/burakçayır.html#işler",
+    "title": "Samet Burak Çayır",
+    "section": "İşler",
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/burakçayır.html#stajlar",
+    "href": "takim/burakçayır.html#stajlar",
+    "title": "Samet Burak Çayır",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/anilmetin.html#works",
+    "href": "takim/anilmetin.html#works",
+    "title": "Anıl Metin",
+    "section": "Works",
+    "text": "Works\n\nİpek Savunma, Mechanical Engineer, 2020\nNoksel, Sales Engineer, 2021\nSTM, Systems Engineer, 2021 - ongoing"
+  },
+  {
+    "objectID": "takim/anilmetin.html#internship",
+    "href": "takim/anilmetin.html#internship",
+    "title": "Anıl Metin",
+    "section": "Internship",
+    "text": "Internship\n\nFord Otosan, Intern Mechanical Engineer, 2016\nMed Makina, Intern Mechanical Engineer, 2017"
   }
 ]
