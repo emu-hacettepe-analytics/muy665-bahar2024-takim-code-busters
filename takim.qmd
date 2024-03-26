@@ -14,6 +14,6 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 4.  [Anıl Metin](/takim/anilmetin.qmd)
 
-5.  [Sebastian Szymański](/takim/szymanski.qmd)
+5.  [Dilek Beyter](/takim/dilekbeyter.qmd)
 
-6.  [Sebastian Szymański](/takim/szymanski.qmd)
+6.  [Elif Selin Buğdayıcı](/takim/elifselinbuğdayıcı.qmd)

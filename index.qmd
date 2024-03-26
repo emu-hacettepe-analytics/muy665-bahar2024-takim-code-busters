@@ -21,9 +21,9 @@ Lütfen faaliyetlerimizi görmek için için bizi takipte kalın.
 
 4.  [Anıl Metin](/takim/anilmetin.qmd)
 
-5.  [---](/takim/s---.qmd)
+5.  [Dilek Beyter](/takim/dilekbeyter.qmd)
 
-6.  [---](/takim/s---.qmd)
+6.  [Elif Selin Buğdayıcı](/takim/elifselinbuğdayıcı.qmd)
 
 
 ## Proje Adı
@@ -31,7 +31,7 @@ MUY665-Henüz belirsiz
 
 ## Proje Konusu
 Örnek:
-Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
+Bu projede MUY665-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için ........ yöntemleri kullanarak, ....... çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik.
 
 
 ## Veri Seti Hakkında Özet Bilgi
