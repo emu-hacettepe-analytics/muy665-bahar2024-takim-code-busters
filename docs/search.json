@@ -324,7 +324,7 @@
     "href": "portfolyo/calisma1.html",
     "title": "Çalışma 1",
     "section": "",
-    "text": "(Aşağıdakiler örnek olarak verilmiştir.)\nBu çalışmada 3 görevimiz var. Bu görevler….. Bunlara sırayla aşağıda cevap arıyoruz.",
+    "text": "Bu çalışmada 3 görevimiz var. Bu görevler ;\nŞuan bu metni okuyorsanız yukarıda listelenen ilk iki görevi doğru yapabilmişiz demektir :) Üçüncü görev için lütfen okumaya devam edin :)\nÜçüncü görev için listelediğimiz maddelere sırayla aşağıda cevap arıyoruz.",
     "crumbs": [
       "Porfolyo",
       "Çalışma 1"
@@ -602,14 +602,22 @@
     "href": "takim/azrabozkurt.html#işler",
     "title": "Azra Bozkurt",
     "section": "İşler",
-    "text": "İşler\n\nFirma Mefa Endustri, pozisyon Proje Muhendisi, yıl 2021 - devam ediyor"
+    "text": "İşler\n\nFirma Mefa Endustri, pozisyon Proje Muhendisi, yıl 2021 - devam ediyor",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Azra Bozkurt"
+    ]
   },
   {
     "objectID": "takim/azrabozkurt.html#stajlar",
     "href": "takim/azrabozkurt.html#stajlar",
     "title": "Azra Bozkurt",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Azra Bozkurt"
+    ]
   },
   {
     "objectID": "takim/burakçayır.html#işler",
@@ -666,5 +674,27 @@
     "title": "Elif Selin Buğdayıcı",
     "section": "Stajlar",
     "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#section",
+    "href": "portfolyo/calisma1.html#section",
+    "title": "Çalışma 1",
+    "section": "()",
+    "text": "()\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#ödev-1-dökümanına-göre-paylaşılan-kaynaklardan-videoyu-seçimi-ve-quarto-dokümanına-kısa-bir-özet-sağlanması",
+    "href": "portfolyo/calisma1.html#ödev-1-dökümanına-göre-paylaşılan-kaynaklardan-videoyu-seçimi-ve-quarto-dokümanına-kısa-bir-özet-sağlanması",
+    "title": "Çalışma 1",
+    "section": "(Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)",
+    "text": "(Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Porfolyo",
+      "Çalışma 1"
+    ]
   }
 ]

@@ -1,0 +1,42 @@
+---
+title: "Baykal Hafizoglu videosu özeti"
+---
+
+Öncelikle Baykal Hafizoğlu kimdir sorusu ile başladık
+OR/Analytics dunyasına bakış
+dersler
+
+Odtü IE Mezunu
+Akademik bir aileden geldiğinden hosuna gitti ve asistan olarak kaldı odtude.
+doktoraya amerıkaya gıttı
+akademık hayattan vazgectı ve endustrıye kaydı
+Operations Research olarak ıse basladı ve hep endustrıde kaldı optımızasyon uzerıne, matematıksel modeller uzerıne calıstı
+fıco scoreda calıstı. 
+Çalıştıgı sırketlerde daha cok matematıksel modelleme olmak uzere optımızasyon dahıl cesıtlı projeler yapmıs.
+Son olarakta hobilerinden bahsederek kişisel bilgiler verdi.
+
+OR/Analytics
+OR: zamanla kapsamı genısledı ve analitik olarak tanımlamak ıstedı konusmacı
+descriptive (tanımlayıcı) datayı tanımlayarak ıs yapmak
+en kritik yontemlerden
+data mining, time series analiz, data visualization
+
+diagnostic: bir sorun var ve dıagnose etmeye calısıyoruz (neden oldugunu anlama sanatı)
+regresyon, clustering, hypothesis testing (hipotez testi)
+
+predictive (tahmin edici): gelecekte ne olacak sorusunun cevabı
+clustering, simulation, regressyon, machine learning
+
+prescriptive (recete edici): sorun var ve ne yapmalıyızın onerılerınden olusan analıtık yontem
+meta heuristics, optimizasyon, decision rules, math modelling, heuristics
+
+
+
+
+## (Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)
+
+```{r}
+1 + 1
+```
+
+## (b)

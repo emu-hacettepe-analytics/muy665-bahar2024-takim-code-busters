@@ -2,15 +2,31 @@
 title: "Çalışma 1"
 ---
 
-\
-(Aşağıdakiler örnek olarak verilmiştir.)
 
-Bu çalışmada 3 görevimiz var. Bu görevler..... Bunlara sırayla aşağıda cevap arıyoruz.
+Bu çalışmada 3 görevimiz var. Bu görevler ;
 
-## (a)
+- GitHub üzerinden repo oluşturup Code Busters takımı adına kişiselleştirme,
+- Takım Üyelerimizin özgeçmişlerini paylaşma ve
+- Portfolyo başlığı altında ilk ödevimizi yayınlamaktır. 
+
+Şuan bu metni okuyorsanız yukarıda listelenen ilk iki görevi doğru yapabilmişiz demektir :)
+Üçüncü görev için lütfen okumaya devam edin :)
+
+
+Üçüncü görev için listelediğimiz maddelere sırayla aşağıda cevap arıyoruz.
+
+## (Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)
 
 ```{r}
 1 + 1
 ```
 
-## (b)
+## (Özel Fonksiyonlar ve Döngüler ile İstatistiksel Özetlerin Keşfi)
+```{r}
+1 + 1
+```
+
+## (Özel Fonksiyonlar ve Döngüler ile İstatistiksel Özetlerin Keşfi)
+```{r}
+1 + 1
+```
