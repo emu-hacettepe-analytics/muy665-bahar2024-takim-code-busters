@@ -14,26 +14,41 @@ title: "Dilek Beyter"
 
 ## İşler
 
-1.  Firma xxx, pozisyon xx, yıl xxx
+1.  Türkiye Cumhuriyet Merkez Bankası, Kimya Mühendisi, Ocak 2024 - devam ediyor
+• Banknot Matbaasında kullanılan hammadelerin kalite uygunluk çalışmalarını yürütmek,
+• Hammaddelerin üretim sürecine uyumunu kontrol etmek,
+• Banknot kağıdı ve mürekkep ihalelerine hazırlanmak,
+• Üretim planına göre tedarik planı oluşturmak
 
-2.  Firma yyy, pozisyon yyy, yıl yyy
+2.  Keyvan Pazarlama A.Ş, Satış Mühendisi, Eylül 2021 - Aralık 2023
+
+• Müşteri ihtiyaçlarına uygun HVAC çözümleri sunmak ve detaylı teklifler hazırlamak,
+• Güçlü müşteri ilişkileri kurmak ve sürdürmek,
+• Satış sonrası müşteri desteği ve teknik yardım sunmak,
+• Uluslararası ortaklarla işbirliği içerisinde proje takip etmek
 
 ## Stajlar
 
-1.  Firma aaa, pozisyon xx, yıl xxx
+1.  Yiğit Akü Malzemeleri A.Ş, Kalite Kontrol Stajyeri, Ağustos 2019
 
-2.  Firma bbb, pozisyon yyy, yıl yyy
+• Ürün kalitesini etkileyen özellikleri ve pil üretim sürecini gözlemek
+• Üretim, mühendislik hizmetleri ve kalite güvence gibi farklı departmanlarla işbirliği yapmak
+
+2.  Türk Şeker Fabrikaları A.Ş, Kalite Laboratuvar Stajyeri, Temmuz 2019
+
+• Analiz için ham madde ve nihai üründen numuneler toplamak,
+• Kimyasal analiz testlerini yapmak,
+• Test sonuçlarının işlemek ve yorumlamak, 
 
 # Projeler
 
-1.  TÜBİTAK 1001..........................
-
-# Yayınlar
-
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Öztürk, D. (2022) “İHA Yönlendirmesi için Keşif Misyonu: Zaman Bağımlı Ödülleri ve Çoklu Bağlantıları Olan Çok Amaçlı Oryantiring Problemi”, Computers & Operations Research, 145: 105882
+1.  Lisans Bitirme Projesi, Derin Ötektik Çözücülerin Süperkapasitör Elektroliti Olarak Kullanılması, 2021
 
 # Yetkinlikler
 
-R, Quarto, Git, Python
+• Dijital Yetkinlikler: Microsoft Office, Trello, PrestoXL ERP
+• Agile Proje Yönetimi, Yalın Üretim Araçları, Aktif dinleme, B2B&B2C Satış, Laboratuvar yetenekleri: Analitik ve organik kimya analizleri, baskı teknikleri
 
 # Hobiler
+
+• Buz pateni, Seyahat etmek, Almanca öğrenmeye çalışmak :)
