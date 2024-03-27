@@ -1,1 +1,131 @@
 /* css styles */
+
+"Bu css dosyası web sitemizi stilize etmek için oluşturulmuştur.Oluştururken freecss ve chatgptden yararlanılmıştır."
+
+"Siyah: #000000
+"Beyaz: #FFFFFF
+"Kırmızı: #FF0000
+"Yeşil: #00FF00
+"Mavi: #0000FF
+"Sarı: #FFFF00
+"Turuncu: #FFA500
+"Mor: #800080
+"Gri: #808080
+"Açık Gri: #D3D3D3
+"Koyu Gri: #A9A9A9
+"Pembe: #FFC0CB
+"Turkuaz: #40E0D0
+"Altın: #FFD700
+
+/* Temel Gövde Stili */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Arka plan rengi */
+    color: #333; /* Temel yazı rengi */
+}
+
+/* Başlık Stilleri */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: left;
+    color: #FFA500; /* Başlık rengi */
+}
+
+/* Menü Çubuğu Stili */
+.navbar {
+    background-color: #800080; /* Menü çubuğu arka plan rengi */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.navbar a {
+    color: #ffffff;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+}
+
+/* İçerik Bölümü */
+.content {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Altbilgi (Footer) Stili */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Buton Stilleri */
+.button {
+    background-color: #28a745; /* Buton arka plan rengi */
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #218838;
+}
+
+/* Form Stilleri */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Kutuların dış kenarlık ve dolguyu genişlik ve yükseklik hesaplamalarına dahil etmesi */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Tablo Stilleri */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}

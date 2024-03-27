@@ -1,6 +1,6 @@
 ---
 title: "Takım: Code Busters"
-sidebar: false 
+sidebar: false
 ---
 
 MUY665-İş Analitiği dersi takım sayfamıza hoş geldiniz.

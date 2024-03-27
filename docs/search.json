@@ -201,7 +201,7 @@
     "href": "index.html#proje-konusu",
     "title": "Takım: Code Busters",
     "section": "Proje Konusu",
-    "text": "Proje Konusu\nÖrnek: Bu projede MUY660-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
+    "text": "Proje Konusu\nÖrnek: Bu projede MUY665-İş Analitiği ders içeriğinin analitik yaklaşımlarla iyileştirilmesini hedefledik. Bu doğrultuda tüm üniversitelerdeki benzer derslerin verisini toplayarak bir veri seti oluşturduk Analiz için …….. yöntemleri kullanarak, ……. çalışmaları yaptık Sonuç olarak, MUY660-İş Analitiği dersinin dünyadaki tüm derslerden daha iyi olduğunu ve bu dersi aldığımız için çok mutlu olduğumuzu tespit ettik."
   },
   {
     "objectID": "index.html#veri-seti-hakkında-özet-bilgi",
@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Code Busters",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\n—\n—"
+    "text": "Takım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nDilek Beyter\nElif Selin Buğdayıcı"
   },
   {
     "objectID": "portfolyo.html",
@@ -240,7 +240,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nSebastian Szymański\nSebastian Szymański\n\n\n\n\n\n Back to top",
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nDilek Beyter\nElif Selin Buğdayıcı\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Takım Üyeleri"
     ]
@@ -584,7 +584,11 @@
     "href": "takim/aysugökkaya.html#works",
     "title": "Aysu Gökkaya",
     "section": "Works",
-    "text": "Works\n1. Siemens Sanayi Ticaret A.Ş., Power System Software Test Engineer, 2021 - Present\n• Working with an international team that works using SAFe (Scaled Agile Framework) methodology on a web-based project (PSS®Cloud) in Turkey as a power system test engineer\n• Preparing test cases with my electrical domain knowledge\n• Worked on writing automated test using Test Complete (Python based). My main responsibility was improving quality of product and it is significantly improved.\n• Created CI/CD automation with Jenkins. Test suites scheduled from Jenkins and triggering nightly and automatically. My responsible was catching fully automation in project.\n• AWS experiences (EC2, S3, AppStream, Cost Management etc.)\n• Non-Functional Test (Load, Performance, API etc.) with Ready API and Postman.\n• Worked on Jira & Confluence as administrator for Grid Simulation group. My responsibility was migration to new plugins, creation spaces for new projects, giving permissions.\n2. Siemens Sanayi Ticaret A.Ş., Power System Consulting , 2019 - 2021 (Part-time)\n•Worked as an electrical engineer 2 years in Power System Consulting department.\n•Modelled power systems with power system tools like PSS®SINCAL, ETAP, PowerWorld\n• Run load flow, short circuit, and protection coordination analysis mostly on industrial facilities and distribution networks and evaluate the analysis results\n• Organized the power system data set received and follow up the data validation/correction/completion process, organized reports."
+    "text": "Works\n1. Siemens Sanayi Ticaret A.Ş., Power System Software Test Engineer, 2021 - Present\n• Working with an international team that works using SAFe (Scaled Agile Framework) methodology on a web-based project (PSS®Cloud) in Turkey as a power system test engineer\n• Preparing test cases with my electrical domain knowledge\n• Worked on writing automated test using Test Complete (Python based). My main responsibility was improving quality of product and it is significantly improved.\n• Created CI/CD automation with Jenkins. Test suites scheduled from Jenkins and triggering nightly and automatically. My responsible was catching fully automation in project.\n• AWS experiences (EC2, S3, AppStream, Cost Management etc.)\n• Non-Functional Test (Load, Performance, API etc.) with Ready API and Postman.\n• Worked on Jira & Confluence as administrator for Grid Simulation group. My responsibility was migration to new plugins, creation spaces for new projects, giving permissions.\n2. Siemens Sanayi Ticaret A.Ş., Power System Consulting , 2019 - 2021 (Part-time)\n•Worked as an electrical engineer 2 years in Power System Consulting department.\n•Modelled power systems with power system tools like PSS®SINCAL, ETAP, PowerWorld\n• Run load flow, short circuit, and protection coordination analysis mostly on industrial facilities and distribution networks and evaluate the analysis results\n• Organized the power system data set received and follow up the data validation/correction/completion process, organized reports.",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Aysu Gökkaya"
+    ]
   },
   {
     "objectID": "takim/aysugökkaya.html#interns",
@@ -646,6 +650,20 @@
     "objectID": "takim/dilekbeyter.html#stajlar",
     "href": "takim/dilekbeyter.html#stajlar",
     "title": "Dilek Beyter",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/elifselinbuğdayıcı.html#işler",
+    "href": "takim/elifselinbuğdayıcı.html#işler",
+    "title": "Elif Selin Buğdayıcı",
+    "section": "İşler",
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+  },
+  {
+    "objectID": "takim/elifselinbuğdayıcı.html#stajlar",
+    "href": "takim/elifselinbuğdayıcı.html#stajlar",
+    "title": "Elif Selin Buğdayıcı",
     "section": "Stajlar",
     "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
   }
