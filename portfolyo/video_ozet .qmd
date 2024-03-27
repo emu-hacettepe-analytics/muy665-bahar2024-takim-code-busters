@@ -2,48 +2,49 @@
 title: "Baykal Hafizoglu videosu özeti"
 ---
 
-Öncelikle Baykal Hafizoğlu kimdir sorusu ile başladık
-OR/Analytics dunyasına bakış
-dersler
+Öncelikle Baykal Hafizoğlu kimdir sorusu ile başladık. Misafirimiz kendini tanıttı.Kısaca bahsetmek gerekirse Odtü Endustri Mühendisliği bölümünde mezun olduktan sonra akademik bir aileden geldiği için asistanlığı denemek istedi. Odtü'de bir süre asistan olarak görev aldıktan sonra doktora eğitimi için Amerika'ya gitti. Orada eğitimini tamamladıktan sonra kariyerine endüstride devam etme kararı aldı.Kariyeri boyunca çeşitli firmalarda matematiksel modelleme ve optimizasyon ağırlıklı konularda çeşitli projeler yaptı. Ve son olarak hobilerinden bahsettikten sonra bu bölümü bitirdi
 
-Odtü IE Mezunu
-Akademik bir aileden geldiğinden hosuna gitti ve asistan olarak kaldı odtude.
-doktoraya amerıkaya gıttı
-akademık hayattan vazgectı ve endustrıye kaydı
-Operations Research olarak ıse basladı ve hep endustrıde kaldı optımızasyon uzerıne, matematıksel modeller uzerıne calıstı
-fıco scoreda calıstı. 
-Çalıştıgı sırketlerde daha cok matematıksel modelleme olmak uzere optımızasyon dahıl cesıtlı projeler yapmıs.
-Son olarakta hobilerinden bahsederek kişisel bilgiler verdi.
 
-OR/Analytics
-OR: zamanla kapsamı genısledı ve analitik olarak tanımlamak ıstedı konusmacı
-descriptive (tanımlayıcı) datayı tanımlayarak ıs yapmak
-en kritik yontemlerden
-data mining, time series analiz, data visualization
+Daha sonra OR/Analytics Dünyasına Bakış bölümüyle konuya giriş yapıldı.Operational Researchün zamanla kapsamı genısledı ve analitik olarak tanımladı.Analitiği de 4 ana başlıkta inceledi:
 
-diagnostic: bir sorun var ve dıagnose etmeye calısıyoruz (neden oldugunu anlama sanatı)
-regresyon, clustering, hypothesis testing (hipotez testi)
+- Descriptive (tanımlayıcı): datayı tanımlayarak iş yapmayı sağlayan analitik türüdür. En kritik yöntemlerdendir.
+Örnekler: data mining, time series analiyse, data visualization
 
-predictive (tahmin edici): gelecekte ne olacak sorusunun cevabı
-clustering, simulation, regressyon, machine learning
+- Diagnostic: Bir sorun var ve dıagnose etmeye calısıyoruz (neden oldugunu anlama sanatı)
+Örnekler: regresyon, clustering, hypothesis testing (hipotez testi)
 
-prescriptive (recete edici): sorun var ve ne yapmalıyızın onerılerınden olusan analıtık yontem
-meta heuristics, optimizasyon, decision rules, math modelling, heuristics
+- Predictive (tahmin edici): gelecekte ne olacak sorusunun cevabı
+Örnekler: clustering, simulation, regressyon, machine learning
+
+- Prescriptive (reçete edici): Sorun var ve ne yapmalıyız sorusunun cevabı olarak onerılerınden olusan analıtık yontem
+Örnekler: meta heuristics, optimizasyon, decision rules, math modelling, heuristics
 
 Analitik çözumler
 
 methodlar : --> descriptive -> predictive -> prescriptive hepsı bır gelır
-bankacılıkta kredı basvurusu, banka once adamı arastırır score cıkarır, adama red kabul kararı ve faız oranı belırlenır ne kadar guvenılır optimizasyon ya da decision rulelar olabilir
+Örneğin; bankacılıkta kredı basvurusu, banka once adamı arastırır score cıkarır, adama red kabul kararı ve faız oranı belırlenır ne kadar guvenılır optimizasyon ya da decision rulelar olabilir
 
-sureklı kullanılan modeller operational her gun
-ayda yılda bır stratejık
-cok nadıren taktıcal
+sureklı, her gün,  kullanılan modeller -> operational 
+ayda bir iki ise - >stratejık
+cok nadıren ise -> tactical
 
-genelde software application delivery edılır son kullanıcıya
-software ıkıye ayırdı out of box ve custom made
-
-
-## (Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)
+genelde son kullanıcıya software application delivery edılır.
+software applicationı da ıkıye ayırdı konuşmacı : out of box ve custom made
+software olmazsa danısmanlık da delivery edilebilir.
 
 
-## (b)
+Teknik konular üzerinden detaylarıyla ve örnekleriyle durduktan sonra konuşmacı kendi kariyer sürecinde ve edindiği tecrübeleri aktardı ve bazı uyarıları oldu.
+
+
+-Her proje temız bır problem tanımıyla baslamalı (kpı tanımlama? kabul kriteri belirleme? )
+-Deploy modeli (modelin son kullanıcıya ulasabılmesı, proda cıkabılmek, cı cd kurulması gereklı,user ınterface gereklı)
+-Son kullanıcı memnunıyetı cok onemlı (early feedback alınmalı)
+-UI userfrıendly olmalı
+-kodun okunurlugunun, acıklanabılır olmasının yuksek olması 
+-Sonucu problemlere baglayabılmek(sorun buydu, bu gelıstırmeyı yaptık, sonucu buraya tasıdık)
+-a-b-c senaryolarını deneyıp hangı senaryo hangı sonucu cıkarttı neden ben a olanı sectım kanıtlama onemlı
+
+
+Son dakikalarda soru cevaba yer verildi ve oturum sonlandırıldı.
+
+
