@@ -30,7 +30,17 @@ clustering, simulation, regressyon, machine learning
 prescriptive (recete edici): sorun var ve ne yapmalıyızın onerılerınden olusan analıtık yontem
 meta heuristics, optimizasyon, decision rules, math modelling, heuristics
 
+Analitik çözumler
 
+methodlar : --> descriptive -> predictive -> prescriptive hepsı bır gelır
+bankacılıkta kredı basvurusu, banka once adamı arastırır score cıkarır, adama red kabul kararı ve faız oranı belırlenır ne kadar guvenılır optimizasyon ya da decision rulelar olabilir
+
+sureklı kullanılan modeller operational her gun
+ayda yılda bır stratejık
+cok nadıren taktıcal
+
+genelde software application delivery edılır son kullanıcıya
+software ıkıye ayırdı out of box ve custom made
 
 
 ## (Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)

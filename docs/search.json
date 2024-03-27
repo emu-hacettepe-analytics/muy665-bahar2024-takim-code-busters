@@ -652,14 +652,22 @@
     "href": "takim/dilekbeyter.html#işler",
     "title": "Dilek Beyter",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Dilek Beyter"
+    ]
   },
   {
     "objectID": "takim/dilekbeyter.html#stajlar",
     "href": "takim/dilekbeyter.html#stajlar",
     "title": "Dilek Beyter",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Dilek Beyter"
+    ]
   },
   {
     "objectID": "takim/elifselinbuğdayıcı.html#işler",

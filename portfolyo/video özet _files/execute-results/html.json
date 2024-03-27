@@ -1,0 +1,15 @@
+{
+  "hash": "025c6467954931f0fc19868a5fee7d20",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Baykal Hafizoglu videosu özeti\"\n---\n\n\nÖncelikle Baykal Hafizoğlu kimdir sorusu ile başladık\nOR/Analytics dunyasına bakış\ndersler\n\nOdtü IE Mezunu\nAkademik bir aileden geldiğinden hosuna gitti ve asistan olarak kaldı odtude.\ndoktoraya amerıkaya gıttı\nakademık hayattan vazgectı ve endustrıye kaydı\nOperations Research olarak ıse basladı ve hep endustrıde kaldı optımızasyon uzerıne, matematıksel modeller uzerıne calıstı\nfıco scoreda calıstı. \nÇalıştıgı sırketlerde daha cok matematıksel modelleme olmak uzere optımızasyon dahıl cesıtlı projeler yapmıs.\nSon olarakta hobilerinden bahsederek kişisel bilgiler verdi.\n\nOR/Analytics\nOR: zamanla kapsamı genısledı ve analitik olarak tanımlamak ıstedı konusmacı\ndescriptive (tanımlayıcı) datayı tanımlayarak ıs yapmak\nen kritik yontemlerden\ndata mining, time series analiz, data visualization\n\ndiagnostic: bir sorun var ve dıagnose etmeye calısıyoruz (neden oldugunu anlama sanatı)\nregresyon, clustering, hypothesis testing (hipotez testi)\n\npredictive (tahmin edici): gelecekte ne olacak sorusunun cevabı\nclustering, simulation, regressyon, machine learning\n\nprescriptive (recete edici): sorun var ve ne yapmalıyızın onerılerınden olusan analıtık yontem\nmeta heuristics, optimizasyon, decision rules, math modelling, heuristics\n\n\n\n\n## (Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n\n\n## (b)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
