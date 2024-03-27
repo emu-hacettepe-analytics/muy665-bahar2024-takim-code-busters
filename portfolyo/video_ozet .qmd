@@ -45,8 +45,5 @@ software ıkıye ayırdı out of box ve custom made
 
 ## (Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)
 
-```{r}
-1 + 1
-```
 
 ## (b)
