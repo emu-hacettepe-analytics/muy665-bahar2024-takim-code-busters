@@ -44,7 +44,6 @@ Teknik konular üzerinden detaylarıyla ve örnekleriyle durduktan sonra konuşm
 -Sonucu problemlere baglayabılmek(sorun buydu, bu gelıstırmeyı yaptık, sonucu buraya tasıdık)
 -a-b-c senaryolarını deneyıp hangı senaryo hangı sonucu cıkarttı neden ben a olanı sectım kanıtlama onemlı
 
-
 Son dakikalarda soru cevaba yer verildi ve oturum sonlandırıldı.
 
 
