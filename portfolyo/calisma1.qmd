@@ -16,6 +16,7 @@ Bu çalışmada 3 görevimiz var. Bu görevler ;
 Üçüncü görev için listelediğimiz maddelere sırayla aşağıda cevap arıyoruz.
 
 ## (Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)
+(/portfolyo/video_ozet.qmd)
 
 ## (Özel Fonksiyonlar ve Döngüler ile İstatistiksel Özetlerin Keşfi)
 
