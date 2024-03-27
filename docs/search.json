@@ -704,5 +704,26 @@
       "Porfolyo",
       "Çalışma 1"
     ]
+  },
+  {
+    "objectID": "portfolyo/video_ozet .html",
+    "href": "portfolyo/video_ozet .html",
+    "title": "Baykal Hafizoglu videosu özeti",
+    "section": "",
+    "text": "Öncelikle Baykal Hafizoğlu kimdir sorusu ile başladık OR/Analytics dunyasına bakış dersler\nOdtü IE Mezunu Akademik bir aileden geldiğinden hosuna gitti ve asistan olarak kaldı odtude. doktoraya amerıkaya gıttı akademık hayattan vazgectı ve endustrıye kaydı Operations Research olarak ıse basladı ve hep endustrıde kaldı optımızasyon uzerıne, matematıksel modeller uzerıne calıstı fıco scoreda calıstı. Çalıştıgı sırketlerde daha cok matematıksel modelleme olmak uzere optımızasyon dahıl cesıtlı projeler yapmıs. Son olarakta hobilerinden bahsederek kişisel bilgiler verdi.\nOR/Analytics OR: zamanla kapsamı genısledı ve analitik olarak tanımlamak ıstedı konusmacı descriptive (tanımlayıcı) datayı tanımlayarak ıs yapmak en kritik yontemlerden data mining, time series analiz, data visualization\ndiagnostic: bir sorun var ve dıagnose etmeye calısıyoruz (neden oldugunu anlama sanatı) regresyon, clustering, hypothesis testing (hipotez testi)\npredictive (tahmin edici): gelecekte ne olacak sorusunun cevabı clustering, simulation, regressyon, machine learning\nprescriptive (recete edici): sorun var ve ne yapmalıyızın onerılerınden olusan analıtık yontem meta heuristics, optimizasyon, decision rules, math modelling, heuristics\nAnalitik çözumler\nmethodlar : –&gt; descriptive -&gt; predictive -&gt; prescriptive hepsı bır gelır bankacılıkta kredı basvurusu, banka once adamı arastırır score cıkarır, adama red kabul kararı ve faız oranı belırlenır ne kadar guvenılır optimizasyon ya da decision rulelar olabilir\nsureklı kullanılan modeller operational her gun ayda yılda bır stratejık cok nadıren taktıcal\ngenelde software application delivery edılır son kullanıcıya software ıkıye ayırdı out of box ve custom made software olmazsa danısmanlık verılebılr\nalınan dersler her proje temız bır problem tanımıyla baslamalı"
+  },
+  {
+    "objectID": "portfolyo/video_ozet .html#ödev-1-dökümanına-göre-paylaşılan-kaynaklardan-videoyu-seçimi-ve-quarto-dokümanına-kısa-bir-özet-sağlanması",
+    "href": "portfolyo/video_ozet .html#ödev-1-dökümanına-göre-paylaşılan-kaynaklardan-videoyu-seçimi-ve-quarto-dokümanına-kısa-bir-özet-sağlanması",
+    "title": "Baykal Hafizoglu videosu özeti",
+    "section": "(Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)",
+    "text": "(Ödev-1 Dökümanına göre paylaşılan kaynaklardan videoyu seçimi ve Quarto dokümanına kısa bir özet sağlanması)"
+  },
+  {
+    "objectID": "portfolyo/video_ozet .html#b",
+    "href": "portfolyo/video_ozet .html#b",
+    "title": "Baykal Hafizoglu videosu özeti",
+    "section": "(b)",
+    "text": "(b)"
   }
 ]
