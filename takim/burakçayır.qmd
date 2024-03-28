@@ -2,7 +2,7 @@
 title: "Samet Burak Çayır"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/BURAKCAYIR.jpg){fig-align="center" width="172"}
 
 # Eğitim
 
