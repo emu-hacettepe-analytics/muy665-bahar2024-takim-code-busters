@@ -6,33 +6,29 @@ title: "Samet Burak Çayır"
 
 # Eğitim
 
--   Lisans, ................................., .................................... Üniversitesi, Türkiye, 20xx - 20xx.
--   Yüksek Lisans, Endüstri Mühendisliği, Hacettepe Üniversitesi, Türkiye, 20xx - devam ediyor.
+-   ENDÜSTRİ MÜHENDİSLİĞİ BÖLÜMÜ (LİSANS) – Gazi Üniversitesi, Türkiye, 2011 - 2015.
+-   MÜHENDİSLİK YÖNETİMİ (YÜKSEK LİSANS) – Hacettepe Üniversitesi - devam ediyor.
 
 # İş Deneyimi
 
 ## İşler
 
-1.  Firma xxx, pozisyon xx, yıl xxx
+1.  ÜRETİM VE PROJE PLANLAMA MÜHENDİSİ – İPEK SAVUNMA SAN. LTD. ŞTI. 2018-2021
 
-2.  Firma yyy, pozisyon yyy, yıl yyy
+2.  ÜRETİM PLANLAMA MÜHENDİSİ – KIZILAY BARINMA SİSTEMLERİ A.Ş 2021-devam ediyor.
 
-## Stajlar
+    # **Staj**
 
-1.  Firma aaa, pozisyon xx, yıl xxx
+3.  STAJYER ENDÜSTRİ MÜHENDİSİ – MAN KAMYON VE OTOBÜS TICARET A.Ş. 2014
 
-2.  Firma bbb, pozisyon yyy, yıl yyy
+4.  STAJYER ENDÜSTRİ MÜHENDİSİ – NUROL MAKINA 2013
 
 # Projeler
 
-1.  TÜBİTAK 1001..........................
-
-# Yayınlar
-
-1.  Dasdemir, E., Batta, R., Koksalan, M., Tezcaner Öztürk, D. (2022) “İHA Yönlendirmesi için Keşif Misyonu: Zaman Bağımlı Ödülleri ve Çoklu Bağlantıları Olan Çok Amaçlı Oryantiring Problemi”, Computers & Operations Research, 145: 105882
+1.  Bitirme tezi (Çizelgeleme) :TUSAŞ-2015
+2.  Benzetim projeleri ve arena uygulamarı :Gate Elektronik-2013
+3.  Method-Zaman etüdü çalışmaları :Som Cıvata Somun San. Tic. A.Ş-2013
 
 # Yetkinlikler
 
-R, Quarto, Git, Python
-
-# Hobiler
+R, Quarto, Git, SAP (PP), AUTOCAD

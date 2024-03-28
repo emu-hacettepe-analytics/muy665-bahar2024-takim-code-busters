@@ -231,7 +231,6 @@
     "section": "",
     "text": "Bu sayfada, MUY665 İş Analitiği dersi 2023-2024 bahar dönemi boyunca yaptığımız analitik çalışmalarını sunmaktayız. Çalışmalarımıza sol menüden ulaşabilirsiniz.\n\n\n\n Back to top",
     "crumbs": [
-      "Porfolyo",
       "Portfolyo"
     ]
   },
@@ -624,14 +623,22 @@
     "href": "takim/burakçayır.html#işler",
     "title": "Samet Burak Çayır",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+    "text": "İşler\n\nÜRETİM VE PROJE PLANLAMA MÜHENDİSİ – İPEK SAVUNMA SAN. LTD. ŞTI. 2018-2021\nÜRETİM PLANLAMA MÜHENDİSİ – KIZILAY BARINMA SİSTEMLERİ A.Ş 2021-devam ediyor.\nStaj\nSTAJYER ENDÜSTRİ MÜHENDİSİ – MAN KAMYON VE OTOBÜS TICARET A.Ş. 2014\nSTAJYER ENDÜSTRİ MÜHENDİSİ – NUROL MAKINA 2013",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Samet Burak Çayır"
+    ]
   },
   {
     "objectID": "takim/burakçayır.html#stajlar",
     "href": "takim/burakçayır.html#stajlar",
     "title": "Samet Burak Çayır",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Samet Burak Çayır"
+    ]
   },
   {
     "objectID": "takim/anilmetin.html#works",
@@ -674,14 +681,22 @@
     "href": "takim/elifselinbuğdayıcı.html#işler",
     "title": "Elif Selin Buğdayıcı",
     "section": "İşler",
-    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy"
+    "text": "İşler\n\nFirma xxx, pozisyon xx, yıl xxx\nFirma yyy, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Elif Selin Buğdayıcı"
+    ]
   },
   {
     "objectID": "takim/elifselinbuğdayıcı.html#stajlar",
     "href": "takim/elifselinbuğdayıcı.html#stajlar",
     "title": "Elif Selin Buğdayıcı",
     "section": "Stajlar",
-    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy"
+    "text": "Stajlar\n\nFirma aaa, pozisyon xx, yıl xxx\nFirma bbb, pozisyon yyy, yıl yyy",
+    "crumbs": [
+      "Takım Üyeleri",
+      "Elif Selin Buğdayıcı"
+    ]
   },
   {
     "objectID": "portfolyo/calisma1.html#section",
