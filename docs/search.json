@@ -222,7 +222,7 @@
     "href": "index.html#takım-üyeleri",
     "title": "Takım: Code Busters",
     "section": "Takım Üyeleri",
-    "text": "Takım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nDilek Beyter\nElif Selin Buğdayıcı"
+    "text": "Takım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nDilek Beyter\nElif Selin Buğdaycı"
   },
   {
     "objectID": "portfolyo.html",
@@ -239,7 +239,7 @@
     "href": "takim.html",
     "title": "Takım Üyeleri",
     "section": "",
-    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nDilek Beyter\nElif Selin Buğdayıcı\n\n\n\n\n\n Back to top",
+    "text": "Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfalarına gitmek için sol menüyü veya aşağıdaki linkleri kullanabilirsiniz.\n\nTakım Üyeleri\n\nAysu Gökkaya\nAzra Bozkurt\nSamet Burak Çayır\nAnıl Metin\nDilek Beyter\nElif Selin Buğdaycı\n\n\n\n\n\n Back to top",
     "crumbs": [
       "Takım Üyeleri"
     ]
@@ -800,9 +800,9 @@
   {
     "objectID": "portfolyo/video_ozet.html",
     "href": "portfolyo/video_ozet.html",
-    "title": "Baykal Hafizoglu videosu özeti",
+    "title": "Baykal Hafızoğlu Video Özeti",
     "section": "",
-    "text": "Öncelikle Baykal Hafizoğlu kimdir sorusu ile başladık. Misafirimiz kendini tanıttı.Kısaca bahsetmek gerekirse Odtü Endustri Mühendisliği bölümünde mezun olduktan sonra akademik bir aileden geldiği için asistanlığı denemek istedi. Odtü’de bir süre asistan olarak görev aldıktan sonra doktora eğitimi için Amerika’ya gitti. Orada eğitimini tamamladıktan sonra kariyerine endüstride devam etme kararı aldı.Kariyeri boyunca çeşitli firmalarda matematiksel modelleme ve optimizasyon ağırlıklı konularda çeşitli projeler yaptı. Ve son olarak hobilerinden bahsettikten sonra bu bölümü bitirdi\nDaha sonra OR/Analytics Dünyasına Bakış bölümüyle konuya giriş yapıldı.Operational Researchün zamanla kapsamı genısledı ve analitik olarak tanımladı.Analitiği de 4 ana başlıkta inceledi:\n\nDescriptive (tanımlayıcı): datayı tanımlayarak iş yapmayı sağlayan analitik türüdür. En kritik yöntemlerdendir. Örnekler: data mining, time series analiyse, data visualization\nDiagnostic: Bir sorun var ve dıagnose etmeye calısıyoruz (neden oldugunu anlama sanatı) Örnekler: regresyon, clustering, hypothesis testing (hipotez testi)\nPredictive (tahmin edici): gelecekte ne olacak sorusunun cevabı Örnekler: clustering, simulation, regressyon, machine learning\nPrescriptive (reçete edici): Sorun var ve ne yapmalıyız sorusunun cevabı olarak onerılerınden olusan analıtık yontem Örnekler: meta heuristics, optimizasyon, decision rules, math modelling, heuristics\n\nAnalitik çözumler\nmethodlar : –&gt; descriptive -&gt; predictive -&gt; prescriptive hepsı bır gelır Örneğin; bankacılıkta kredı basvurusu, banka once adamı arastırır score cıkarır, adama red kabul kararı ve faız oranı belırlenır ne kadar guvenılır optimizasyon ya da decision rulelar olabilir\nsureklı, her gün, kullanılan modeller -&gt; operational ayda bir iki ise - &gt;stratejık cok nadıren ise -&gt; tactical\ngenelde son kullanıcıya software application delivery edılır. software applicationı da ıkıye ayırdı konuşmacı : out of box ve custom made software olmazsa danısmanlık da delivery edilebilir.\nTeknik konular üzerinden detaylarıyla ve örnekleriyle durduktan sonra konuşmacı kendi kariyer sürecinde ve edindiği tecrübeleri aktardı ve bazı uyarıları oldu.\n-Her proje temız bır problem tanımıyla baslamalı (kpı tanımlama? kabul kriteri belirleme? ) -Deploy modeli (modelin son kullanıcıya ulasabılmesı, proda cıkabılmek, cı cd kurulması gereklı,user ınterface gereklı) -Son kullanıcı memnunıyetı cok onemlı (early feedback alınmalı) -UI userfrıendly olmalı -kodun okunurlugunun, acıklanabılır olmasının yuksek olması -Sonucu problemlere baglayabılmek(sorun buydu, bu gelıstırmeyı yaptık, sonucu buraya tasıdık) -a-b-c senaryolarını deneyıp hangı senaryo hangı sonucu cıkarttı neden ben a olanı sectım kanıtlama onemlı\nSon dakikalarda soru cevaba yer verildi ve oturum sonlandırıldı.\n\n\n\n Back to top"
+    "text": "Öncelikle Baykal Hafızoğlu kimdir sorusu ile başladık. Misafirimiz kendini tanıttı.Kısaca bahsetmek gerekirse Odtü Endüstri Mühendisliği bölümünden mezun olduktan sonra akademik bir aileden geldiği için asistanlığı denemek istedi. Odtü’de bir süre asistan olarak görev aldıktan sonra doktora eğitimi için Amerika’ya gitti. Orada eğitimini tamamladıktan sonra kariyerine endüstride devam etme kararı aldı.Kariyeri boyunca çeşitli firmalarda matematiksel modelleme ve optimizasyon ağırlıklı konularda çeşitli projeler yaptı. Ve son olarak hobilerinden bahsettikten sonra bu bölümü bitirdi\nDaha sonra OR/Analytics Dünyasına Bakış bölümüyle konuya giriş yapıldı.Operational Researchün zamanla kapsamı genişledi ve analitik olarak tanımladı.Analitiği de 4 ana başlıkta inceledi:\n\nDescriptive (Tanımlayıcı): Datayı tanımlayarak iş yapmayı sağlayan analitik türüdür. En kritik yöntemlerdendir. Örnekler: data mining, time series analiyse, data visualization\nDiagnostic: Bir sorun var ve diagnose etmeye çalışıyoruz (neden oldugunu anlama sanatı). Örnekler: regresyon, clustering, hypothesis testing (hipotez testi)\nPredictive (Tahmin edici): Gelecekte ne olacak sorusunun cevabını arar. Örnekler: clustering, simulation, regressyon, machine learning\nPrescriptive (Reçete edici): Sorun var ve ne yapmalıyız sorusunun cevabı olarak önerilerinden oluşan analitik yöntemdir. Örnekler: meta heuristics, optimizasyon, decision rules, math modelling, heuristics\n\nAnalitik Çözümler\nMethodlar : –&gt; descriptive -&gt; predictive -&gt; prescriptive hepsi sırasıyla gelir. Örneğin; bankacılıkta kredı basvurusu, banka once adamı araştırır score çıkarır, adama red kabul kararı ve faiz oranı belirlenir, ne kadar güvenilir optimizasyon ya da decision rulelar olabilir.\nSürekli, her gün kullanılan modeller -&gt; operational Ayda bir iki ise - &gt;stratejık Çok nadiren ise -&gt; tactical\nGenelde son kullanıcıya software application delivery edilir. -software applicationı da ıkıye ayırdı konuşmacı : out of box ve custom made -software olmazsa danısmanlık da delivery edilebilir.\nTeknik konular üzerinden detaylarıyla ve örnekleriyle durduktan sonra konuşmacı kendi kariyer sürecinde ve edindiği tecrübeleri aktardı ve bazı uyarıları oldu.\n-Her proje temız bır problem tanımıyla baslamalı (kpı tanımlama? kabul kriteri belirleme? ). -Deploy modeli (modelin son kullanıcıya ulasabılmesı, proda cıkabılmek, cı cd kurulması gereklı,user ınterface gereklı). -Son kullanıcı memnunıyetı cok onemlı (early feedback alınmalı). -UI userfrıendly olmalı. -kodun okunurlugunun, acıklanabılır olmasının yuksek olması. -Sonucu problemlere baglayabılmek(sorun buydu, bu gelıstırmeyı yaptık, sonucu buraya tasıdık). -a-b-c senaryolarını deneyip hangi senaryo hangi sonucu çıkarttı neden ben a olanı seçtim, kanıtlama onemli.\nSon dakikalarda soru cevaba yer verildi ve oturum sonlandırıldı.\n\n\n\n Back to top"
   },
   {
     "objectID": "portfolyo/calisma1.html#ödev-dokümanında-paylaşılan-kaynaklardan-videoyu-seçimi-ve-quarto-dokümanına-kısa-bir-özet-sağlanması",
@@ -814,5 +814,19 @@
       "Portfolyo",
       "Çalışma 1"
     ]
+  },
+  {
+    "objectID": "takim/elifselinbuğdaycı.html#işler",
+    "href": "takim/elifselinbuğdaycı.html#işler",
+    "title": "Elif Selin Buğdaycı",
+    "section": "İşler",
+    "text": "İşler\n\nArçelik Bulaşık Makinesi İşletmesi, Maliyet ve Değişim Ekibi Yöneticisi, 2023- devam ediyor\nArçelik Bulaşık Makinesi İşletmesi, Proje Lideri, 2021-2023\nArçelik Pişirici Cihazlar İşletmesi, Çevre Mühendisi, 2017-2021\nENCEV , Karbon Danışmanı , 2016-2017"
+  },
+  {
+    "objectID": "takim/elifselinbuğdaycı.html#stajlar",
+    "href": "takim/elifselinbuğdaycı.html#stajlar",
+    "title": "Elif Selin Buğdaycı",
+    "section": "Stajlar",
+    "text": "Stajlar\n\nENCEV Enerji, Çevre Mühendisi, 2015\nİZSU, Çevre Mühendisi, 2014"
   }
 ]

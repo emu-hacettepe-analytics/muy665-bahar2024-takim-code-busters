@@ -16,4 +16,4 @@ Takım Üyelerimizin detaylı özgemişlerinin yer aldığı kişisel sayfaları
 
 5.  [Dilek Beyter](/takim/dilekbeyter.qmd)
 
-6.  [Elif Selin Buğdayıcı](/takim/elifselinbuğdayıcı.qmd)
+6.  [Elif Selin Buğdaycı](/takim/elifselinbuğdaycı.qmd)

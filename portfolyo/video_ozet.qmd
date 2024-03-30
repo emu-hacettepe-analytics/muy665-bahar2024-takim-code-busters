@@ -2,47 +2,47 @@
 title: "Baykal Hafızoğlu Video Özeti"
 ---
 
-Öncelikle Baykal Hafizoğlu kimdir sorusu ile başladık. Misafirimiz kendini tanıttı.Kısaca bahsetmek gerekirse Odtü Endustri Mühendisliği bölümünde mezun olduktan sonra akademik bir aileden geldiği için asistanlığı denemek istedi. Odtü'de bir süre asistan olarak görev aldıktan sonra doktora eğitimi için Amerika'ya gitti. Orada eğitimini tamamladıktan sonra kariyerine endüstride devam etme kararı aldı.Kariyeri boyunca çeşitli firmalarda matematiksel modelleme ve optimizasyon ağırlıklı konularda çeşitli projeler yaptı. Ve son olarak hobilerinden bahsettikten sonra bu bölümü bitirdi
+Öncelikle Baykal Hafızoğlu kimdir sorusu ile başladık. Misafirimiz kendini tanıttı.Kısaca bahsetmek gerekirse Odtü Endüstri Mühendisliği bölümünden mezun olduktan sonra akademik bir aileden geldiği için asistanlığı denemek istedi. Odtü'de bir süre asistan olarak görev aldıktan sonra doktora eğitimi için Amerika'ya gitti. Orada eğitimini tamamladıktan sonra kariyerine endüstride devam etme kararı aldı.Kariyeri boyunca çeşitli firmalarda matematiksel modelleme ve optimizasyon ağırlıklı konularda çeşitli projeler yaptı. Ve son olarak hobilerinden bahsettikten sonra bu bölümü bitirdi
 
 
-Daha sonra OR/Analytics Dünyasına Bakış bölümüyle konuya giriş yapıldı.Operational Researchün zamanla kapsamı genısledı ve analitik olarak tanımladı.Analitiği de 4 ana başlıkta inceledi:
+Daha sonra OR/Analytics Dünyasına Bakış bölümüyle konuya giriş yapıldı.Operational Researchün zamanla kapsamı genişledi ve analitik olarak tanımladı.Analitiği de 4 ana başlıkta inceledi:
 
-- Descriptive (tanımlayıcı): datayı tanımlayarak iş yapmayı sağlayan analitik türüdür. En kritik yöntemlerdendir.
+- Descriptive (Tanımlayıcı): Datayı tanımlayarak iş yapmayı sağlayan analitik türüdür. En kritik yöntemlerdendir.
 Örnekler: data mining, time series analiyse, data visualization
 
-- Diagnostic: Bir sorun var ve dıagnose etmeye calısıyoruz (neden oldugunu anlama sanatı)
+- Diagnostic: Bir sorun var ve diagnose etmeye çalışıyoruz (neden oldugunu anlama sanatı).
 Örnekler: regresyon, clustering, hypothesis testing (hipotez testi)
 
-- Predictive (tahmin edici): gelecekte ne olacak sorusunun cevabı
+- Predictive (Tahmin edici): Gelecekte ne olacak sorusunun cevabını arar.
 Örnekler: clustering, simulation, regressyon, machine learning
 
-- Prescriptive (reçete edici): Sorun var ve ne yapmalıyız sorusunun cevabı olarak onerılerınden olusan analıtık yontem
+- Prescriptive (Reçete edici): Sorun var ve ne yapmalıyız sorusunun cevabı olarak önerilerinden oluşan analitik yöntemdir.
 Örnekler: meta heuristics, optimizasyon, decision rules, math modelling, heuristics
 
-Analitik çözumler
+Analitik Çözümler
 
-methodlar : --> descriptive -> predictive -> prescriptive hepsı bır gelır
-Örneğin; bankacılıkta kredı basvurusu, banka once adamı arastırır score cıkarır, adama red kabul kararı ve faız oranı belırlenır ne kadar guvenılır optimizasyon ya da decision rulelar olabilir
+Methodlar : --> descriptive -> predictive -> prescriptive hepsi sırasıyla gelir.
+Örneğin; bankacılıkta kredı basvurusu, banka once adamı araştırır score çıkarır, adama red kabul kararı ve faiz oranı belirlenir, ne kadar güvenilir optimizasyon ya da decision rulelar olabilir.
 
-sureklı, her gün,  kullanılan modeller -> operational 
-ayda bir iki ise - >stratejık
-cok nadıren ise -> tactical
+Sürekli, her gün kullanılan modeller -> operational 
+Ayda bir iki ise - >stratejık
+Çok nadiren ise -> tactical
 
-genelde son kullanıcıya software application delivery edılır.
-software applicationı da ıkıye ayırdı konuşmacı : out of box ve custom made
-software olmazsa danısmanlık da delivery edilebilir.
+Genelde son kullanıcıya software application delivery edilir.
+-software applicationı da ıkıye ayırdı konuşmacı : out of box ve custom made
+-software olmazsa danısmanlık da delivery edilebilir.
 
 
 Teknik konular üzerinden detaylarıyla ve örnekleriyle durduktan sonra konuşmacı kendi kariyer sürecinde ve edindiği tecrübeleri aktardı ve bazı uyarıları oldu.
 
 
--Her proje temız bır problem tanımıyla baslamalı (kpı tanımlama? kabul kriteri belirleme? )
--Deploy modeli (modelin son kullanıcıya ulasabılmesı, proda cıkabılmek, cı cd kurulması gereklı,user ınterface gereklı)
--Son kullanıcı memnunıyetı cok onemlı (early feedback alınmalı)
--UI userfrıendly olmalı
--kodun okunurlugunun, acıklanabılır olmasının yuksek olması 
--Sonucu problemlere baglayabılmek(sorun buydu, bu gelıstırmeyı yaptık, sonucu buraya tasıdık)
--a-b-c senaryolarını deneyıp hangı senaryo hangı sonucu cıkarttı neden ben a olanı sectım kanıtlama onemlı
+-Her proje temız bır problem tanımıyla baslamalı (kpı tanımlama? kabul kriteri belirleme? ).
+-Deploy modeli (modelin son kullanıcıya ulasabılmesı, proda cıkabılmek, cı cd kurulması gereklı,user ınterface gereklı).
+-Son kullanıcı memnunıyetı cok onemlı (early feedback alınmalı).
+-UI userfrıendly olmalı.
+-kodun okunurlugunun, acıklanabılır olmasının yuksek olması. 
+-Sonucu problemlere baglayabılmek(sorun buydu, bu gelıstırmeyı yaptık, sonucu buraya tasıdık).
+-a-b-c senaryolarını deneyip hangi senaryo hangi sonucu çıkarttı neden ben a olanı seçtim, kanıtlama onemli.
 
 Son dakikalarda soru cevaba yer verildi ve oturum sonlandırıldı.
 
