@@ -2,7 +2,7 @@
 title: "Anıl Metin"
 ---
 
-![](/assets/images/anil_metin.jpg){fig-align="center"}
+![](/assets/images/anil_metin.jpg){fig-align="left" width="200" height="250"}
 
 # Education
 
@@ -37,4 +37,4 @@ R, Quarto, Git, Python, Solidworks, MatLab
 
 # Interests
 
-Fantasy Basketball
+Fantasy Basketball "
