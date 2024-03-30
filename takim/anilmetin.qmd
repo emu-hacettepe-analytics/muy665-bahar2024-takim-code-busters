@@ -2,7 +2,7 @@
 title: "Anıl Metin"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/anil_metin.jpg){fig-align="center"}
 
 # Education
 
@@ -29,12 +29,7 @@ title: "Anıl Metin"
 
 1.  Tractor Bonnet Fatigue Testing Machine, Türk Traktör, 2019
 
-Within the scope of Bilkent University Mechanical Engineering Department's Graduation Project, our
-team manufactured the Bonnet Fatigue Testing Machine for Türk Traktör. Our team worked hard to
-met all the requirements of the project and requests from the company. After a long period of design,
-analysis and hardwork we manufactured the prototype of the system. The company immediately
-started to use our prototype for their bonnet fatigue testing purposes.
-
+Within the scope of Bilkent University Mechanical Engineering Department's Graduation Project, our team manufactured the Bonnet Fatigue Testing Machine for Türk Traktör. Our team worked hard to met all the requirements of the project and requests from the company. After a long period of design, analysis and hardwork we manufactured the prototype of the system. The company immediately started to use our prototype for their bonnet fatigue testing purposes.
 
 # Abilities
 
