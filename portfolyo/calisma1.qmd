@@ -80,7 +80,7 @@ apply(mtcars, 2, custom_summary)                   #apply kullanılarak yukarıd
 
 ```{r}
 # Gerekli kütüphaneler yüklendi
-install.packages("dslabs")
+# install.packages("dslabs")   #kullanıcı bu satırı sadece bir kere çalıştırmalı, yükledikten sonra commentlenmeli 
 library(dslabs)
 
 # na_example veri setini yazdır

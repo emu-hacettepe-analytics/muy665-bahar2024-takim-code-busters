@@ -732,7 +732,166 @@ $carb$max
 </div>
 <section id="c.na-example" class="level2">
 <h2 class="anchored" data-anchor-id="c.na-example">c.Na Example</h2>
-<p>install.packages(“dslabs”) library(dslabs) print(na_example) #na_example veri seti yazdırıldı. na_example_na_locations &lt;- is.na(na_example) #na_example veri setinde bulunan “NA”lerin konumu array olarak bulundu. na_total &lt;- sum(na_example_na_locations) #toplam “NA” sayısı hesaplandı. print(na_total) #toplam “NA” sayısı yazdırıldı. example_665 &lt;- replace(na_example, is.na(na_example), 665) #na_example veri setinde bulunan “NA” değerleri “665” ile değiştirildi ve oluşan yeni veri seti example_665 adıyla kaydedildi. print(example_665) #yeni veri seti olan example_665 yazdırıldı. example_665_na_locations &lt;- is.na(example_665) #example_665 veri setinde bulunan “NA”lerin konumu array olarak bulundu. (boş array oluşturmalı) example_665_total_na &lt;- sum(example_665_na_locations) #example_665 veri setinde bulunan toplam “NA” sayısı hesaplandı. print(example_665_total_na) #example_665 veri setinde bulunan toplam “NA” sayısı yazdırıldı. example_665_locations_of_665 &lt;- (example_665 == 665) #example_665 veri setinde bulunan “665” değerlerinin konumu array olarak bulundu. example_665_total_665 &lt;- sum(example_665_locations_of_665) #example_665 veri setinde bulunan toplam “665” sayısı hesaplandı. print(example_665_total_665) #example_665 veri setinde bulunan toplam “665” sayısı yazdırıldı. am_i_correct &lt;- na_total == example_665_total_665 #na_example veri setinde bulunan “NA” değerlerinin toplamı ile example_665 veri setinde bulunan “665” değerlerinin toplamı karşılaştırıldı (logical). if (am_i_correct) { #yukarı satırda karşılaştırılan değerler eşitse “congrats”, değilse “try again” yazdırıldı. print(“congrats”) } else { print(“try again”) }</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gerekli kütüphaneler yüklendi</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("dslabs")</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># na_example veri setini yazdır</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(na_example)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1
+  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1
+  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2
+  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1
+  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4
+ [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5
+ [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA
+ [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5
+ [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2
+ [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4
+ [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2
+ [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2
+ [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3
+ [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2
+ [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1
+ [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1
+ [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1
+ [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1
+ [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3
+ [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3
+ [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2
+ [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1
+ [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2
+ [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA
+ [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6
+ [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2
+ [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4
+ [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1
+ [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4
+ [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4
+ [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4
+ [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3
+ [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3
+ [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5
+ [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1
+ [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3
+ [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3
+ [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3
+ [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3
+ [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2
+ [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1
+ [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># na_example veri setindeki "NA"ların konumunu array olarak yarat</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>na_example_na_locations <span class="ot">&lt;-</span> <span class="fu">is.na</span>(na_example)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Toplam "NA" sayısını hesapla</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>na_total <span class="ot">&lt;-</span> <span class="fu">sum</span>(na_example_na_locations)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Toplam "NA" sayısını yazdır</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(na_total)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 145</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># na_example veri setindeki "NA" değerlerini "665" ile değiştir ve yeni veri setini kaydet</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>example_665 <span class="ot">&lt;-</span> <span class="fu">replace</span>(na_example, <span class="fu">is.na</span>(na_example), <span class="dv">665</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Yeni veri setini yazdır</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(example_665)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1]   2   1   3   2   1   3   1   4   3   2   2 665   2   2   1   4 665   1
+  [19]   1   2   1   2   2   1   2   5 665   2   2   3   1   2   4   1   1   1
+  [37]   4   5   2   3   4   1   2   4   1   1   2   1   5 665 665 665   1   1
+  [55]   5   1   3   1 665   4   4   7   3   2 665 665   1 665   4   1   2   2
+  [73]   3   2   1   2   2   4   3   4   2   3   1   3   2   1   1   1   3   1
+  [91] 665   3   1   2   2   1   2   2   1   1   4   1   1   2   3   3   2   2
+ [109]   3   3   3   4   1   1   1   2 665   4   3   4   3   1   2   1 665 665
+ [127] 665 665   1   5   1   2   1   3   5   3   2   2 665 665 665 665   3   5
+ [145]   3   1   1   4   2   4   3   3 665   2   3   2   6 665   1   1   2   2
+ [163]   1   3   1   1   5 665 665   2   4 665   2   5   1   4   3   3 665   4
+ [181]   3   1   4   1   1   3   1   1 665 665   3   5   2   2   2   3   1   2
+ [199]   2   3   2   1 665   2 665   1 665 665   2   1   1 665   3 665   1   2
+ [217]   2   1   3   2   2   1   1   2   3   1   1   1   4   3   4   2   2   1
+ [235]   4   1 665   5   1   4 665   3 665 665   1   1   5   2   3   3   2   4
+ [253] 665   3   2   5 665   2   3   4   6   2   2   2 665   2 665   2 665   3
+ [271]   3   2   2   4   3   1   4   2 665   2   4 665   6   2   3   1 665   2
+ [289]   2 665   1   1   3   2   3   3   1 665   1   4   2   1   1   3   2   1
+ [307]   2   3   1 665   2   3   3   2   1   2   3   5   5   1   2   3   3   1
+ [325] 665 665   1   2   4 665   2   1   1   1   3   2   1   1   3   4 665   1
+ [343]   2   1   1   3   3 665   1   1   3   5   3   2   3   4   1   4   3   1
+ [361] 665   2   1   2   2   1   2   2   6   1   2   4   5 665   3   4   2   1
+ [379]   1   4   2   1   1   1   1   2   1   4   4   1   3 665   3   3 665   2
+ [397] 665   1   2   1   1   4   2   1   4   4 665   1   2 665   3   2   2   2
+ [415]   1   4   3   6   1   2   3   1   3   2   2   2   1   1   3   2   1   1
+ [433]   1   3   2   2 665   4   4   4   1   1 665   4   3 665   1   3   1   3
+ [451]   2   4   2   2   2   3   2   1   4   3 665   1   4   3   1   3   2 665
+ [469]   3 665   1   3   1   4   1   1   1   2   4   3   1   2   2   2   3   2
+ [487]   3   1   1 665   3   2   1   1   2 665   2   2   2   3   3   1   1   2
+ [505] 665   1   2   1   1   3   3   1   3   1   1   1   1   1   2   5   1   1
+ [523]   2   2   1   1 665   1   4   1   2   4   1   3   2 665   1   1 665   2
+ [541]   1   1   4   2   3   3   1   5   3   1   1   2 665   1   1   3   1   3
+ [559]   2   4 665   2   3   2   1   2   1   1   1   2   2   3   1   5   2 665
+ [577]   2 665   3   2   2   2   1   5   3   2   3   1 665   3   1   2   2   2
+ [595]   1   2   2   4 665   6   1   2 665   1   1   2   2   3 665   3   2   3
+ [613]   3   4   2 665   2 665   4 665   1   1   2   2   3   1   1   1   3 665
+ [631]   2   5 665   7   1 665   4   3   3   1 665   1   1   1   1   3   2   4
+ [649]   2   2   3 665 665   1   4   3   2   2   2   3   2   4   2   2   4 665
+ [667] 665 665   6   3   3   1   4   4   2   1 665   1   6 665   3   3   2   1
+ [685]   1   6 665   1   5   1 665   2   6   2 665   4   1   3   1   2 665   1
+ [703]   1   3   1   2   4   2   1   3   2   4   3   2   2   1   1   5   6   4
+ [721]   2   2   2   2   4 665   1   2   2   2   2   4   5 665 665 665   4   3
+ [739]   3   3   2   4   2   4 665 665 665 665   2   1 665   2   4   3   2 665
+ [757]   2   3   1   3   4 665   1   2   1   2 665   3   1   2   1   2   1   2
+ [775]   1   2   2   2   2   1   1   3   3   1   3   4   3 665 665   4   2   3
+ [793]   2   1   3   2   4   2   2   3   1   2   4   3   3   4 665   1   4   2
+ [811]   1   1   1   3   1   5   2   2   4   2 665   1   3   1   2 665   1   2
+ [829]   1   2   1 665   1   3   2   3   2 665   2   1   4   2 665 665 665   2
+ [847]   4   2 665 665   3   1 665   5   5   2   2   2 665   2   1   3   1   3
+ [865]   2   4   2   4 665   4   1   2   3   2   3   3   2   3   2   2   2   1
+ [883]   3   2   4   2 665   3   3   2   2 665 665   3   2   1   2   4   1   1
+ [901]   1   1   4   3   2 665   3   2 665   1 665   3   2   1   1   1   2 665
+ [919]   2   2   3   3   2 665 665   4   5   2   2   2   1   2   3   1   3   3
+ [937]   4   3 665   1   1   1 665   4   3   5   1   1   2 665   2   2   2   2
+ [955]   5   2   2   3   1   2   3 665   1   2 665 665   2 665   3   1   1   2
+ [973]   5   3   5   1   1   4 665   2   1   3   1   1   2   4   3   3   3 665
+ [991]   1   1   2   2   1   1   2   2 665   2</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># example_665 veri setindeki "NA"ların konumunu array olarak yarat (boş dizi oluşturulacak)</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>example_665_na_locations <span class="ot">&lt;-</span> <span class="fu">is.na</span>(example_665)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># example_665 veri setindeki toplam "NA" sayısını hesapla</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>example_665_total_na <span class="ot">&lt;-</span> <span class="fu">sum</span>(example_665_na_locations)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># example_665 veri setindeki toplam "NA" sayısını yazdır</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(example_665_total_na)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># example_665 veri setindeki "665" değerlerinin konumunu array olarak yarat</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>example_665_locations_of_665 <span class="ot">&lt;-</span> (example_665 <span class="sc">==</span> <span class="dv">665</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="co"># example_665 veri setindeki toplam "665" sayısını hesapla</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>example_665_total_665 <span class="ot">&lt;-</span> <span class="fu">sum</span>(example_665_locations_of_665)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co"># example_665 veri setindeki toplam "665" sayısını yazdır</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(example_665_total_665)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 145</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># na_example veri setindeki "NA" değerlerinin toplamı ile example_665 veri setindeki "665" değerlerinin toplamını karşılaştır (mantıksal)</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>am_i_correct <span class="ot">&lt;-</span> na_total <span class="sc">==</span> example_665_total_665</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Eğer karşılaştırma doğruysa "tebrikler", değilse "yeniden deneyin" yazdır</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (am_i_correct) {</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"tebrikler"</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>} <span class="cf">else</span> {</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(<span class="st">"yeniden deneyin"</span>)</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "tebrikler"</code></pre>
+</div>
+</div>
 
 
 </section>
