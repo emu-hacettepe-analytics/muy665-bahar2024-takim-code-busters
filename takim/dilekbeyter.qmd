@@ -3,7 +3,7 @@ title: "Dilek Beyter"
 ---
 
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/dilek_beyter_new.JPG){fig-align="left"}
 
 # Eğitim
 
@@ -12,32 +12,40 @@ title: "Dilek Beyter"
 
 # İş Deneyimi
 
-## İşler
-
 1.  Türkiye Cumhuriyet Merkez Bankası, Kimya Mühendisi, Ocak 2024 - devam ediyor
+
 • Banknot Matbaasında kullanılan hammadelerin kalite uygunluk çalışmalarını yürütmek,
+
 • Hammaddelerin üretim sürecine uyumunu kontrol etmek,
+
 • Banknot kağıdı ve mürekkep ihalelerine hazırlanmak,
+
 • Üretim planına göre tedarik planı oluşturmak
 
 2.  Keyvan Pazarlama A.Ş, Satış Mühendisi, Eylül 2021 - Aralık 2023
 
 • Müşteri ihtiyaçlarına uygun HVAC çözümleri sunmak ve detaylı teklifler hazırlamak,
+
 • Güçlü müşteri ilişkileri kurmak ve sürdürmek,
+
 • Satış sonrası müşteri desteği ve teknik yardım sunmak,
+
 • Uluslararası ortaklarla işbirliği içerisinde proje takip etmek
 
 ## Stajlar
 
 1.  Yiğit Akü Malzemeleri A.Ş, Kalite Kontrol Stajyeri, Ağustos 2019
 
-• Ürün kalitesini etkileyen özellikleri ve pil üretim sürecini gözlemek
+• Ürün kalitesini etkileyen özellikleri ve pil üretim sürecini gözlemek,
+
 • Üretim, mühendislik hizmetleri ve kalite güvence gibi farklı departmanlarla işbirliği yapmak
 
 2.  Türk Şeker Fabrikaları A.Ş, Kalite Laboratuvar Stajyeri, Temmuz 2019
 
 • Analiz için ham madde ve nihai üründen numuneler toplamak,
+
 • Kimyasal analiz testlerini yapmak,
+
 • Test sonuçlarının işlemek ve yorumlamak, 
 
 # Projeler
@@ -47,6 +55,7 @@ title: "Dilek Beyter"
 # Yetkinlikler
 
 • Dijital Yetkinlikler: Microsoft Office, Trello, PrestoXL ERP
+
 • Agile Proje Yönetimi, Yalın Üretim Araçları, Aktif dinleme, B2B&B2C Satış, Laboratuvar yetenekleri: Analitik ve organik kimya analizleri, baskı teknikleri
 
 # Hobiler
