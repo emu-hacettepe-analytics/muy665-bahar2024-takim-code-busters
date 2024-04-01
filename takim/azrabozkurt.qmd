@@ -2,7 +2,7 @@
 title: "Azra Bozkurt"
 ---
 
-![](/assets/images/vesikalik.jpeg){fig-align="center"}
+![](/assets/images/Azra.JPG){fig-align="center"}
 
 # Eğitim
 
@@ -13,18 +13,24 @@ title: "Azra Bozkurt"
 
 ## İşler
 
-1.  Firma Mefa Endustri, pozisyon Proje Muhendisi, yıl 2021 - devam ediyor
+1.  Essa Mühendislik, Aday Mühendis, 2017-2018
+
+2. Assan Grup, Ar-Ge Proje Muhendisi, 2018 - 2021
+
+3.   Mefa Endustri, Proje Muhendisi, 2021 - devam ediyor
 
 
 ## Stajlar
 
-1.  Firma aaa, pozisyon xx, yıl xxx
+1.  Ay Döküm Makina Sanayi Ticaret A.Ş., Üretim Stajı, 2013
 
-2.  Firma bbb, pozisyon yyy, yıl yyy
+2.  Yeşilyurtlar Makine ve Isı Cihazları, Isı Stajı, 2015
+
+3.  Formmetal Makina Sanayi, Yönetim Stajı, 2018
 
 # Projeler
 
-1.  TÜBİTAK 1001..........................
+1.  Kompozit Balistik Plaka, Bitirme Projesi
 
 # Yayınlar
 
@@ -32,6 +38,23 @@ title: "Azra Bozkurt"
 
 # Yetkinlikler
 
-R, Quarto, Git, Python
+R, Autocad, Solidworks, MS Project
 
 # Hobiler
+
+At Binmek
+Kitaplar
+Latin Dansları
+Süper Kahramanlar
+Hayvanlar
+
+# Diller
+
+İngilizce - B1
+Almanca -temel seviye- A2
+
+# İletişim
+
+LinkedIn :
+https://tr.linkedin.com/in/dilaraazra-
+b-67b2a36a
