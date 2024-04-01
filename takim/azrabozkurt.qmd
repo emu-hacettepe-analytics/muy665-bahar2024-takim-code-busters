@@ -2,7 +2,7 @@
 title: "Azra Bozkurt"
 ---
 
-![](/assets/images/Azra.JPG){fig-align="center"}
+![](/assets/images/Azra.JPG){fig-align="left"}
 
 # Eğitim
 
