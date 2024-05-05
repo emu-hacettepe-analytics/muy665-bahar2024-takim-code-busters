@@ -19,6 +19,9 @@ xxxxxx
 ## Veri Kaynağı
 
 https://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasından csv formatı ile çekilmiştir.
+Ancak ilişki kuracağımız alt başlıklardan kilo ve boy verisi bu data setinde verilmemiştir. 
+
+https://www.nba.com/players sayfasından oyuncuların boy ve kilo verisi alınmış olup ana veri setine yeni sütun olarak eklenmiştir.
 
 ## Veri Hakkında Genel Bilgiler
 
@@ -31,6 +34,8 @@ xxxxxx
 ## Ön İşleme
 
 Bazı veri setleri, analize hazır değildi. Veri setlerini kullanabilmek için önce ön işlemeye ihtiyaç duyduk. Proje konumuz NBA oyuncularının sezondaki çeşitli istatististiklerine dayanıyordu ancak hazır veri setleri yoktu. Bu yüzden NBA'in sitesinden yayınladığı istatistikleri projemizde kullanabilmek için veri seti yani .csv formatında excell dosyalarına çevirdik.
+
+https://www.nba.com/players sayfasından ise 572 oyuncunun boy, kilo verisini ana veri setine yeni kolon olarak ekledik.
 
 # Analiz
 
