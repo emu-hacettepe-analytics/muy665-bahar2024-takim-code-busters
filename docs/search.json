@@ -247,9 +247,9 @@
   {
     "objectID": "proje.html",
     "href": "proje.html",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "CTRL - NBA",
     "section": "",
-    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.\n(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)"
+    "text": "Proje sayfamıza hoş geldiniz.\nProjemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin."
   },
   {
     "objectID": "proje.html#data-source",
@@ -321,69 +321,69 @@
   {
     "objectID": "portfolyo/calisma1.html",
     "href": "portfolyo/calisma1.html",
-    "title": "Çalışma 1",
+    "title": "Calışma1",
     "section": "",
-    "text": "Bu çalışmada 3 görevimiz var. Bu görevler ;\nŞuan bu metni okuyorsanız yukarıda listelenen ilk iki görevi doğru yapabilmişiz demektir :) Üçüncü görev için lütfen okumaya devam edin :)\nÜçüncü görev için listelediğimiz maddelere sırayla aşağıda cevap arıyoruz.",
+    "text": "Bu Calışmada 3 görevimiz var. Bu görevler ;\nE\u001euan bu metni okuyorsanD1z yukarD1da listelenen ilk iki gC6revi doD\u001fru yapabilmiE\u001fiz demektir :) C\u001cC’C&lt;ncC&lt; gC6rev iC’in lC&lt;tfen okumaya devam edin :)\nC\u001cC’C&lt;ncC&lt; gC6rev iC’in listelediD\u001fimiz maddelere sD1rayla aE\u001faD\u001fD1da cevap arD1yoruz.",
     "crumbs": [
       "Portfolyo",
-      "Çalışma 1"
+      "Calışma1"
     ]
   },
   {
     "objectID": "proje.html#veri-kaynağı",
     "href": "proje.html#veri-kaynağı",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "CTRL - NBA",
     "section": "2.1 Veri Kaynağı",
     "text": "2.1 Veri Kaynağı\nxxxxxx"
   },
   {
     "objectID": "proje.html#veri-hakkında-genel-bilgiler",
     "href": "proje.html#veri-hakkında-genel-bilgiler",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "CTRL - NBA",
     "section": "2.2 Veri Hakkında Genel Bilgiler",
     "text": "2.2 Veri Hakkında Genel Bilgiler\nxxxxxx"
   },
   {
     "objectID": "proje.html#tercih-sebebi",
     "href": "proje.html#tercih-sebebi",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "CTRL - NBA",
     "section": "2.3 Tercih Sebebi",
     "text": "2.3 Tercih Sebebi\nxxxxxx"
   },
   {
     "objectID": "proje.html#ön-işleme",
     "href": "proje.html#ön-işleme",
-    "title": "Proje X (proje adını yazınız)",
+    "title": "CTRL - NBA",
     "section": "2.4 Ön İşleme",
-    "text": "2.4 Ön İşleme\nxxxxxx"
+    "text": "2.4 Ön İşleme\nBazı veri setleri, analize hazır değildi. Veri setlerini kullanabilmek için önce ön işlemeye ihtiyaç duyduk. Proje konumuz NBA oyuncularının sezondaki çeşitli istatististiklerine dayanıyordu ancak hazır veri setleri yoktu. Bu yüzden NBA’in sitesinden yayınladığı istatistikleri projemizde kullanabilmek için veri seti yani .csv formatında excell dosyalarına çevirdik."
   },
   {
     "objectID": "proje.html#keşifsel-veri-analizi",
     "href": "proje.html#keşifsel-veri-analizi",
-    "title": "Proje X (proje adını yazınız)",
-    "section": "3.1 Keşifsel Veri Analizi",
-    "text": "3.1 Keşifsel Veri Analizi\nxxxxxx"
+    "title": "CTRL - NBA",
+    "section": "3.5 Keşifsel Veri Analizi",
+    "text": "3.5 Keşifsel Veri Analizi\nKeşifsel veri analizi, veri setlerini inceleyerek içerdikleri bilgiyi anlamak ve veri hakkında sezgisel bir anlayış geliştirmek için kullanılan bir süreçtir. Bu süreç, veri setlerinin yapılarını, eğilimlerini, ilişkilerini ve desenlerini keşfetmeyi amaçlar.\nProjeye başlamadan önce inelediğimiz veri setleri hakkında bazı beklentilerimiz vardı. Mesela boyu uzun olan oyuncuların rebound ortalaması daha yüksek olmalıydı. Alt başlıkları bu beklentilerimiz üzerine oluşturduk. Beklentimizi kanıtlamak bir amaçken bir yandan da bu beklentilerimizi şaşırtacak çeşitli oyuncular olacağının farkındaydık. Ne de olsa NBA :) Bu da bizlere outliersları gösterecekti.\nVeri keşfi ve gözlemi yaptıktan sonra kullanacağımız veri setlerini bulup incelemeye başladık. Proje için inceleyeceğimiz hedef kitlemizi belirledik ( 23-24 Sezonu, en iyi ilk 50 oyuncu ).\nSonrasında Veri görselleştirme ile veriyi daha okunur kılmaya çalıştık.Bunun için incelediğimiz veriye göre çeşitli plotlar seçmeliydik. En optimum plotu seçmeye gayret gösterdik. (Modelleme öncesi analiz)\nKeşifsel modelleme üzerinde çok zaman kaybetmedik. Çünkü R studio veri için en optimum yani en uygun plotu seçenek olarak sundu.\nDaha sonrasında sonuçları ilgili başlıkların altında paylaştık."
   },
   {
     "objectID": "proje.html#trend-analizi",
     "href": "proje.html#trend-analizi",
-    "title": "Proje X (proje adını yazınız)",
-    "section": "3.2 Trend Analizi",
-    "text": "3.2 Trend Analizi\nxxxxxx"
+    "title": "CTRL - NBA",
+    "section": "3.6 Trend Analizi",
+    "text": "3.6 Trend Analizi\n/chatgptden baktım bunu uygularken tekrar konusalım/ Trend analizi, belirli bir zaman dilimindeki veri setlerindeki uzun vadeli eğilimleri belirlemek için kullanılan bir analiz yöntemidir. Bu analiz, veri setindeki değişkenlerin zamanla nasıl değiştiğini inceleyerek gelecekteki davranışlar hakkında tahminler yapmaya yardımcı olur.\nTrend analizinde genellikle zaman serisi verileri kullanılır. Temel olarak, zaman serisi verileri, belirli bir zaman diliminde belirli aralıklarla ölçülen veya gözlenen verilerdir (örneğin, aylık satış rakamları, günlük hisse senedi fiyatları). Bu veriler, bir trendin varlığını ve bu trendin ne yönde olduğunu belirlemek için analiz edilir.\nTrend analizi genellikle şu adımları içerir:\nVeri Görselleştirme: Zaman serisi verileri grafiğe dökülür. Bu, verinin nasıl davrandığını görsel olarak görmemize olanak tanır. Grafik üzerinde belirli bir eğilim olduğu gözlemlenebilir. Trendin Belirlenmesi: Veri setindeki eğilimin ne olduğunu belirlemek için çeşitli istatistiksel yöntemler kullanılır. Bu, veri setindeki değişkenliğin sabit bir eğilimle artıp artmadığını veya azaldığını belirler. Trendin Uygun Modellemesi: Veri setinin yapısına ve belirlenen trende bağlı olarak uygun bir model seçilir. Doğrusal, üstel veya polinomiyal trendler gibi farklı modeller kullanılabilir. Trendin Tahmin Edilmesi: Belirlenen trend modeli kullanılarak gelecekteki değerler tahmin edilir. Bu, trendin devam edip etmeyeceği veya tersine dönüp dönmediği hakkında fikir verebilir. Trend analizi, çeşitli endüstrilerde pazar trendlerini, tüketici davranışlarını, finansal piyasaları ve daha fazlasını anlamak için kullanılır. Örneğin, bir şirketin satışlarını analiz ederek gelecekteki satış trendlerini tahmin etmek veya bir yatırımcının belirli bir hisse senedinin fiyatının gelecekteki trendini belirlemek için trend analizi yapılabilir."
   },
   {
     "objectID": "proje.html#model-uydurma",
     "href": "proje.html#model-uydurma",
-    "title": "Proje X (proje adını yazınız)",
-    "section": "3.3 Model Uydurma",
-    "text": "3.3 Model Uydurma\nxxxxxx"
+    "title": "CTRL - NBA",
+    "section": "3.7 Model Uydurma",
+    "text": "3.7 Model Uydurma\nchtagptden aldım bu aşamaya geldıgımızde tekrar konusalım Model uydurma (fitting), istatistik ve makine öğrenimi alanlarında bir modelin veriye uyum sağlaması veya veriyi en iyi şekilde açıklaması anlamına gelir. Bu, modelin gözlemlenen verilere ne kadar iyi uymakta olduğunu ifade eder.\nModel uydurma genellikle şu adımları içerir:\n\nModel Seçimi: İncelenen veri seti için uygun bir model seçilir. Bu model, veri setinin yapısına ve hedeflenen sonuca bağlı olarak belirlenir. Örneğin, doğrusal regresyon, lojistik regresyon, karar ağaçları, destek vektör makineleri gibi çeşitli modeller arasından bir seçim yapılabilir.\nModel Parametrelerinin Belirlenmesi: Seçilen modelin parametreleri belirlenir veya tahmin edilir. Bu parametreler, modelin veriye ne kadar iyi uyduğunu belirler. Bazı modellerde bu parametreler manuel olarak ayarlanabilirken, bazıları otomatik olarak ayarlanır.\nModel Uydurma: Model, veri setine uydurulur. Bu, modelin gözlemlenen verilere ne kadar iyi uyduğunu ifade eder. Modelin parametreleri, veri setindeki gözlemlenen değerlerle uyumlu hale getirilir.\nModel Değerlendirme: Uydurulan modelin performansı değerlendirilir. Bu, modelin ne kadar iyi olduğunu ve tahmin yeteneğini belirler. Doğruluk, hassasiyet, belirlilik katsayısı gibi metrikler kullanılarak değerlendirme yapılır.\n\nModel uydurma, veri setindeki desenleri ve ilişkileri açıklamak ve gelecekteki davranışları tahmin etmek için kullanılır. İyi bir model, veri setindeki değişkenliği ve yapıyı doğru bir şekilde yakalar ve bu sayede gelecekteki değerlerin tahmininde daha doğru sonuçlar verir. Ancak model uydurma sürecinde aşırı uydurma (overfitting) riski de vardır, bu da modelin eğitim verilerine çok iyi uyması ancak genelleme yapma yeteneğinin azalması anlamına gelir. Bu nedenle, modelin aşırı uydurma yapmaması için düzenleme teknikleri ve doğrulama yöntemleri kullanılır."
   },
   {
     "objectID": "proje.html#sonuçlar",
     "href": "proje.html#sonuçlar",
-    "title": "Proje X (proje adını yazınız)",
-    "section": "3.4 Sonuçlar",
-    "text": "3.4 Sonuçlar\nxxxxxx"
+    "title": "CTRL - NBA",
+    "section": "3.8 Sonuçlar",
+    "text": "3.8 Sonuçlar\nxxxxxx"
   },
   {
     "objectID": "portfolyo/calisma1.html#a",
@@ -873,12 +873,97 @@
   {
     "objectID": "portfolyo/calisma1.html#c.na-example",
     "href": "portfolyo/calisma1.html#c.na-example",
-    "title": "Çalışma 1",
+    "title": "Calışma1",
     "section": "c.Na Example",
-    "text": "c.Na Example\n\n# Gerekli kütüphaneler yüklendi\n# install.packages(\"dslabs\")   #kullanıcı bu satırı sadece bir kere çalıştırmalı, yükledikten sonra commentlenmeli \nlibrary(dslabs)\n\n# na_example veri setini yazdır\nprint(na_example)\n\n   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1\n  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1\n  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2\n  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1\n  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4\n [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5\n [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA\n [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5\n [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2\n [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4\n [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2\n [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2\n [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3\n [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2\n [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1\n [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1\n [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1\n [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1\n [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3\n [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3\n [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2\n [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1\n [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2\n [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA\n [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6\n [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2\n [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4\n [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1\n [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4\n [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4\n [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4\n [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3\n [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3\n [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5\n [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1\n [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3\n [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3\n [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3\n [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3\n [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2\n [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1\n [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2\n\n# na_example veri setindeki \"NA\"ların konumunu array olarak yarat\nna_example_na_locations &lt;- is.na(na_example)\n\n# Toplam \"NA\" sayısını hesapla\nna_total &lt;- sum(na_example_na_locations)\n\n# Toplam \"NA\" sayısını yazdır\nprint(na_total)\n\n[1] 145\n\n# na_example veri setindeki \"NA\" değerlerini \"665\" ile değiştir ve yeni veri setini kaydet\nexample_665 &lt;- replace(na_example, is.na(na_example), 665)\n\n# Yeni veri setini yazdır\nprint(example_665)\n\n   [1]   2   1   3   2   1   3   1   4   3   2   2 665   2   2   1   4 665   1\n  [19]   1   2   1   2   2   1   2   5 665   2   2   3   1   2   4   1   1   1\n  [37]   4   5   2   3   4   1   2   4   1   1   2   1   5 665 665 665   1   1\n  [55]   5   1   3   1 665   4   4   7   3   2 665 665   1 665   4   1   2   2\n  [73]   3   2   1   2   2   4   3   4   2   3   1   3   2   1   1   1   3   1\n  [91] 665   3   1   2   2   1   2   2   1   1   4   1   1   2   3   3   2   2\n [109]   3   3   3   4   1   1   1   2 665   4   3   4   3   1   2   1 665 665\n [127] 665 665   1   5   1   2   1   3   5   3   2   2 665 665 665 665   3   5\n [145]   3   1   1   4   2   4   3   3 665   2   3   2   6 665   1   1   2   2\n [163]   1   3   1   1   5 665 665   2   4 665   2   5   1   4   3   3 665   4\n [181]   3   1   4   1   1   3   1   1 665 665   3   5   2   2   2   3   1   2\n [199]   2   3   2   1 665   2 665   1 665 665   2   1   1 665   3 665   1   2\n [217]   2   1   3   2   2   1   1   2   3   1   1   1   4   3   4   2   2   1\n [235]   4   1 665   5   1   4 665   3 665 665   1   1   5   2   3   3   2   4\n [253] 665   3   2   5 665   2   3   4   6   2   2   2 665   2 665   2 665   3\n [271]   3   2   2   4   3   1   4   2 665   2   4 665   6   2   3   1 665   2\n [289]   2 665   1   1   3   2   3   3   1 665   1   4   2   1   1   3   2   1\n [307]   2   3   1 665   2   3   3   2   1   2   3   5   5   1   2   3   3   1\n [325] 665 665   1   2   4 665   2   1   1   1   3   2   1   1   3   4 665   1\n [343]   2   1   1   3   3 665   1   1   3   5   3   2   3   4   1   4   3   1\n [361] 665   2   1   2   2   1   2   2   6   1   2   4   5 665   3   4   2   1\n [379]   1   4   2   1   1   1   1   2   1   4   4   1   3 665   3   3 665   2\n [397] 665   1   2   1   1   4   2   1   4   4 665   1   2 665   3   2   2   2\n [415]   1   4   3   6   1   2   3   1   3   2   2   2   1   1   3   2   1   1\n [433]   1   3   2   2 665   4   4   4   1   1 665   4   3 665   1   3   1   3\n [451]   2   4   2   2   2   3   2   1   4   3 665   1   4   3   1   3   2 665\n [469]   3 665   1   3   1   4   1   1   1   2   4   3   1   2   2   2   3   2\n [487]   3   1   1 665   3   2   1   1   2 665   2   2   2   3   3   1   1   2\n [505] 665   1   2   1   1   3   3   1   3   1   1   1   1   1   2   5   1   1\n [523]   2   2   1   1 665   1   4   1   2   4   1   3   2 665   1   1 665   2\n [541]   1   1   4   2   3   3   1   5   3   1   1   2 665   1   1   3   1   3\n [559]   2   4 665   2   3   2   1   2   1   1   1   2   2   3   1   5   2 665\n [577]   2 665   3   2   2   2   1   5   3   2   3   1 665   3   1   2   2   2\n [595]   1   2   2   4 665   6   1   2 665   1   1   2   2   3 665   3   2   3\n [613]   3   4   2 665   2 665   4 665   1   1   2   2   3   1   1   1   3 665\n [631]   2   5 665   7   1 665   4   3   3   1 665   1   1   1   1   3   2   4\n [649]   2   2   3 665 665   1   4   3   2   2   2   3   2   4   2   2   4 665\n [667] 665 665   6   3   3   1   4   4   2   1 665   1   6 665   3   3   2   1\n [685]   1   6 665   1   5   1 665   2   6   2 665   4   1   3   1   2 665   1\n [703]   1   3   1   2   4   2   1   3   2   4   3   2   2   1   1   5   6   4\n [721]   2   2   2   2   4 665   1   2   2   2   2   4   5 665 665 665   4   3\n [739]   3   3   2   4   2   4 665 665 665 665   2   1 665   2   4   3   2 665\n [757]   2   3   1   3   4 665   1   2   1   2 665   3   1   2   1   2   1   2\n [775]   1   2   2   2   2   1   1   3   3   1   3   4   3 665 665   4   2   3\n [793]   2   1   3   2   4   2   2   3   1   2   4   3   3   4 665   1   4   2\n [811]   1   1   1   3   1   5   2   2   4   2 665   1   3   1   2 665   1   2\n [829]   1   2   1 665   1   3   2   3   2 665   2   1   4   2 665 665 665   2\n [847]   4   2 665 665   3   1 665   5   5   2   2   2 665   2   1   3   1   3\n [865]   2   4   2   4 665   4   1   2   3   2   3   3   2   3   2   2   2   1\n [883]   3   2   4   2 665   3   3   2   2 665 665   3   2   1   2   4   1   1\n [901]   1   1   4   3   2 665   3   2 665   1 665   3   2   1   1   1   2 665\n [919]   2   2   3   3   2 665 665   4   5   2   2   2   1   2   3   1   3   3\n [937]   4   3 665   1   1   1 665   4   3   5   1   1   2 665   2   2   2   2\n [955]   5   2   2   3   1   2   3 665   1   2 665 665   2 665   3   1   1   2\n [973]   5   3   5   1   1   4 665   2   1   3   1   1   2   4   3   3   3 665\n [991]   1   1   2   2   1   1   2   2 665   2\n\n# example_665 veri setindeki \"NA\"ların konumunu array olarak yarat (boş dizi oluşturulacak)\nexample_665_na_locations &lt;- is.na(example_665)\n\n# example_665 veri setindeki toplam \"NA\" sayısını hesapla\nexample_665_total_na &lt;- sum(example_665_na_locations)\n\n# example_665 veri setindeki toplam \"NA\" sayısını yazdır\nprint(example_665_total_na)\n\n[1] 0\n\n# example_665 veri setindeki \"665\" değerlerinin konumunu array olarak yarat\nexample_665_locations_of_665 &lt;- (example_665 == 665)\n\n# example_665 veri setindeki toplam \"665\" sayısını hesapla\nexample_665_total_665 &lt;- sum(example_665_locations_of_665)\n\n# example_665 veri setindeki toplam \"665\" sayısını yazdır\nprint(example_665_total_665)\n\n[1] 145\n\n# na_example veri setindeki \"NA\" değerlerinin toplamı ile example_665 veri setindeki \"665\" değerlerinin toplamını karşılaştır (mantıksal)\nam_i_correct &lt;- na_total == example_665_total_665\n\n# Eğer karşılaştırma doğruysa \"tebrikler\", değilse \"yeniden deneyin\" yazdır\nif (am_i_correct) {\n  print(\"tebrikler\")\n} else {\n  print(\"yeniden deneyin\")\n}\n\n[1] \"tebrikler\"",
+    "text": "c.Na Example\n\n# Gerekli kC&lt;tC&lt;phaneler yC&lt;klendi\n# install.packages(\"dslabs\")   #kullanD1cD1 bu satD1rD1 sadece bir kere C'alD1E\u001ftD1rmalD1, yC&lt;kledikten sonra commentlenmeli \nlibrary(dslabs)\n\n# na_example veri setini yazdD1r\nprint(na_example)\n\n   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1\n  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1\n  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2\n  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1\n  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4\n [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5\n [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA\n [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5\n [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2\n [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4\n [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2\n [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2\n [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3\n [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2\n [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1\n [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1\n [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1\n [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1\n [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3\n [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3\n [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2\n [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1\n [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2\n [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA\n [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6\n [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2\n [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4\n [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1\n [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4\n [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4\n [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4\n [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3\n [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3\n [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5\n [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1\n [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3\n [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3\n [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3\n [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3\n [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2\n [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1\n [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2\n\n# na_example veri setindeki \"NA\"larD1n konumunu array olarak yarat\nna_example_na_locations &lt;- is.na(na_example)\n\n# Toplam \"NA\" sayD1sD1nD1 hesapla\nna_total &lt;- sum(na_example_na_locations)\n\n# Toplam \"NA\" sayD1sD1nD1 yazdD1r\nprint(na_total)\n\n[1] 145\n\n# na_example veri setindeki \"NA\" deD\u001ferlerini \"665\" ile deD\u001fiE\u001ftir ve yeni veri setini kaydet\nexample_665 &lt;- replace(na_example, is.na(na_example), 665)\n\n# Yeni veri setini yazdD1r\nprint(example_665)\n\n   [1]   2   1   3   2   1   3   1   4   3   2   2 665   2   2   1   4 665   1\n  [19]   1   2   1   2   2   1   2   5 665   2   2   3   1   2   4   1   1   1\n  [37]   4   5   2   3   4   1   2   4   1   1   2   1   5 665 665 665   1   1\n  [55]   5   1   3   1 665   4   4   7   3   2 665 665   1 665   4   1   2   2\n  [73]   3   2   1   2   2   4   3   4   2   3   1   3   2   1   1   1   3   1\n  [91] 665   3   1   2   2   1   2   2   1   1   4   1   1   2   3   3   2   2\n [109]   3   3   3   4   1   1   1   2 665   4   3   4   3   1   2   1 665 665\n [127] 665 665   1   5   1   2   1   3   5   3   2   2 665 665 665 665   3   5\n [145]   3   1   1   4   2   4   3   3 665   2   3   2   6 665   1   1   2   2\n [163]   1   3   1   1   5 665 665   2   4 665   2   5   1   4   3   3 665   4\n [181]   3   1   4   1   1   3   1   1 665 665   3   5   2   2   2   3   1   2\n [199]   2   3   2   1 665   2 665   1 665 665   2   1   1 665   3 665   1   2\n [217]   2   1   3   2   2   1   1   2   3   1   1   1   4   3   4   2   2   1\n [235]   4   1 665   5   1   4 665   3 665 665   1   1   5   2   3   3   2   4\n [253] 665   3   2   5 665   2   3   4   6   2   2   2 665   2 665   2 665   3\n [271]   3   2   2   4   3   1   4   2 665   2   4 665   6   2   3   1 665   2\n [289]   2 665   1   1   3   2   3   3   1 665   1   4   2   1   1   3   2   1\n [307]   2   3   1 665   2   3   3   2   1   2   3   5   5   1   2   3   3   1\n [325] 665 665   1   2   4 665   2   1   1   1   3   2   1   1   3   4 665   1\n [343]   2   1   1   3   3 665   1   1   3   5   3   2   3   4   1   4   3   1\n [361] 665   2   1   2   2   1   2   2   6   1   2   4   5 665   3   4   2   1\n [379]   1   4   2   1   1   1   1   2   1   4   4   1   3 665   3   3 665   2\n [397] 665   1   2   1   1   4   2   1   4   4 665   1   2 665   3   2   2   2\n [415]   1   4   3   6   1   2   3   1   3   2   2   2   1   1   3   2   1   1\n [433]   1   3   2   2 665   4   4   4   1   1 665   4   3 665   1   3   1   3\n [451]   2   4   2   2   2   3   2   1   4   3 665   1   4   3   1   3   2 665\n [469]   3 665   1   3   1   4   1   1   1   2   4   3   1   2   2   2   3   2\n [487]   3   1   1 665   3   2   1   1   2 665   2   2   2   3   3   1   1   2\n [505] 665   1   2   1   1   3   3   1   3   1   1   1   1   1   2   5   1   1\n [523]   2   2   1   1 665   1   4   1   2   4   1   3   2 665   1   1 665   2\n [541]   1   1   4   2   3   3   1   5   3   1   1   2 665   1   1   3   1   3\n [559]   2   4 665   2   3   2   1   2   1   1   1   2   2   3   1   5   2 665\n [577]   2 665   3   2   2   2   1   5   3   2   3   1 665   3   1   2   2   2\n [595]   1   2   2   4 665   6   1   2 665   1   1   2   2   3 665   3   2   3\n [613]   3   4   2 665   2 665   4 665   1   1   2   2   3   1   1   1   3 665\n [631]   2   5 665   7   1 665   4   3   3   1 665   1   1   1   1   3   2   4\n [649]   2   2   3 665 665   1   4   3   2   2   2   3   2   4   2   2   4 665\n [667] 665 665   6   3   3   1   4   4   2   1 665   1   6 665   3   3   2   1\n [685]   1   6 665   1   5   1 665   2   6   2 665   4   1   3   1   2 665   1\n [703]   1   3   1   2   4   2   1   3   2   4   3   2   2   1   1   5   6   4\n [721]   2   2   2   2   4 665   1   2   2   2   2   4   5 665 665 665   4   3\n [739]   3   3   2   4   2   4 665 665 665 665   2   1 665   2   4   3   2 665\n [757]   2   3   1   3   4 665   1   2   1   2 665   3   1   2   1   2   1   2\n [775]   1   2   2   2   2   1   1   3   3   1   3   4   3 665 665   4   2   3\n [793]   2   1   3   2   4   2   2   3   1   2   4   3   3   4 665   1   4   2\n [811]   1   1   1   3   1   5   2   2   4   2 665   1   3   1   2 665   1   2\n [829]   1   2   1 665   1   3   2   3   2 665   2   1   4   2 665 665 665   2\n [847]   4   2 665 665   3   1 665   5   5   2   2   2 665   2   1   3   1   3\n [865]   2   4   2   4 665   4   1   2   3   2   3   3   2   3   2   2   2   1\n [883]   3   2   4   2 665   3   3   2   2 665 665   3   2   1   2   4   1   1\n [901]   1   1   4   3   2 665   3   2 665   1 665   3   2   1   1   1   2 665\n [919]   2   2   3   3   2 665 665   4   5   2   2   2   1   2   3   1   3   3\n [937]   4   3 665   1   1   1 665   4   3   5   1   1   2 665   2   2   2   2\n [955]   5   2   2   3   1   2   3 665   1   2 665 665   2 665   3   1   1   2\n [973]   5   3   5   1   1   4 665   2   1   3   1   1   2   4   3   3   3 665\n [991]   1   1   2   2   1   1   2   2 665   2\n\n# example_665 veri setindeki \"NA\"larD1n konumunu array olarak yarat (boE\u001f dizi oluE\u001fturulacak)\nexample_665_na_locations &lt;- is.na(example_665)\n\n# example_665 veri setindeki toplam \"NA\" sayD1sD1nD1 hesapla\nexample_665_total_na &lt;- sum(example_665_na_locations)\n\n# example_665 veri setindeki toplam \"NA\" sayD1sD1nD1 yazdD1r\nprint(example_665_total_na)\n\n[1] 0\n\n# example_665 veri setindeki \"665\" deD\u001ferlerinin konumunu array olarak yarat\nexample_665_locations_of_665 &lt;- (example_665 == 665)\n\n# example_665 veri setindeki toplam \"665\" sayD1sD1nD1 hesapla\nexample_665_total_665 &lt;- sum(example_665_locations_of_665)\n\n# example_665 veri setindeki toplam \"665\" sayD1sD1nD1 yazdD1r\nprint(example_665_total_665)\n\n[1] 145\n\n# na_example veri setindeki \"NA\" deD\u001ferlerinin toplamD1 ile example_665 veri setindeki \"665\" deD\u001ferlerinin toplamD1nD1 karE\u001fD1laE\u001ftD1r (mantD1ksal)\nam_i_correct &lt;- na_total == example_665_total_665\n\n# ED\u001fer karE\u001fD1laE\u001ftD1rma doD\u001fruysa \"tebrikler\", deD\u001filse \"yeniden deneyin\" yazdD1r\nif (am_i_correct) {\n  print(\"tebrikler\")\n} else {\n  print(\"yeniden deneyin\")\n}\n\n[1] \"tebrikler\"",
     "crumbs": [
       "Portfolyo",
-      "Çalışma 1"
+      "Calışma1"
     ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#a.-cdev-dokcmand1nda-paylaed1lan-kaynaklardan-videoyu-secimi-ve-quarto-dokcmand1na-kd1sa-bir-czet-sadlanmasd1",
+    "href": "portfolyo/calisma1.html#a.-cdev-dokcmand1nda-paylaed1lan-kaynaklardan-videoyu-secimi-ve-quarto-dokcmand1na-kd1sa-bir-czet-sadlanmasd1",
+    "title": "Calışma1",
+    "section": "a. C\u0016dev DokC<manD1nda PaylaE\u001fD1lan Kaynaklardan Videoyu SeC’imi ve Quarto DokC<manD1na KD1sa Bir C\u0016zet SaD\u001flanmasD1",
+    "text": "a. C\u0016dev DokC&lt;manD1nda PaylaE\u001fD1lan Kaynaklardan Videoyu SeC’imi ve Quarto DokC&lt;manD1na KD1sa Bir C\u0016zet SaD\u001flanmasD1\nVideo C\u0016zet",
+    "crumbs": [
+      "Portfolyo",
+      "Calışma1"
+    ]
+  },
+  {
+    "objectID": "portfolyo/calisma1.html#b.czel-fonksiyonlar-ve-dc6ngcler-ile-d0statistiksel-czetlerin-keefi",
+    "href": "portfolyo/calisma1.html#b.czel-fonksiyonlar-ve-dc6ngcler-ile-d0statistiksel-czetlerin-keefi",
+    "title": "Calışma1",
+    "section": "b.C\u0016zel Fonksiyonlar ve DC6ngC<ler ile D0statistiksel C\u0016zetlerin KeE\u001ffi",
+    "text": "b.C\u0016zel Fonksiyonlar ve DC6ngC&lt;ler ile D0statistiksel C\u0016zetlerin KeE\u001ffi\n\nmtcars\n\n                     mpg cyl  disp  hp drat    wt  qsec vs am gear carb\nMazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0  0    3    2\nValiant             18.1   6 225.0 105 2.76 3.460 20.22  1  0    3    1\nDuster 360          14.3   8 360.0 245 3.21 3.570 15.84  0  0    3    4\nMerc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1  0    4    2\nMerc 230            22.8   4 140.8  95 3.92 3.150 22.90  1  0    4    2\nMerc 280            19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4\nMerc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1  0    4    4\nMerc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0  0    3    3\nMerc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0  0    3    3\nMerc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0  0    3    3\nCadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0  0    3    4\nLincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0  0    3    4\nChrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0  0    3    4\nFiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1  1    4    1\nHonda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1  1    4    2\nToyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1  1    4    1\nToyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1  0    3    1\nDodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0  0    3    2\nAMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0  0    3    2\nCamaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0  0    3    4\nPontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0  0    3    2\nFiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1  1    4    1\nPorsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0  1    5    2\nLotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1  1    5    2\nFord Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0  1    5    4\nFerrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0  1    5    6\nMaserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0  1    5    8\nVolvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1  1    4    2\n\n\n\ncustom_summary &lt;- function(vec) {              #fonksD1yonu vektor olarak tanD1mladD1k ;  vec her bir sC&lt;tunu temsilen\n    summary_list &lt;- list(\n        mean = mean(vec),                      #gD1rdD1gD1nD1n ortalamasD1\n        median = median(vec),                  #girdinin medyanD1\n        std_dev = sd(vec),                     #girdinin std sapmasD1\n        min = min(vec),                        #girdinin minimumu\n        max = max(vec)                         #girdinin maximumu\n    )\n    return(summary_list)\n}\n\n#bu verileri yazdD1rabilmek iC'in de deD\u001fiE\u001fkene atayD1p print ettirmemiz gerekir, aynD1 zamanda hangi sC&lt;tunu C6zetleyeceD\u001fimizi belirtmeliyiz, cyl yerine mpg de olabilir \n\n\ncyl_summary &lt;- custom_summary(mtcars$cyl)\nprint(cyl_summary)\n\n$mean\n[1] 6.1875\n\n$median\n[1] 6\n\n$std_dev\n[1] 1.785922\n\n$min\n[1] 4\n\n$max\n[1] 8",
+    "crumbs": [
+      "Portfolyo",
+      "Calışma1"
+    ]
+  },
+  {
+    "objectID": "proje.html#veri-kaynadd1",
+    "href": "proje.html#veri-kaynadd1",
+    "title": "CTRL - NBA",
+    "section": "2.1 Veri KaynaD\u001fD1",
+    "text": "2.1 Veri KaynaD\u001fD1\nxxxxxx"
+  },
+  {
+    "objectID": "proje.html#veri-hakkd1nda-genel-bilgiler",
+    "href": "proje.html#veri-hakkd1nda-genel-bilgiler",
+    "title": "CTRL - NBA",
+    "section": "2.2 Veri HakkD1nda Genel Bilgiler",
+    "text": "2.2 Veri HakkD1nda Genel Bilgiler\nxxxxxx"
+  },
+  {
+    "objectID": "proje.html#cn-d0eleme",
+    "href": "proje.html#cn-d0eleme",
+    "title": "CTRL - NBA",
+    "section": "2.4 C\u0016n D0E\u001fleme",
+    "text": "2.4 C\u0016n D0E\u001fleme\nxxxxxx"
+  },
+  {
+    "objectID": "proje.html#keeifsel-veri-analizi",
+    "href": "proje.html#keeifsel-veri-analizi",
+    "title": "CTRL - NBA",
+    "section": "3.1 KeE\u001fifsel Veri Analizi",
+    "text": "3.1 KeE\u001fifsel Veri Analizi\nxxxxxx"
+  },
+  {
+    "objectID": "proje.html#sonuclar",
+    "href": "proje.html#sonuclar",
+    "title": "CTRL - NBA",
+    "section": "3.8 SonuC’lar",
+    "text": "3.8 SonuC’lar\nxxxxxx"
+  },
+  {
+    "objectID": "proje.html#rebound---boy",
+    "href": "proje.html#rebound---boy",
+    "title": "CTRL - NBA",
+    "section": "3.1 Rebound - Boy",
+    "text": "3.1 Rebound - Boy"
+  },
+  {
+    "objectID": "proje.html#block-sayısı---boy",
+    "href": "proje.html#block-sayısı---boy",
+    "title": "CTRL - NBA",
+    "section": "3.2 Block sayısı - Boy",
+    "text": "3.2 Block sayısı - Boy"
+  },
+  {
+    "objectID": "proje.html#asist---yaş",
+    "href": "proje.html#asist---yaş",
+    "title": "CTRL - NBA",
+    "section": "3.3 Asist - Yaş",
+    "text": "3.3 Asist - Yaş"
+  },
+  {
+    "objectID": "proje.html#asisttop-kaybı---yaş",
+    "href": "proje.html#asisttop-kaybı---yaş",
+    "title": "CTRL - NBA",
+    "section": "3.4 Asist/Top kaybı - Yaş",
+    "text": "3.4 Asist/Top kaybı - Yaş\n. . ."
   }
 ]

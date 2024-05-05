@@ -1,133 +1,130 @@
 ---
-title: "Çalışma 1"
+title: "Calışma1"
 ---
-
 
 Bu çalışmada 3 görevimiz var. Bu görevler ;
 
-- GitHub üzerinden repo oluşturup Code Busters takımı adına kişiselleştirme,
-- Takım Üyelerimizin özgeçmişlerini paylaşma ve
-- Portfolyo başlığı altında ilk ödevimizi yayınlamaktır. 
+-   GitHub üzerinden repo oluşturup Code Busters tak1m1 ad1na kişiselleştirme,
+-   Takım üyelerimizin özgeçmişlerini paylaşma ve
+-   Portfolyo başlığ1 alt1nda ilk ödevimizi yay1nlamakt1r.
 
-Şuan bu metni okuyorsanız yukarıda listelenen ilk iki görevi doğru yapabilmişiz demektir :)
-Üçüncü görev için lütfen okumaya devam edin :)
+Şuan bu metni okuyorsanız yukarıda listelenen ilk iki gC6revi doDru yapabilmiEiz demektir :) CC'C\<ncC\< gC6rev iC'in lC\<tfen okumaya devam edin :)
 
+CC'C\<ncC\< gC6rev iC'in listelediDimiz maddelere sD1rayla aEaDD1da cevap arD1yoruz.
 
-Üçüncü görev için listelediğimiz maddelere sırayla aşağıda cevap arıyoruz.
+## a. Cdev DokC\<manD1nda PaylaED1lan Kaynaklardan Videoyu SeC'imi ve Quarto DokC\<manD1na KD1sa Bir Czet SaDlanmasD1
 
-## a. Ödev Dokümanında Paylaşılan Kaynaklardan Videoyu Seçimi ve Quarto Dokümanına Kısa Bir Özet Sağlanması
+[Video Czet](/portfolyo/video_ozet.qmd)
 
-[Video Özet](/portfolyo/video_ozet.qmd)
-
-## b.Özel Fonksiyonlar ve Döngüler ile İstatistiksel Özetlerin Keşfi
+## b.Czel Fonksiyonlar ve DC6ngC\<ler ile D0statistiksel Czetlerin KeEfi
 
 ```{r}
 mtcars
 ```
+
 ```{r}
-custom_summary <- function(vec) {              #fonksıyonu vektor olarak tanımladık ;  vec her bir sütunu temsilen
+custom_summary <- function(vec) {              #fonksD1yonu vektor olarak tanD1mladD1k ;  vec her bir sC<tunu temsilen
     summary_list <- list(
-        mean = mean(vec),                      #gırdıgının ortalaması
-        median = median(vec),                  #girdinin medyanı
-        std_dev = sd(vec),                     #girdinin std sapması
+        mean = mean(vec),                      #gD1rdD1gD1nD1n ortalamasD1
+        median = median(vec),                  #girdinin medyanD1
+        std_dev = sd(vec),                     #girdinin std sapmasD1
         min = min(vec),                        #girdinin minimumu
         max = max(vec)                         #girdinin maximumu
     )
     return(summary_list)
 }
 
-#bu verileri yazdırabilmek için de değişkene atayıp print ettirmemiz gerekir, aynı zamanda hangi sütunu özetleyeceğimizi belirtmeliyiz, cyl yerine mpg de olabilir 
+#bu verileri yazdD1rabilmek iC'in de deDiEkene atayD1p print ettirmemiz gerekir, aynD1 zamanda hangi sC<tunu C6zetleyeceDimizi belirtmeliyiz, cyl yerine mpg de olabilir 
 
 
 cyl_summary <- custom_summary(mtcars$cyl)
 print(cyl_summary)
 
 ```
-# Fonksiyonu Döngü Kullanarak Uygulama ve Apply ile Alternatif Bir Yaklaşım
+
+# Fonksiyonu DC6ngC\< Kullanarak Uygulama ve Apply ile Alternatif Bir YaklaED1m
 
 ```{r}
-custom_summary <- function(vec) {              #fonksıyonu vektor olarak tanımladık ;  vec her bir sütunu temsilen
+custom_summary <- function(vec) {              #fonksD1yonu vektor olarak tanD1mladD1k ;  vec her bir sC<tunu temsilen
   summary_list <- list(
-    mean = mean(vec),                      #gırdıgının ortalaması
-    median = median(vec),                  #girdinin medyanı
-    std_dev = sd(vec),                     #girdinin std sapması
+    mean = mean(vec),                      #gD1rdD1gD1nD1n ortalamasD1
+    median = median(vec),                  #girdinin medyanD1
+    std_dev = sd(vec),                     #girdinin std sapmasD1
     min = min(vec),                        #girdinin minimumu
     max = max(vec)                         #girdinin maximumu
   )
   return(summary_list)
 }
 
-#bu verileri yazdırabilmek için de değişkene atayıp print ettirmemiz gerekir, aynı zamanda hangi sütunu özetleyeceğimizi belirtmeliyiz, cyl yerine mpg de olabilir 
+#bu verileri yazdD1rabilmek iC'in de deDiEkene atayD1p print ettirmemiz gerekir, aynD1 zamanda hangi sC<tunu C6zetleyeceDimizi belirtmeliyiz, cyl yerine mpg de olabilir 
 
 
 cyl_summary <- custom_summary(mtcars$cyl)
 print(cyl_summary)
 
-for (n in 1:ncol(mtcars)) {                        # 1'den mtcars data setinin sütun sayısına kadar for loop döndürmek için n değişkeni tanımlandı.
+for (n in 1:ncol(mtcars)) {                        # 1'den mtcars data setinin sC<tun sayD1sD1na kadar for loop dC6ndC<rmek iC'in n deDiEkeni tanD1mlandD1.
   
-  column_name <- colnames(mtcars)[n]               # sütun isimlerini bastırmak için column_name değişkeni tanımlandı. 
-  list_of_variables <- custom_summary(mtcars[,n])  # yukarıda tanımlanan custom_summary fonksiyonu çalıştırıldı.
-  print(column_name)                               # sütun adı yazdırıldı.
-  print(list_of_variables)                         # fonksiyonun içinde hesaplanan değerler bastırıldı.
+  column_name <- colnames(mtcars)[n]               # sC<tun isimlerini bastD1rmak iC'in column_name deDiEkeni tanD1mlandD1. 
+  list_of_variables <- custom_summary(mtcars[,n])  # yukarD1da tanD1mlanan custom_summary fonksiyonu C'alD1EtD1rD1ldD1.
+  print(column_name)                               # sC<tun adD1 yazdD1rD1ldD1.
+  print(list_of_variables)                         # fonksiyonun iC'inde hesaplanan deDerler bastD1rD1ldD1.
   
 }
 
-apply(mtcars, 2, custom_summary)                   #apply kullanılarak yukarıdaki for döngüsü tek bir komut ile çalıştırıldı.
+apply(mtcars, 2, custom_summary)                   #apply kullanD1larak yukarD1daki for dC6ngC<sC< tek bir komut ile C'alD1EtD1rD1ldD1.
 
 ```
 
 ## c.Na Example
 
 ```{r}
-# Gerekli kütüphaneler yüklendi
-# install.packages("dslabs")   #kullanıcı bu satırı sadece bir kere çalıştırmalı, yükledikten sonra commentlenmeli 
+# Gerekli kC<tC<phaneler yC<klendi
+# install.packages("dslabs")   #kullanD1cD1 bu satD1rD1 sadece bir kere C'alD1EtD1rmalD1, yC<kledikten sonra commentlenmeli 
 library(dslabs)
 
-# na_example veri setini yazdır
+# na_example veri setini yazdD1r
 print(na_example)
 
-# na_example veri setindeki "NA"ların konumunu array olarak yarat
+# na_example veri setindeki "NA"larD1n konumunu array olarak yarat
 na_example_na_locations <- is.na(na_example)
 
-# Toplam "NA" sayısını hesapla
+# Toplam "NA" sayD1sD1nD1 hesapla
 na_total <- sum(na_example_na_locations)
 
-# Toplam "NA" sayısını yazdır
+# Toplam "NA" sayD1sD1nD1 yazdD1r
 print(na_total)
 
-# na_example veri setindeki "NA" değerlerini "665" ile değiştir ve yeni veri setini kaydet
+# na_example veri setindeki "NA" deDerlerini "665" ile deDiEtir ve yeni veri setini kaydet
 example_665 <- replace(na_example, is.na(na_example), 665)
 
-# Yeni veri setini yazdır
+# Yeni veri setini yazdD1r
 print(example_665)
 
-# example_665 veri setindeki "NA"ların konumunu array olarak yarat (boş dizi oluşturulacak)
+# example_665 veri setindeki "NA"larD1n konumunu array olarak yarat (boE dizi oluEturulacak)
 example_665_na_locations <- is.na(example_665)
 
-# example_665 veri setindeki toplam "NA" sayısını hesapla
+# example_665 veri setindeki toplam "NA" sayD1sD1nD1 hesapla
 example_665_total_na <- sum(example_665_na_locations)
 
-# example_665 veri setindeki toplam "NA" sayısını yazdır
+# example_665 veri setindeki toplam "NA" sayD1sD1nD1 yazdD1r
 print(example_665_total_na)
 
-# example_665 veri setindeki "665" değerlerinin konumunu array olarak yarat
+# example_665 veri setindeki "665" deDerlerinin konumunu array olarak yarat
 example_665_locations_of_665 <- (example_665 == 665)
 
-# example_665 veri setindeki toplam "665" sayısını hesapla
+# example_665 veri setindeki toplam "665" sayD1sD1nD1 hesapla
 example_665_total_665 <- sum(example_665_locations_of_665)
 
-# example_665 veri setindeki toplam "665" sayısını yazdır
+# example_665 veri setindeki toplam "665" sayD1sD1nD1 yazdD1r
 print(example_665_total_665)
 
-# na_example veri setindeki "NA" değerlerinin toplamı ile example_665 veri setindeki "665" değerlerinin toplamını karşılaştır (mantıksal)
+# na_example veri setindeki "NA" deDerlerinin toplamD1 ile example_665 veri setindeki "665" deDerlerinin toplamD1nD1 karED1laEtD1r (mantD1ksal)
 am_i_correct <- na_total == example_665_total_665
 
-# Eğer karşılaştırma doğruysa "tebrikler", değilse "yeniden deneyin" yazdır
+# EDer karED1laEtD1rma doDruysa "tebrikler", deDilse "yeniden deneyin" yazdD1r
 if (am_i_correct) {
   print("tebrikler")
 } else {
   print("yeniden deneyin")
 }
 ```
-
-

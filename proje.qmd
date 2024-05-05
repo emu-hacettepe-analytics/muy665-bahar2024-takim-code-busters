@@ -1,16 +1,14 @@
 ---
-title: "Proje X (proje adını yazınız)"
+title: "CTRL - NBA"
 number-sections: true
 ---
 
 **Proje sayfamıza hoş geldiniz.**
 
-_Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin._
-
-(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)
+*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
 
-# Proje Genel Bakış ve Kapsamı
+# Proje Genel Bakışı ve Kapsamı
 
 xxxxxx
 
@@ -32,23 +30,67 @@ xxxxxx
 
 ## Ön İşleme
 
-xxxxxx
+Bazı veri setleri, analize hazır değildi. Veri setlerini kullanabilmek için önce ön işlemeye ihtiyaç duyduk. Proje konumuz NBA oyuncularının sezondaki çeşitli istatististiklerine dayanıyordu ancak hazır veri setleri yoktu. Bu yüzden NBA'in sitesinden yayınladığı istatistikleri projemizde kullanabilmek için veri seti yani .csv formatında excell dosyalarına çevirdik.
 
 # Analiz
 
-xxxxxx
+Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncuların verileri kullanmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:
+
+## Rebound - Boy
+
+## Block sayısı - Boy
+
+## Asist - Yaş
+
+## Asist/Top kaybı - Yaş
+
+.
+.
+.
 
 ## Keşifsel Veri Analizi
 
-xxxxxx
+Keşifsel veri analizi, veri setlerini inceleyerek içerdikleri bilgiyi anlamak ve veri hakkında sezgisel bir anlayış geliştirmek için kullanılan bir süreçtir. Bu süreç, veri setlerinin yapılarını, eğilimlerini, ilişkilerini ve desenlerini keşfetmeyi amaçlar.
+
+Projeye başlamadan önce inelediğimiz veri setleri hakkında bazı beklentilerimiz vardı. Mesela boyu uzun olan oyuncuların rebound ortalaması daha yüksek olmalıydı. Alt başlıkları bu beklentilerimiz üzerine oluşturduk. Beklentimizi kanıtlamak bir amaçken bir yandan da bu beklentilerimizi şaşırtacak çeşitli oyuncular olacağının farkındaydık. Ne de olsa NBA :) Bu da bizlere outliersları gösterecekti. 
+
+Veri keşfi ve gözlemi yaptıktan sonra kullanacağımız veri setlerini bulup incelemeye başladık. Proje için inceleyeceğimiz hedef kitlemizi belirledik ( 23-24 Sezonu, en iyi ilk 50 oyuncu ).
+
+Sonrasında Veri görselleştirme ile veriyi daha okunur kılmaya çalıştık.Bunun için incelediğimiz veriye göre çeşitli plotlar seçmeliydik. En optimum plotu seçmeye gayret gösterdik. (Modelleme öncesi analiz)
+
+Keşifsel modelleme üzerinde çok zaman kaybetmedik. Çünkü R studio veri için en optimum yani en uygun plotu seçenek olarak sundu.
+
+Daha sonrasında sonuçları ilgili başlıkların altında paylaştık.
 
 ## Trend Analizi
+/chatgptden baktım bunu uygularken tekrar konusalım/
+Trend analizi, belirli bir zaman dilimindeki veri setlerindeki uzun vadeli eğilimleri belirlemek için kullanılan bir analiz yöntemidir. Bu analiz, veri setindeki değişkenlerin zamanla nasıl değiştiğini inceleyerek gelecekteki davranışlar hakkında tahminler yapmaya yardımcı olur.
 
-xxxxxx
+Trend analizinde genellikle zaman serisi verileri kullanılır. Temel olarak, zaman serisi verileri, belirli bir zaman diliminde belirli aralıklarla ölçülen veya gözlenen verilerdir (örneğin, aylık satış rakamları, günlük hisse senedi fiyatları). Bu veriler, bir trendin varlığını ve bu trendin ne yönde olduğunu belirlemek için analiz edilir.
+
+Trend analizi genellikle şu adımları içerir:
+
+Veri Görselleştirme: Zaman serisi verileri grafiğe dökülür. Bu, verinin nasıl davrandığını görsel olarak görmemize olanak tanır. Grafik üzerinde belirli bir eğilim olduğu gözlemlenebilir.
+Trendin Belirlenmesi: Veri setindeki eğilimin ne olduğunu belirlemek için çeşitli istatistiksel yöntemler kullanılır. Bu, veri setindeki değişkenliğin sabit bir eğilimle artıp artmadığını veya azaldığını belirler.
+Trendin Uygun Modellemesi: Veri setinin yapısına ve belirlenen trende bağlı olarak uygun bir model seçilir. Doğrusal, üstel veya polinomiyal trendler gibi farklı modeller kullanılabilir.
+Trendin Tahmin Edilmesi: Belirlenen trend modeli kullanılarak gelecekteki değerler tahmin edilir. Bu, trendin devam edip etmeyeceği veya tersine dönüp dönmediği hakkında fikir verebilir.
+Trend analizi, çeşitli endüstrilerde pazar trendlerini, tüketici davranışlarını, finansal piyasaları ve daha fazlasını anlamak için kullanılır. Örneğin, bir şirketin satışlarını analiz ederek gelecekteki satış trendlerini tahmin etmek veya bir yatırımcının belirli bir hisse senedinin fiyatının gelecekteki trendini belirlemek için trend analizi yapılabilir.
 
 ## Model Uydurma
+chtagptden aldım bu aşamaya geldıgımızde tekrar konusalım
+Model uydurma (fitting), istatistik ve makine öğrenimi alanlarında bir modelin veriye uyum sağlaması veya veriyi en iyi şekilde açıklaması anlamına gelir. Bu, modelin gözlemlenen verilere ne kadar iyi uymakta olduğunu ifade eder.
 
-xxxxxx
+Model uydurma genellikle şu adımları içerir:
+
+1. **Model Seçimi**: İncelenen veri seti için uygun bir model seçilir. Bu model, veri setinin yapısına ve hedeflenen sonuca bağlı olarak belirlenir. Örneğin, doğrusal regresyon, lojistik regresyon, karar ağaçları, destek vektör makineleri gibi çeşitli modeller arasından bir seçim yapılabilir.
+
+2. **Model Parametrelerinin Belirlenmesi**: Seçilen modelin parametreleri belirlenir veya tahmin edilir. Bu parametreler, modelin veriye ne kadar iyi uyduğunu belirler. Bazı modellerde bu parametreler manuel olarak ayarlanabilirken, bazıları otomatik olarak ayarlanır.
+
+3. **Model Uydurma**: Model, veri setine uydurulur. Bu, modelin gözlemlenen verilere ne kadar iyi uyduğunu ifade eder. Modelin parametreleri, veri setindeki gözlemlenen değerlerle uyumlu hale getirilir.
+
+4. **Model Değerlendirme**: Uydurulan modelin performansı değerlendirilir. Bu, modelin ne kadar iyi olduğunu ve tahmin yeteneğini belirler. Doğruluk, hassasiyet, belirlilik katsayısı gibi metrikler kullanılarak değerlendirme yapılır.
+
+Model uydurma, veri setindeki desenleri ve ilişkileri açıklamak ve gelecekteki davranışları tahmin etmek için kullanılır. İyi bir model, veri setindeki değişkenliği ve yapıyı doğru bir şekilde yakalar ve bu sayede gelecekteki değerlerin tahmininde daha doğru sonuçlar verir. Ancak model uydurma sürecinde aşırı uydurma (overfitting) riski de vardır, bu da modelin eğitim verilerine çok iyi uyması ancak genelleme yapma yeteneğinin azalması anlamına gelir. Bu nedenle, modelin aşırı uydurma yapmaması için düzenleme teknikleri ve doğrulama yöntemleri kullanılır.
 
 ## Sonuçlar
 

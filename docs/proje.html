@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Code Buster Takımı Analitik Labı - Proje X (proje adını yazınız)</title>
+<title>Code Busters Takımı Analitik Labı - CTRL - NBA</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Code Buster Takımı Analitik Labı</span>
+    <span class="navbar-title">Code Busters Takımı Analitik Labı</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#proje-genel-bakış-ve-kapsamı" id="toc-proje-genel-bakış-ve-kapsamı" class="nav-link active" data-scroll-target="#proje-genel-bakış-ve-kapsamı"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı</a></li>
+  <li><a href="#proje-genel-bakışı-ve-kapsamı" id="toc-proje-genel-bakışı-ve-kapsamı" class="nav-link active" data-scroll-target="#proje-genel-bakışı-ve-kapsamı"><span class="header-section-number">1</span> Proje Genel Bakışı ve Kapsamı</a></li>
   <li><a href="#veri" id="toc-veri" class="nav-link" data-scroll-target="#veri"><span class="header-section-number">2</span> Veri</a>
   <ul class="collapse">
   <li><a href="#veri-kaynağı" id="toc-veri-kaynağı" class="nav-link" data-scroll-target="#veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</a></li>
@@ -133,10 +133,14 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#analiz" id="toc-analiz" class="nav-link" data-scroll-target="#analiz"><span class="header-section-number">3</span> Analiz</a>
   <ul class="collapse">
-  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</a></li>
-  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.2</span> Trend Analizi</a></li>
-  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.3</span> Model Uydurma</a></li>
-  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.4</span> Sonuçlar</a></li>
+  <li><a href="#rebound---boy" id="toc-rebound---boy" class="nav-link" data-scroll-target="#rebound---boy"><span class="header-section-number">3.1</span> Rebound - Boy</a></li>
+  <li><a href="#block-sayısı---boy" id="toc-block-sayısı---boy" class="nav-link" data-scroll-target="#block-sayısı---boy"><span class="header-section-number">3.2</span> Block sayısı - Boy</a></li>
+  <li><a href="#asist---yaş" id="toc-asist---yaş" class="nav-link" data-scroll-target="#asist---yaş"><span class="header-section-number">3.3</span> Asist - Yaş</a></li>
+  <li><a href="#asisttop-kaybı---yaş" id="toc-asisttop-kaybı---yaş" class="nav-link" data-scroll-target="#asisttop-kaybı---yaş"><span class="header-section-number">3.4</span> Asist/Top kaybı - Yaş</a></li>
+  <li><a href="#keşifsel-veri-analizi" id="toc-keşifsel-veri-analizi" class="nav-link" data-scroll-target="#keşifsel-veri-analizi"><span class="header-section-number">3.5</span> Keşifsel Veri Analizi</a></li>
+  <li><a href="#trend-analizi" id="toc-trend-analizi" class="nav-link" data-scroll-target="#trend-analizi"><span class="header-section-number">3.6</span> Trend Analizi</a></li>
+  <li><a href="#model-uydurma" id="toc-model-uydurma" class="nav-link" data-scroll-target="#model-uydurma"><span class="header-section-number">3.7</span> Model Uydurma</a></li>
+  <li><a href="#sonuçlar" id="toc-sonuçlar" class="nav-link" data-scroll-target="#sonuçlar"><span class="header-section-number">3.8</span> Sonuçlar</a></li>
   </ul></li>
   <li><a href="#sonuçlar-ve-ana-çıkarımlar" id="toc-sonuçlar-ve-ana-çıkarımlar" class="nav-link" data-scroll-target="#sonuçlar-ve-ana-çıkarımlar"><span class="header-section-number">4</span> Sonuçlar ve Ana Çıkarımlar</a></li>
   </ul>
@@ -151,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Proje X (proje adını yazınız)</h1>
+<h1 class="title">CTRL - NBA</h1>
 </div>
 
 
@@ -170,9 +174,8 @@ ul.task-list li input[type="checkbox"] {
 
 <p><strong>Proje sayfamıza hoş geldiniz.</strong></p>
 <p><em>Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.</em></p>
-<p>(Aşağıdaki başlıklar örnek olarak verilmiştir; lütfen gerektiği şekilde düzenlemekten çekinmeyin.)</p>
-<section id="proje-genel-bakış-ve-kapsamı" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Proje Genel Bakış ve Kapsamı</h1>
+<section id="proje-genel-bakışı-ve-kapsamı" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Proje Genel Bakışı ve Kapsamı</h1>
 <p>xxxxxx</p>
 </section>
 <section id="veri" class="level1" data-number="2">
@@ -192,26 +195,55 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="ön-işleme" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="ön-işleme"><span class="header-section-number">2.4</span> Ön İşleme</h2>
-<p>xxxxxx</p>
+<p>Bazı veri setleri, analize hazır değildi. Veri setlerini kullanabilmek için önce ön işlemeye ihtiyaç duyduk. Proje konumuz NBA oyuncularının sezondaki çeşitli istatististiklerine dayanıyordu ancak hazır veri setleri yoktu. Bu yüzden NBA’in sitesinden yayınladığı istatistikleri projemizde kullanabilmek için veri seti yani .csv formatında excell dosyalarına çevirdik.</p>
 </section>
 </section>
 <section id="analiz" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Analiz</h1>
-<p>xxxxxx</p>
-<section id="keşifsel-veri-analizi" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.1</span> Keşifsel Veri Analizi</h2>
-<p>xxxxxx</p>
+<p>Bu analizde NBA 2023-24 sezonundaki ilk 50’ye giren oyuncuların verileri kullanmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:</p>
+<section id="rebound---boy" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="rebound---boy"><span class="header-section-number">3.1</span> Rebound - Boy</h2>
 </section>
-<section id="trend-analizi" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.2</span> Trend Analizi</h2>
-<p>xxxxxx</p>
+<section id="block-sayısı---boy" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="block-sayısı---boy"><span class="header-section-number">3.2</span> Block sayısı - Boy</h2>
 </section>
-<section id="model-uydurma" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.3</span> Model Uydurma</h2>
-<p>xxxxxx</p>
+<section id="asist---yaş" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="asist---yaş"><span class="header-section-number">3.3</span> Asist - Yaş</h2>
 </section>
-<section id="sonuçlar" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.4</span> Sonuçlar</h2>
+<section id="asisttop-kaybı---yaş" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="asisttop-kaybı---yaş"><span class="header-section-number">3.4</span> Asist/Top kaybı - Yaş</h2>
+<p>. . .</p>
+</section>
+<section id="keşifsel-veri-analizi" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="keşifsel-veri-analizi"><span class="header-section-number">3.5</span> Keşifsel Veri Analizi</h2>
+<p>Keşifsel veri analizi, veri setlerini inceleyerek içerdikleri bilgiyi anlamak ve veri hakkında sezgisel bir anlayış geliştirmek için kullanılan bir süreçtir. Bu süreç, veri setlerinin yapılarını, eğilimlerini, ilişkilerini ve desenlerini keşfetmeyi amaçlar.</p>
+<p>Projeye başlamadan önce inelediğimiz veri setleri hakkında bazı beklentilerimiz vardı. Mesela boyu uzun olan oyuncuların rebound ortalaması daha yüksek olmalıydı. Alt başlıkları bu beklentilerimiz üzerine oluşturduk. Beklentimizi kanıtlamak bir amaçken bir yandan da bu beklentilerimizi şaşırtacak çeşitli oyuncular olacağının farkındaydık. Ne de olsa NBA :) Bu da bizlere outliersları gösterecekti.</p>
+<p>Veri keşfi ve gözlemi yaptıktan sonra kullanacağımız veri setlerini bulup incelemeye başladık. Proje için inceleyeceğimiz hedef kitlemizi belirledik ( 23-24 Sezonu, en iyi ilk 50 oyuncu ).</p>
+<p>Sonrasında Veri görselleştirme ile veriyi daha okunur kılmaya çalıştık.Bunun için incelediğimiz veriye göre çeşitli plotlar seçmeliydik. En optimum plotu seçmeye gayret gösterdik. (Modelleme öncesi analiz)</p>
+<p>Keşifsel modelleme üzerinde çok zaman kaybetmedik. Çünkü R studio veri için en optimum yani en uygun plotu seçenek olarak sundu.</p>
+<p>Daha sonrasında sonuçları ilgili başlıkların altında paylaştık.</p>
+</section>
+<section id="trend-analizi" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="trend-analizi"><span class="header-section-number">3.6</span> Trend Analizi</h2>
+<p>/chatgptden baktım bunu uygularken tekrar konusalım/ Trend analizi, belirli bir zaman dilimindeki veri setlerindeki uzun vadeli eğilimleri belirlemek için kullanılan bir analiz yöntemidir. Bu analiz, veri setindeki değişkenlerin zamanla nasıl değiştiğini inceleyerek gelecekteki davranışlar hakkında tahminler yapmaya yardımcı olur.</p>
+<p>Trend analizinde genellikle zaman serisi verileri kullanılır. Temel olarak, zaman serisi verileri, belirli bir zaman diliminde belirli aralıklarla ölçülen veya gözlenen verilerdir (örneğin, aylık satış rakamları, günlük hisse senedi fiyatları). Bu veriler, bir trendin varlığını ve bu trendin ne yönde olduğunu belirlemek için analiz edilir.</p>
+<p>Trend analizi genellikle şu adımları içerir:</p>
+<p>Veri Görselleştirme: Zaman serisi verileri grafiğe dökülür. Bu, verinin nasıl davrandığını görsel olarak görmemize olanak tanır. Grafik üzerinde belirli bir eğilim olduğu gözlemlenebilir. Trendin Belirlenmesi: Veri setindeki eğilimin ne olduğunu belirlemek için çeşitli istatistiksel yöntemler kullanılır. Bu, veri setindeki değişkenliğin sabit bir eğilimle artıp artmadığını veya azaldığını belirler. Trendin Uygun Modellemesi: Veri setinin yapısına ve belirlenen trende bağlı olarak uygun bir model seçilir. Doğrusal, üstel veya polinomiyal trendler gibi farklı modeller kullanılabilir. Trendin Tahmin Edilmesi: Belirlenen trend modeli kullanılarak gelecekteki değerler tahmin edilir. Bu, trendin devam edip etmeyeceği veya tersine dönüp dönmediği hakkında fikir verebilir. Trend analizi, çeşitli endüstrilerde pazar trendlerini, tüketici davranışlarını, finansal piyasaları ve daha fazlasını anlamak için kullanılır. Örneğin, bir şirketin satışlarını analiz ederek gelecekteki satış trendlerini tahmin etmek veya bir yatırımcının belirli bir hisse senedinin fiyatının gelecekteki trendini belirlemek için trend analizi yapılabilir.</p>
+</section>
+<section id="model-uydurma" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="model-uydurma"><span class="header-section-number">3.7</span> Model Uydurma</h2>
+<p>chtagptden aldım bu aşamaya geldıgımızde tekrar konusalım Model uydurma (fitting), istatistik ve makine öğrenimi alanlarında bir modelin veriye uyum sağlaması veya veriyi en iyi şekilde açıklaması anlamına gelir. Bu, modelin gözlemlenen verilere ne kadar iyi uymakta olduğunu ifade eder.</p>
+<p>Model uydurma genellikle şu adımları içerir:</p>
+<ol type="1">
+<li><p><strong>Model Seçimi</strong>: İncelenen veri seti için uygun bir model seçilir. Bu model, veri setinin yapısına ve hedeflenen sonuca bağlı olarak belirlenir. Örneğin, doğrusal regresyon, lojistik regresyon, karar ağaçları, destek vektör makineleri gibi çeşitli modeller arasından bir seçim yapılabilir.</p></li>
+<li><p><strong>Model Parametrelerinin Belirlenmesi</strong>: Seçilen modelin parametreleri belirlenir veya tahmin edilir. Bu parametreler, modelin veriye ne kadar iyi uyduğunu belirler. Bazı modellerde bu parametreler manuel olarak ayarlanabilirken, bazıları otomatik olarak ayarlanır.</p></li>
+<li><p><strong>Model Uydurma</strong>: Model, veri setine uydurulur. Bu, modelin gözlemlenen verilere ne kadar iyi uyduğunu ifade eder. Modelin parametreleri, veri setindeki gözlemlenen değerlerle uyumlu hale getirilir.</p></li>
+<li><p><strong>Model Değerlendirme</strong>: Uydurulan modelin performansı değerlendirilir. Bu, modelin ne kadar iyi olduğunu ve tahmin yeteneğini belirler. Doğruluk, hassasiyet, belirlilik katsayısı gibi metrikler kullanılarak değerlendirme yapılır.</p></li>
+</ol>
+<p>Model uydurma, veri setindeki desenleri ve ilişkileri açıklamak ve gelecekteki davranışları tahmin etmek için kullanılır. İyi bir model, veri setindeki değişkenliği ve yapıyı doğru bir şekilde yakalar ve bu sayede gelecekteki değerlerin tahmininde daha doğru sonuçlar verir. Ancak model uydurma sürecinde aşırı uydurma (overfitting) riski de vardır, bu da modelin eğitim verilerine çok iyi uyması ancak genelleme yapma yeteneğinin azalması anlamına gelir. Bu nedenle, modelin aşırı uydurma yapmaması için düzenleme teknikleri ve doğrulama yöntemleri kullanılır.</p>
+</section>
+<section id="sonuçlar" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="sonuçlar"><span class="header-section-number">3.8</span> Sonuçlar</h2>
 <p>xxxxxx</p>
 </section>
 </section>
