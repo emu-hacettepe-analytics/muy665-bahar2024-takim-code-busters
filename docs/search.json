@@ -334,7 +334,7 @@
     "href": "proje.html#veri-kaynağı",
     "title": "CTRL - NBA",
     "section": "2.1 Veri Kaynağı",
-    "text": "2.1 Veri Kaynağı\nxxxxxx"
+    "text": "2.1 Veri Kaynağı\nhttps://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasından csv formatı ile çekilmiştir."
   },
   {
     "objectID": "proje.html#veri-hakkında-genel-bilgiler",
@@ -943,7 +943,7 @@
     "href": "proje.html#rebound---boy",
     "title": "CTRL - NBA",
     "section": "3.1 Rebound - Boy",
-    "text": "3.1 Rebound - Boy"
+    "text": "3.1 Rebound - Boy\n\n# Veri setini yükleme\nveri &lt;- read.csv(file = \"nba_dataset.csv\", head = TRUE, sep=\";\")\n\n#veriyi TRB sütununa göre sıralama\nrebounds_data &lt;- veri[order(veri$TRB, decreasing = TRUE),]\n\n#TRB sütununa göre sıralanan veriden ilk 50sini alma\nrebounds_top50 &lt;- rebounds_data[1:50,]\nTRB &lt;- rebounds_top50[,c(\"Player\", \"TRB\")]\n\n#print(TRB[,c(\"Player\", \"TRB\")])\n\n\nprint(TRB,row.names = FALSE)\n\n                Player TRB\n      Domantas Sabonis 137\n           Rudy Gobert 129\n         Anthony Davis 126\n          Nikola Joki? 124\n           Jalen Duren 116\n Giannis Antetokounmpo 115\n         Deandre Ayton 111\n           Joel Embiid 110\n          Jusuf Nurki? 110\n          Clint Capela 106\n     Victor Wembanyama 106\n         Jarrett Allen 105\n        Nikola Vu?evi? 105\n           Bam Adebayo 104\n           Nic Claxton  99\n         Mark Williams  97\n           Evan Mobley  94\n        Alperen Sengun  93\n           Luka Don?i?  92\n         Julius Randle  92\n           Ivica Zubac  92\n        Andre Drummond  90\n     Jonas Valan?i?nas  88\n         Jalen Johnson  87\n          Jakob Poeltl  86\n          John Collins  85\n     Mitchell Robinson  85\n             Josh Hart  83\n    Isaiah Hartenstein  83\n    Karl-Anthony Towns  83\n        Scottie Barnes  82\n       Lauri Markkanen  82\n      Jabari Smith Jr.  81\n          Jayson Tatum  81\n         Nick Richards  80\n         Chet Holmgren  79\n           Ben Simmons  79\n        Daniel Gafford  76\n        Walker Kessler  75\n         Javonte Green  74\n          Bobby Portis  74\n         Miles Bridges  73\n          LeBron James  73\n           Deni Avdija  72\n        Draymond Green  72\n    Kristaps Porzi??is  72\n         Pascal Siakam  71\n         Jabari Walker  71\n            Tari Eason  70\n    Michael Porter Jr.  70\n\n#print(TRB.to_string(index=False))"
   },
   {
     "objectID": "proje.html#block-sayısı---boy",

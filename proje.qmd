@@ -18,7 +18,7 @@ xxxxxx
 
 ## Veri Kaynağı
 
-xxxxxx
+https://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasından csv formatı ile çekilmiştir.
 
 ## Veri Hakkında Genel Bilgiler
 
@@ -37,6 +37,24 @@ Bazı veri setleri, analize hazır değildi. Veri setlerini kullanabilmek için 
 Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncuların verileri kullanmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:
 
 ## Rebound - Boy
+
+```{r}
+
+# Veri setini yükleme
+veri <- read.csv(file = "nba_dataset.csv", head = TRUE, sep=";")
+
+#veriyi TRB sütununa göre sıralama
+rebounds_data <- veri[order(veri$TRB, decreasing = TRUE),]
+
+#TRB sütununa göre sıralanan veriden ilk 50sini alma
+rebounds_top50 <- rebounds_data[1:50,]
+TRB <- rebounds_top50[,c("Player", "TRB")]
+
+print(TRB,row.names = FALSE)
+
+
+```
+
 
 ## Block sayısı - Boy
 

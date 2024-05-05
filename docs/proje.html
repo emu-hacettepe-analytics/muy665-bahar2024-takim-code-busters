@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -183,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 <p>xxxxxx</p>
 <section id="veri-kaynağı" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="veri-kaynağı"><span class="header-section-number">2.1</span> Veri Kaynağı</h2>
-<p>xxxxxx</p>
+<p>https://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasından csv formatı ile çekilmiştir.</p>
 </section>
 <section id="veri-hakkında-genel-bilgiler" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="veri-hakkında-genel-bilgiler"><span class="header-section-number">2.2</span> Veri Hakkında Genel Bilgiler</h2>
@@ -203,6 +237,76 @@ ul.task-list li input[type="checkbox"] {
 <p>Bu analizde NBA 2023-24 sezonundaki ilk 50’ye giren oyuncuların verileri kullanmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:</p>
 <section id="rebound---boy" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="rebound---boy"><span class="header-section-number">3.1</span> Rebound - Boy</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Veri setini yükleme</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>veri <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file =</span> <span class="st">"nba_dataset.csv"</span>, <span class="at">head =</span> <span class="cn">TRUE</span>, <span class="at">sep=</span><span class="st">";"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">#veriyi TRB sütununa göre sıralama</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>rebounds_data <span class="ot">&lt;-</span> veri[<span class="fu">order</span>(veri<span class="sc">$</span>TRB, <span class="at">decreasing =</span> <span class="cn">TRUE</span>),]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">#TRB sütununa göre sıralanan veriden ilk 50sini alma</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>rebounds_top50 <span class="ot">&lt;-</span> rebounds_data[<span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>,]</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>TRB <span class="ot">&lt;-</span> rebounds_top50[,<span class="fu">c</span>(<span class="st">"Player"</span>, <span class="st">"TRB"</span>)]</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#print(TRB[,c("Player", "TRB")])</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(TRB,<span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                Player TRB
+      Domantas Sabonis 137
+           Rudy Gobert 129
+         Anthony Davis 126
+          Nikola Joki? 124
+           Jalen Duren 116
+ Giannis Antetokounmpo 115
+         Deandre Ayton 111
+           Joel Embiid 110
+          Jusuf Nurki? 110
+          Clint Capela 106
+     Victor Wembanyama 106
+         Jarrett Allen 105
+        Nikola Vu?evi? 105
+           Bam Adebayo 104
+           Nic Claxton  99
+         Mark Williams  97
+           Evan Mobley  94
+        Alperen Sengun  93
+           Luka Don?i?  92
+         Julius Randle  92
+           Ivica Zubac  92
+        Andre Drummond  90
+     Jonas Valan?i?nas  88
+         Jalen Johnson  87
+          Jakob Poeltl  86
+          John Collins  85
+     Mitchell Robinson  85
+             Josh Hart  83
+    Isaiah Hartenstein  83
+    Karl-Anthony Towns  83
+        Scottie Barnes  82
+       Lauri Markkanen  82
+      Jabari Smith Jr.  81
+          Jayson Tatum  81
+         Nick Richards  80
+         Chet Holmgren  79
+           Ben Simmons  79
+        Daniel Gafford  76
+        Walker Kessler  75
+         Javonte Green  74
+          Bobby Portis  74
+         Miles Bridges  73
+          LeBron James  73
+           Deni Avdija  72
+        Draymond Green  72
+    Kristaps Porzi??is  72
+         Pascal Siakam  71
+         Jabari Walker  71
+            Tari Eason  70
+    Michael Porter Jr.  70</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#print(TRB.to_string(index=False))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="block-sayısı---boy" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="block-sayısı---boy"><span class="header-section-number">3.2</span> Block sayısı - Boy</h2>
