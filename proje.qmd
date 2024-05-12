@@ -47,7 +47,7 @@ Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncuların verileri kullan
 
 # Veri setini yükleme
 veri <- read.csv(file = "nba_dataset.csv", head = TRUE, sep=";")
-boy_veri <- veri[1:150,]
+boy_veri <- veri[1:280,]
 
 #veriyi TRB sütununa göre sıralama
 rebounds_data <- veri[order(boy_veri$TRB, decreasing = TRUE),]
@@ -63,7 +63,7 @@ library(tidyverse)
 library(dslabs)
 
 
-boy_veri |> ggplot()+ geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.7, 2.3)) +scale_y_continuous(limits = c(25, 150))
+boy_veri |> ggplot()+ geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(25, 280))
 
 ```
 Bu grafikte boy arttıkça rebound sayısının arttığını gözlemledik. Beklenen sonuç da buydu. Ancak grafikten çıkarılması gereken bir diğer sonuç ise 1.9 - 2.1 uzunluğundaki oyuncuların 60 TRB değerinin altında kalan kümesi. Bu oyuncular uzun olmasına rağmen diğer oyunculara göre düşük performans sergilemişler. Bir sonraki başlıkta bu kümenin yaş ve kilo ile grafiğine bakıp bunların sebep olma ihtimalini inceleyeceğiz. 
