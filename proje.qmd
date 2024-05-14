@@ -3,47 +3,51 @@ title: "CTRL - NBA"
 number-sections: true
 ---
 
-**Proje sayfamD1za hoE geldiniz.**
+**Proje sayfamıza hoşgeldiniz.**
 
-*Projemizle ilgili gC<ncellemelerden haberdar olmak iC'in bu alanD1 takip edin.*
+*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
 
 
-# Proje Genel BakD1ED1 ve KapsamD1
+# Proje Genel Bakışı ve Kapsamı
 
-Code Busters olarak dC6nem projemizde NBA'in 2023-2024 sezonuna ait oyuncu istatistiklerinden yola C'D1karak oyuncu performansD1nD1 etkileyen parametreleri incelemeyi amaC'ladD1k. Projede, R Studio kullanarak veri ayD1klama, keEifsel veri analizi, gC6rselleEtirme ve istatistiksel analiz teknikleri kullanD1lmasD1 planlandD1. 
+Code Busters olarak dönem projemizde NBA'in 2023-2024 sezonuna ait oyuncu istatistiklerinden yola çıkarak oyuncu performansını etkileyen parametreleri incelemeyi amaçladık. Projede, R Studio kullanarak veri ayıklama, keşifsel veri analizi, görselleştirme ve istatistiksel analiz teknikleri kullanılması planlandı.  
 
-## Analiz Edilecek DeDiEkenler:
+## Analiz Edilecek Değişkenler:
 
-Oyuncu D0statistikleri: MaC' baED1na dC<Een SayD1, Asist, Ribaund, Blok, Top Calma, Saha D0C'i AtD1E YC<zdesi, Saha DD1ED1 AtD1E YC<zdesi vb. 
+Oyuncu istatistikleri: Maç başına düşen Sayı, Asist, Ribaund, Blok, Top çalma, Saha İçi Atış Yüzdesi, Saha Dışı Atış Yüzdesi vb. 
 
-Oyuncu Czellikleri: YaE, Boy, Kilo, Pozisyon vb.
+Oyuncu Özellikleri: Yaş, Boy, Kilo, Pozisyon vb.
+
 
 ## Analiz Teknikleri:
 
-1) Eksik verilerin iElenmesi, veri tC<rlerinin dC6nC<EtC<rC<lmesi
-2) Veri daDD1lD1mlarD1nD1n incelenmesi, histogramlar, kutu grafikleri, daDD1lD1m grafikleri ile gC6rselleEtirme
-3) Beklenen sonuC'larD1n gerC'ek sonuC'lar ile karED1laEtD1rD1lmasD1
+1) Eksik verilerin işlenmesi, veri türlerinin dönüştürülmesi
+2) Veri dağılımlarının incelenmesi, histogramlar, kutu grafikleri, dağılım grafikleri ile görselleştirme
+3) Beklenen sonuçların gerçek sonuçlar ile karşılaştırılması
 
-## KD1sD1tlar ve Cnemli Notlar:
 
-Veri setinde eksik gC6zlemler olabilir, bunlarD1n ele alD1nmasD1 ve gelecek C'alD1Emalarda etkisinin deDerlendirilmesi gerekebilir.
-Oyuncu istatistikleri ve oyuncu C6zellikleri arasD1ndaki iliEki gC6rC<ndC<DC<nden daha karmaED1ktD1r ve tek bir faktC6rle sD1nD1rlD1 olmayabilir.
+## Kısıtlar ve Önemli Notlar:
 
-## Zaman Cizelgesi:
+Veri setinde eksik gözlemler olabilir, bunların ele alınması ve gelecek çalışmalarda etkisinin değerlendirilmesi gerekebilir.
+Oyuncu istatistikleri ve oyuncu özellikleri arasındaki ilişki göründüğünden daha karmaşıktır ve tek bir faktörle sınırlı olmayabilir.
 
-Veri toplama ve temizleme, Analiz ve model oluEturma, SonuC'larD1n derlenmesi ve sunumu adD1mlarD1 iC'in atanmD1E sC<re 6 Nisan ile 15 MayD1s aralD1DD1dD1r, tabiki son haftaya bD1rakmadD1k... 
+
+## Zaman Çizelgesi:
+
+Veri toplama ve temizleme, Analiz ve model oluşturma, Sonuçların derlenmesi ve sunumu adımları için atanmış süre 6 Nisan ile 15 Mayıs aralığıdır, tabiki son haftaya bırakmadık...  
 
 
 # VERİ
 
-## Veri KaynaDD1
+## Veri Kaynağı
 
-https://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasD1ndan csv formatD1 ile C'ekildi.
-Ancak iliEki kuracaDD1mD1z alt baElD1klardan kilo ve boy verisi bu data setinde yer almıyordu. Bu sebeple Anıl ve Burak veriyi ön işlemeye tabi tuttu.
+https://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasından csv formatı ile çekildi.
+Ancak ilişki kuracağımız alt başlıklardan kilo ve boy verisi bu data setinde yer almıyordu. Bu sebeple Anıl ve Burak veriyi ön işlemeye tabi tuttu.
 
-https://www.nba.com/players sayfasD1ndan oyuncularD1n boy ve kilo verisi alD1ndı ve ana veri setine yeni bir sC<tun olarak eklendi.
+https://www.nba.com/players sayfasından oyuncuların boy ve kilo verisi alındı ve ana veri setine yeni bir sütun olarak eklendi.
 
-## Veri HakkD1nda Genel Bilgiler
+
+## Veri Hakkında Genel Bilgiler
 
 NBA (National Basketball Association), dünya genelinde büyük bir popülerliğe sahip olan profesyonel basketbol liglerinden biridir. NBA'de yer alan takımlar, Amerika Birleşik Devletleri ve Kanada'da bulunan şehirleri temsil eder ve her sezon düzenlenen maçlar büyük bir izleyici kitlesi tarafından takip edilir.
 
@@ -68,6 +72,7 @@ Tecrübe: Oyuncunun ligdeki toplam tecrübesi (yıllar olarak).
 
 NBA oyuncu istatistikleri ve özellikleri spor analizi, oyuncu performansının değerlendirilmesi ve takım stratejilerinin oluşturulmasında önemli bir rol oynar. Bu veriler, hem spor endüstrisi uzmanları hem de basketbol severler için değerli bir kaynaktır ve geniş bir analiz ve araştırma alanı sunar.
 
+
 ## Tercih Sebebi
 
 NBA, dünya genelinde büyük bir popülerliğe sahip olan profesyonel bir spor ligi olduğundan, oyuncu istatistikleri ve özellikleri genellikle kapsamlı, güvenilir ve güncel veri kaynaklarına sahiptir. 2023-2024 sezonu ile filtreleyerek analizimiz için ideal bir veri seti sağladık.
@@ -79,13 +84,14 @@ Basketbol dünya genelinde milyonlarca insanı ilgilendiren bir spor dalıdır. 
 
 ## Ön İşleme
 
-BazD1 veri setleri, analize hazD1r deDildi. Veri setlerini kullanabilmek iC'in C6nce C6n iElemeye ihtiyaC' duyduk. Proje konumuz NBA oyuncularD1nD1n sezondaki C'eEitli istatististiklerine dayanD1yordu ancak hazD1r veri setleri yoktu. Bu yC<zden NBA'in sitesinden yayD1nladD1DD1 istatistikleri projemizde kullanabilmek iC'in veri seti yani .csv formatD1nda excell dosyalarD1na C'evirdik.
+Bazı veri setleri, analize hazır değildi. Veri setlerini kullanabilmek için önce ön işlemeye ihtiyaç duyduk. Proje konumuz NBA oyuncularının sezondaki çeşitli istatististiklerine dayanıyordu ancak hazır veri setleri yoktu. Bu yüzden NBA'in resmi websitesinden yayınladığı istatistikleri projemizde kullanabilmek için veri seti yani .csv formatında excell dosyalarına çevirdik.
 
-https://www.nba.com/players sayfasD1ndan ise 572 oyuncunun boy, kilo verisini ana veri setine yeni kolon olarak ekledik.
+https://www.nba.com/players sayfasından ise 572 oyuncunun boy, kilo verisini ana veri setine yeni kolon olarak ekledik.
+
 
 # Analiz
 
-Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncularD1n verileri kullanmD1EtD1r. D0ncelenecek alt baElD1klar aEaDD1daki gibidir:
+Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncuların verileri kullanılmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:
 
 ## Rebound - Boy (Aysu)
 
@@ -214,49 +220,28 @@ Kilonun hareketi kısıtlayacağı icin blok sayısı ile ters orantılı olmas�
 .
 .
 
-## KeEifsel Veri Analizi
+## Keşifsel Veri Analizi
 
-KeEifsel veri analizi, veri setlerini inceleyerek iC'erdikleri bilgiyi anlamak ve veri hakkD1nda sezgisel bir anlayD1E geliEtirmek iC'in kullanD1lan bir sC<reC'tir. Bu sC<reC', veri setlerinin yapD1larD1nD1, eDilimlerini, iliEkilerini ve desenlerini keEfetmeyi amaC'lar.
+Keşifsel veri analizi, veri setlerini inceleyerek içerdikleri bilgiyi anlamak ve veri hakkında sezgisel bir anlayış geliştirmek için kullanılan bir süreçtir. Bu süreç, veri setlerinin yapılarını, eğilimlerini, ilişkilerini ve desenlerini keşfetmeyi amaçlar.
 
-Projeye baElamadan C6nce inelediDimiz veri setleri hakkD1nda bazD1 beklentilerimiz vardD1. Mesela boyu uzun olan oyuncularD1n rebound ortalamasD1 daha yC<ksek olmalD1ydD1. Alt baElD1klarD1 bu beklentilerimiz C<zerine oluEturduk. Beklentimizi kanD1tlamak bir amaC'ken bir yandan da bu beklentilerimizi EaED1rtacak C'eEitli oyuncular olacaDD1nD1n farkD1ndaydD1k. Ne de olsa NBA :) Bu da bizlere outlierslarD1 gC6sterecekti. 
+Projemize başlamadan önce incelediğimiz veri setleri hakkında bazı tahminlerimiz vardı. Örneğin boyu uzun olan oyuncuların rebound ortalamasının daha yüksek olmasını bekliyorduk. Alt başlıklarımız incelenen ikililer olarak bu tahminlerimiz üzerine oluşturuldu. Tahminleri kanıtlamayı amaçlarken, bir yandan da bu tahminlerin aksi performans gösteren çeşitli oyuncular olacağının farkındaydık. Ne de olsa NBA :) Bu da bizlere outlierslarımızı göstermiş oldu. 
 
-Veri keEfi ve gC6zlemi yaptD1ktan sonra kullanacaDD1mD1z veri setlerini bulup incelemeye baEladD1k. Proje iC'in inceleyeceDimiz hedef kitlemizi belirledik ( 23-24 Sezonu, en iyi ilk 50 oyuncu ).
+Veri keşfi ve gözlemi yaptıktan sonra kullanacağımız veri setlerini bulup incelemeye başladık. Proje için inceleyeceğimiz hedef kitlemizi belirledik:  23-24 Sezonu, en iyi ilk 50 oyuncu
 
-SonrasD1nda Veri gC6rselleEtirme ile veriyi daha okunur kD1lmaya C'alD1EtD1k.Bunun iC'in incelediDimiz veriye gC6re C'eEitli plotlar seC'meliydik. En optimum plotu seC'meye gayret gC6sterdik. (Modelleme C6ncesi analiz)
+Sonrasında Veri görselleştirme ile veriyi daha okunur kılmaya çalıştık. İncelediğimiz veriye göre çeşitli plotlar seçmeliydik. En optimum plotu seçmeye gayret gösterdik.
+Keşifsel modelleme üzerine çok zaman kaybetmedik çünkü R studio veri için en uygun plotu seçenek olarak bize sundu.
 
-KeEifsel modelleme C<zerinde C'ok zaman kaybetmedik. CC<nkC< R studio veri iC'in en optimum yani en uygun plotu seC'enek olarak sundu.
-
-Daha sonrasD1nda sonuC'larD1 ilgili baElD1klarD1n altD1nda paylaEtD1k.
 
 ## Trend Analizi
-/chatgptden baktD1m bunu uygularken tekrar konusalD1m/
-Trend analizi, belirli bir zaman dilimindeki veri setlerindeki uzun vadeli eDilimleri belirlemek iC'in kullanD1lan bir analiz yC6ntemidir. Bu analiz, veri setindeki deDiEkenlerin zamanla nasD1l deDiEtiDini inceleyerek gelecekteki davranD1Elar hakkD1nda tahminler yapmaya yardD1mcD1 olur.
 
-Trend analizinde genellikle zaman serisi verileri kullanD1lD1r. Temel olarak, zaman serisi verileri, belirli bir zaman diliminde belirli aralD1klarla C6lC'C<len veya gC6zlenen verilerdir (C6rneDin, aylD1k satD1E rakamlarD1, gC<nlC<k hisse senedi fiyatlarD1). Bu veriler, bir trendin varlD1DD1nD1 ve bu trendin ne yC6nde olduDunu belirlemek iC'in analiz edilir.
+Trend analizi, belirli bir zaman dilimindeki veri setlerindeki uzun vadeli eğilimleri belirlemek için kullanılan bir analiz yöntemidir. Bu analiz, veri setindeki değişkenlerin zamanla nasıl değiştiğini inceleyerek gelecekteki davranışlar hakkında tahminler yapmaya yardımcı olur.
 
-Trend analizi genellikle Eu adD1mlarD1 iC'erir:
+Trend analizinde genellikle zaman serisi verileri kullanılır. Ancak bizim projemizde 2023-2024 Sezonu incelendiği için zaman bir parametre olarak kullanılmadı. Sabit bir zaman diliminde çalışıldı bu sebeple bir trend analizi yapılmadı.
 
-Veri GC6rselleEtirme: Zaman serisi verileri grafiDe dC6kC<lC<r. Bu, verinin nasD1l davrandD1DD1nD1 gC6rsel olarak gC6rmemize olanak tanD1r. Grafik C<zerinde belirli bir eDilim olduDu gC6zlemlenebilir.
-Trendin Belirlenmesi: Veri setindeki eDilimin ne olduDunu belirlemek iC'in C'eEitli istatistiksel yC6ntemler kullanD1lD1r. Bu, veri setindeki deDiEkenliDin sabit bir eDilimle artD1p artmadD1DD1nD1 veya azaldD1DD1nD1 belirler.
-Trendin Uygun Modellemesi: Veri setinin yapD1sD1na ve belirlenen trende baDlD1 olarak uygun bir model seC'ilir. DoDrusal, C<stel veya polinomiyal trendler gibi farklD1 modeller kullanD1labilir.
-Trendin Tahmin Edilmesi: Belirlenen trend modeli kullanD1larak gelecekteki deDerler tahmin edilir. Bu, trendin devam edip etmeyeceDi veya tersine dC6nC<p dC6nmediDi hakkD1nda fikir verebilir.
-Trend analizi, C'eEitli endC<strilerde pazar trendlerini, tC<ketici davranD1ElarD1nD1, finansal piyasalarD1 ve daha fazlasD1nD1 anlamak iC'in kullanD1lD1r. CrneDin, bir Eirketin satD1ElarD1nD1 analiz ederek gelecekteki satD1E trendlerini tahmin etmek veya bir yatD1rD1mcD1nD1n belirli bir hisse senedinin fiyatD1nD1n gelecekteki trendini belirlemek iC'in trend analizi yapD1labilir.
 
 ## Model Uydurma
-chtagptden aldD1m bu aEamaya geldD1gD1mD1zde tekrar konusalD1m
-Model uydurma (fitting), istatistik ve makine C6Drenimi alanlarD1nda bir modelin veriye uyum saDlamasD1 veya veriyi en iyi Eekilde aC'D1klamasD1 anlamD1na gelir. Bu, modelin gC6zlemlenen verilere ne kadar iyi uymakta olduDunu ifade eder.
 
-Model uydurma genellikle Eu adD1mlarD1 iC'erir:
-
-1. **Model SeC'imi**: D0ncelenen veri seti iC'in uygun bir model seC'ilir. Bu model, veri setinin yapD1sD1na ve hedeflenen sonuca baDlD1 olarak belirlenir. CrneDin, doDrusal regresyon, lojistik regresyon, karar aDaC'larD1, destek vektC6r makineleri gibi C'eEitli modeller arasD1ndan bir seC'im yapD1labilir.
-
-2. **Model Parametrelerinin Belirlenmesi**: SeC'ilen modelin parametreleri belirlenir veya tahmin edilir. Bu parametreler, modelin veriye ne kadar iyi uyduDunu belirler. BazD1 modellerde bu parametreler manuel olarak ayarlanabilirken, bazD1larD1 otomatik olarak ayarlanD1r.
-
-3. **Model Uydurma**: Model, veri setine uydurulur. Bu, modelin gC6zlemlenen verilere ne kadar iyi uyduDunu ifade eder. Modelin parametreleri, veri setindeki gC6zlemlenen deDerlerle uyumlu hale getirilir.
-
-4. **Model DeDerlendirme**: Uydurulan modelin performansD1 deDerlendirilir. Bu, modelin ne kadar iyi olduDunu ve tahmin yeteneDini belirler. DoDruluk, hassasiyet, belirlilik katsayD1sD1 gibi metrikler kullanD1larak deDerlendirme yapD1lD1r.
-
-Model uydurma, veri setindeki desenleri ve iliEkileri aC'D1klamak ve gelecekteki davranD1ElarD1 tahmin etmek iC'in kullanD1lD1r. D0yi bir model, veri setindeki deDiEkenliDi ve yapD1yD1 doDru bir Eekilde yakalar ve bu sayede gelecekteki deDerlerin tahmininde daha doDru sonuC'lar verir. Ancak model uydurma sC<recinde aED1rD1 uydurma (overfitting) riski de vardD1r, bu da modelin eDitim verilerine C'ok iyi uymasD1 ancak genelleme yapma yeteneDinin azalmasD1 anlamD1na gelir. Bu nedenle, modelin aED1rD1 uydurma yapmamasD1 iC'in dC<zenleme teknikleri ve doDrulama yC6ntemleri kullanD1lD1r.
+Model uydurma (fitting), istatistik ve makine öğrenimi alanlarında bir modelin veriye uyum sağlaması veya veriyi en iyi şekilde açıklaması anlamına gelir. Bu, modelin gözlemlenen verilere ne kadar iyi uymakta olduğunu ifade eder. Geçmiş veriler ile güncel verileri analiz ederek gelecek tahmini yapmamıza yarar. Biz projemizde model uydurma adımlarını tamamlamadık çünkü sabit zaman diliminde geçmiş veriler olmadan analiz edip gelecek tahmini yapmadık.
 
 ## SonuC'lar
 
