@@ -115,7 +115,7 @@ veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB,
 
 #veriyi sadeleştirme
 veri %>% dplyr::filter(MP >25) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color =
-Pos), size = 2, )+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Oyunda Kalma Suresi ile Veriyi Sadeleştirme")
+Pos), size = 2 )+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Oyunda Kalma Suresi ile Veriyi Sadeleştirme")
 
 #outliers grupları filtreleme
 veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos ), size = 2) + scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Rebound-Kilo Grafiği")
