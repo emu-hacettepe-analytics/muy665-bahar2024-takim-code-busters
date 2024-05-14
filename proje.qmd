@@ -77,7 +77,7 @@ NBA oyuncuları hakkında toplanan veriler, oyuncuların performansını değerl
 Basketbol dünya genelinde milyonlarca insanı ilgilendiren bir spor dalıdır. Bu nedenle, geniş bir kitleye hitap edeceğini ve ilgi çekebileceğini düşündük. Bunun da projenin etkileşim ve geri bildirim potansiyelini arttırmasını umut ettik. Bu verileri kullanmak, spor analizi konusunda ilgili olan bireyler için -Aysu ve Anıl gibi-  heyecan verici bir proje konusu olmuştur.
 
 
-## Cn D0Eleme
+## Ön İşleme
 
 BazD1 veri setleri, analize hazD1r deDildi. Veri setlerini kullanabilmek iC'in C6nce C6n iElemeye ihtiyaC' duyduk. Proje konumuz NBA oyuncularD1nD1n sezondaki C'eEitli istatististiklerine dayanD1yordu ancak hazD1r veri setleri yoktu. Bu yC<zden NBA'in sitesinden yayD1nladD1DD1 istatistikleri projemizde kullanabilmek iC'in veri seti yani .csv formatD1nda excell dosyalarD1na C'evirdik.
 
@@ -111,17 +111,24 @@ library(conflicted)
 library(dplyr)
 
 #Veri görselleştirme
-veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
+veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color= Pos), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
 
 #veriyi sadeleştirme
-veri %>% dplyr::filter(MP >25) %>% ggplot() + geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
+veri %>% dplyr::filter(MP >25) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color =
+Pos), size = 2, )+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
 
 #outliers grupları filtreleme
-veri %>% dplyr::filter(MP >25  & TRB>5 & TRB< 7.5) %>% ggplot() + geom_point(aes(x = Age, y = TRB), size = 2)+ scale_x_continuous(limits = c(18, 50)) +scale_y_continuous(limits = c(0, 15))
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15))
+
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Age, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(16, 45)) +scale_y_continuous(limits = c(0, 15))
 
 
 ```
-Bu grafikte boy arttD1kC'a rebound sayD1sD1nD1n arttD1DD1nD1 gC6zlemledik. Beklenen sonuC' da buydu. Ancak grafikten C'D1karD1lmasD1 gereken bir diDer sonuC' ise 1.9 - 2.1 uzunluDundaki oyuncularD1n 60 TRB deDerinin altD1nda kalan kC<mesi. Bu oyuncular uzun olmasD1na raDmen diDer oyunculara gC6re dC<EC<k performans sergilemiEler. Bir sonraki baElD1kta bu kC<menin yaE ve kilo ile grafiDine bakD1p bunlarD1n sebep olma ihtimalini inceleyeceDiz. 
+  İlk grafikte rebound sayısı ile boyun doğru orantılı bri şekilde arttığını gözlemledik.Bu grafiğe baktığımızda boyu uzun olmasına rağmen rebound sayısı düşük çıkan outlierslar mevcut. Ancak bu sonucu doğrudan çıkarmamız mümkün değildir. Bu karşılaştırmayı yapabilmek için oyuncuların belli bir süre üzerinde oynamış olması gerekmektedir.
+  
+  İkinci grafikte veri sadeleştirmesi yapmamız gerektiğinden MP değerini kullanarak sadeleştirmeye gittik. En az 25 dakika oyunda kalanları incelediğimizde aslında bir önceki grafikteki outliersın kaybolduğunu gözlemliyoruz. İncelediğimiz bu durum aslında ilk incelememizin doğru bir kıyaslama olmadığını bize göstermektedir.
+  
+  Üçüncü grafikte...
 
 
 ## Block sayısı - Boy (Selin)
