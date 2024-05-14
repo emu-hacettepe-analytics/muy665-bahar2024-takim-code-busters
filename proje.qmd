@@ -111,24 +111,30 @@ library(conflicted)
 library(dplyr)
 
 #Veri görselleştirme
-veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color= Pos), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
+veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color= Pos), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Rebound-Boy Grafiği")
 
 #veriyi sadeleştirme
 veri %>% dplyr::filter(MP >25) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color =
-Pos), size = 2, )+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
+Pos), size = 2, )+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Oyunda Kalma Suresi ile Veriyi Sadeleştirme")
 
 #outliers grupları filtreleme
-veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15))
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos ), size = 2) + scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Rebound-Kilo Grafiği")
 
-veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Age, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(16, 45)) +scale_y_continuous(limits = c(0, 15))
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Age, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(16, 45)) +scale_y_continuous(limits = c(0, 15))+ ggtitle("Rebound-Yaş Grafiği")
 
 
 ```
-  İlk grafikte rebound sayısı ile boyun doğru orantılı bri şekilde arttığını gözlemledik.Bu grafiğe baktığımızda boyu uzun olmasına rağmen rebound sayısı düşük çıkan outlierslar mevcut. Ancak bu sonucu doğrudan çıkarmamız mümkün değildir. Bu karşılaştırmayı yapabilmek için oyuncuların belli bir süre üzerinde oynamış olması gerekmektedir.
+  Rebound-Boy grafiğinde rebound sayısı ile boyun doğru orantılı bir şekilde arttığını gözlemledik.Aynı zamanda pozisyonlara göre renklendirme ekledik ve C ile PF (4 ve 5 numaralı mevkiler) pozisyonlarındaki oyuncuların rebound sayısının daha yüksek olduğunu gözlemledik.Bu grafiğe baktığımızda boyu uzun olmasına rağmen rebound sayısı düşük çıkan outlierslar mevcut. Ancak bu sonucu doğrudan çıkarmamız mümkün değildir. Bu karşılaştırmayı yapabilmek için oyuncuların belli bir süre üzerinde oynamış olması gerekmektedir.
   
-  İkinci grafikte veri sadeleştirmesi yapmamız gerektiğinden MP değerini kullanarak sadeleştirmeye gittik. En az 25 dakika oyunda kalanları incelediğimizde aslında bir önceki grafikteki outliersın kaybolduğunu gözlemliyoruz. İncelediğimiz bu durum aslında ilk incelememizin doğru bir kıyaslama olmadığını bize göstermektedir.
+  İkinci grafikte veri sadeleştirmesi yapmamız gerektiğinden MP değerini kullanarak sadeleştirmeye gittik. En az 25 dakika oyunda kalanları incelediğimizde bir önceki grafikteki outliersın kaybolduğunu gözlemliyoruz. İncelediğimiz bu durum aslında ilk incelememizin doğru bir kıyaslama olmadığını bize göstermektedir.
   
-  Üçüncü grafikte...
+  Veriyi sadeleştirdikten sonra yeni parametrelerle inceleme yapabilmek için boy parametresinde sabit aralık belirledik. Boyu 2.0 ile 2.1 arası olan oyuncular için TRB verisini Kilo ve Yaş parametreleriyle tekrardan inceledik. Bunun sonucunda :
+  
+  Rebound-Kilo grafiği bizlere oyuncuların kilosu ile rebound sayısının doğru orantılı olduğuu göstermektedir. 
+  
+  Rebound-Yaş grafiğinde ise hiçbir çarpıcı gözleme rastlanmamıştır.
+  
+  
 
 
 ## Block sayısı - Boy (Selin)
