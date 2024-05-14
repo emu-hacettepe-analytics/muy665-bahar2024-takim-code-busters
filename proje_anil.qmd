@@ -1,0 +1,222 @@
+---
+title: "CTRL - NBA"
+number-sections: true
+---
+
+**Proje sayfamıza hoş geldiniz.**
+
+*Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
+
+# Proje Genel Bakışı ve Kapsamı
+
+xxxxxx
+
+# Veri
+
+xxxxxx
+
+## Veri Kaynağı
+
+https://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasından csv formatı ile çekilmiştir. Ancak ilişki kuracağımız alt başlıklardan kilo ve boy verisi bu data setinde verilmemiştir.
+
+https://www.nba.com/players sayfasından oyuncuların boy ve kilo verisi alınmış olup ana veri setine yeni sütun olarak eklenmiştir.
+
+## Veri Hakkında Genel Bilgiler
+
+xxxxxx
+
+## Tercih Sebebi
+
+xxxxxx
+
+## Ön İşleme
+
+Bazı veri setleri, analize hazır değildi. Veri setlerini kullanabilmek için önce ön işlemeye ihtiyaç duyduk. Proje konumuz NBA oyuncularının sezondaki çeşitli istatististiklerine dayanıyordu ancak hazır veri setleri yoktu. Bu yüzden NBA'in sitesinden yayınladığı istatistikleri projemizde kullanabilmek için veri seti yani .csv formatında excell dosyalarına çevirdik.
+
+https://www.nba.com/players sayfasından ise 572 oyuncunun boy, kilo verisini ana veri setine yeni kolon olarak ekledik.
+
+# Analiz
+
+Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncuların verileri kullanmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:
+
+## Rebound - Boy
+
+```{r}
+
+library(ggplot2)
+library(tidyverse)
+library(dslabs)
+library(ggthemes)
+
+# Veri setini yükleme
+veri <- read.csv(file = "NBA_Dataset_yeni.csv", head = TRUE, sep = ",")
+boy_veri <- veri[1:150,]
+
+#veriyi AST sütununa göre sıralama
+rebounds_data <- veri[order(veri$TRB, decreasing = TRUE),]
+
+#TRB sütununa göre sıralanan veriden ilk 50sini alma
+rebounds_top50 <- rebounds_data[1:50,]
+TRB <- rebounds_data[,c("Player", "TRB")]
+Height <- rebounds_data[,c("Player", "Height")]
+
+#print(TRB,row.names = FALSE)
+
+
+
+boy_veri |> ggplot()+ geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.7, 2.3)) +scale_y_continuous(limits = c(0, 15)) + theme_fivethirtyeight()
+
+```
+
+Bu grafikte boy arttıkça rebound sayısının arttığını gözlemledik. Beklenen sonuç da buydu. Ancak grafikten çıkarılması gereken bir diğer sonuç ise 1.9 - 2.1 uzunluğundaki oyuncuların 60 TRB değerinin altında kalan kümesi. Bu oyuncular uzun olmasına rağmen diğer oyunculara göre düşük performans sergilemişler. Bir sonraki başlıkta bu kümenin yaş ve kilo ile grafiğine bakıp bunların sebep olma ihtimalini inceleyeceğiz.
+
+## Block sayısı - Boy
+
+## Asist - Top kaybı
+
+```{r}
+
+# Veri seti daha önce yüklendiği için tekrar yüklemeye gerek yok.
+
+library(stringr)
+library(tidyverse)
+library(ggplot2)
+library(dslabs)
+library(ggthemes)
+
+#veriyi AST sütununa göre sıralama
+assists_data <- veri[order(veri$AST, decreasing = TRUE),]
+
+#AST sütununa göre sıralanan veriden ilk 50sini alma
+assists_top50 <- assists_data[1:50,]
+AST <- assists_top50[,c("Player", "AST")] #en çok asist yapan 50 oyuncunun vektörü
+TOV <- assists_top50[,c("Player", "TOV")] #en çok asist yapan 50 oyuncunun, top kaybı istatistiklerinin vektörü
+
+#print(AST,row.names = FALSE)
+#print(TOV,row.names = FALSE)
+
+assists_top50 |> ggplot(aes(x = TOV, y = AST, label = Player)) + 
+  geom_point(size = 1) + 
+  geom_text (nudge_x = 0.1, nudge_y = 0.1 )
+
+assists_top10 <- assists_top50 %>% top_n(10, AST)
+print (assists_top10)
+
+```
+Grafikte oyuncuların asist sayısı arttıkça top kaybı sayısının da arttığını görüyoruz ancak aradaki ilişki Rebound-Boy ve Blok-Boy grafiklerindeki kadar belirgin değil. Ligin en yüksek asist ortalamasına sahip olan oyuncusu Tyrese Haliburton, benzer sayıda asist yapan diğer oyunculara kıyasla çok daha az top kaybı ortalamasına sahip. En yüksek asist ortalamasına sahip oyuncuların pozisyonlarının guard ağırlıklı olması beklenen bir durum ancak Nikola Jokic ve Domantas Sabonis'in pivot pozisyonunda oynamalarına rağmen ligin maç başına en çok asist yapan ilk 10 oyuncusu arasına girmiş  olması beklenenin üzerinde performans veren oyuncular olduklarını gösteriyor.
+
+## Asist/Top kaybı - Yas
+
+```{r}
+
+# Veri seti daha önce yüklendiği için tekrar yüklemeye gerek yok.
+
+library(stringr)
+library(tidyverse)
+library(ggplot2)
+library(dslabs)
+library(ggthemes)
+
+veri_ast_to_ratio <- veri %>% mutate(AT_Ratio = AST / TOV)
+
+#veriyi A/TO sütununa göre sıralama
+a_to_ratio_data <- veri_ast_to_ratio[order(veri$AT_Ratio, decreasing = TRUE),]
+
+#AST sütununa göre sıralanan veriden ilk 50sini alma
+a_to_ratio_top50 <- a_to_ratio_data[1:50,]
+A/TO <- a_to_ratio_top50[,c("Player", "A/TO")] #en iyi Asist/Top Kaybı oranına sahip 50 oyuncu
+AGE <- assists_top50[,c("Player", "Age")] #en iyi Asist/Top Kaybı oranına sahip 50 oyuncunun, yaş istatistiklerinin vektörü
+
+#print(A/TO,row.names = FALSE)
+#print(Age,row.names = FALSE)
+
+a_to_ratio_top50 |> ggplot(aes(x = Age, y = AT_Ratio, label = Player)) + 
+  geom_point(size = 1) + 
+  geom_text (nudge_x = 0.1, nudge_y = 0.1 )
+
+a_to_ratio_top10 <- a_to_ratio_top50 %>% top_n(10, A/TO)
+print (a_to_ratio_top10)
+
+```
+
+## Sayi - Yaş
+
+```{r}
+
+# Veri seti daha önce yüklendiği için tekrar yüklemeye gerek yok.
+
+library(stringr)
+library(tidyverse)
+library(ggplot2)
+library(dslabs)
+library(ggthemes)
+
+#veriyi PTS sütununa göre sıralama
+pts_data <- veri[order(veri$PTS, decreasing = TRUE),]
+
+#PTS sütununa göre sıralanan veriden ilk 50sini alma
+pts_top50 <- pts_data[1:50,]
+PTS <- pts_top50[,c("Player", "AST")] #en çok sayi atan 50 oyuncunun vektörü
+AGE <- pts_top50[,c("Player", "Age")] #en çok sayi 50 oyuncunun, yas istatistiklerinin vektörü
+
+#print(PTS,row.names = FALSE)
+#print(AGE,row.names = FALSE)
+
+pts_top50 |> ggplot(aes(x = Age, y = PTS, label = Player)) + 
+  geom_point(size = 1) 
+
+```
+Grafikte ligin en çok sayı atan oyuncularının 25-30 yaş aralığında daha yoğun olarak bulunduğunu gözlemliyoruz. 30 sayı üzerinde atan 4 oyuncu (Embiid, Doncic, Shai Gilgous-Alexander ve Giannis) kendilerini diğer oyunculardan ayırmış durumda. 30 yaşın üzerinde olup 30 sayı ve üzeri ortalama yakalayabilen oyuncu bulunmuyor. Bu durumun başlıca nedenlerinden biri daha yaşlı oyuncuların uzun sezonun yükünü kaldırabilmeleri için maç başına aldıkları dakikaların daha az olması gösterilebilir. Son olarak listede 35 yaş üzerinde sadece 1 oyuncu bulunmakta: Lebron James. Onun yaşındaki oyuncuların bir sezonda en çok sayı atan 50 oyuncu listesine girmesini değil emekli olmasını beklediğimizi hesaba katarsak grafikteki yerinin anlamını daha iyi anlayabiliriz. 
+. . .
+
+## Keşifsel Veri Analizi
+
+Keşifsel veri analizi, veri setlerini inceleyerek içerdikleri bilgiyi anlamak ve veri hakkında sezgisel bir anlayış geliştirmek için kullanılan bir süreçtir. Bu süreç, veri setlerinin yapılarını, eğilimlerini, ilişkilerini ve desenlerini keşfetmeyi amaçlar.
+
+Projeye başlamadan önce inelediğimiz veri setleri hakkında bazı beklentilerimiz vardı. Mesela boyu uzun olan oyuncuların rebound ortalaması daha yüksek olmalıydı. Alt başlıkları bu beklentilerimiz üzerine oluşturduk. Beklentimizi kanıtlamak bir amaçken bir yandan da bu beklentilerimizi şaşırtacak çeşitli oyuncular olacağının farkındaydık. Ne de olsa NBA :) Bu da bizlere outliersları gösterecekti.
+
+Veri keşfi ve gözlemi yaptıktan sonra kullanacağımız veri setlerini bulup incelemeye başladık. Proje için inceleyeceğimiz hedef kitlemizi belirledik ( 23-24 Sezonu, en iyi ilk 50 oyuncu ).
+
+Sonrasında Veri görselleştirme ile veriyi daha okunur kılmaya çalıştık.Bunun için incelediğimiz veriye göre çeşitli plotlar seçmeliydik. En optimum plotu seçmeye gayret gösterdik. (Modelleme öncesi analiz)
+
+Keşifsel modelleme üzerinde çok zaman kaybetmedik. Çünkü R studio veri için en optimum yani en uygun plotu seçenek olarak sundu.
+
+Daha sonrasında sonuçları ilgili başlıkların altında paylaştık.
+
+## Trend Analizi
+
+/chatgptden baktım bunu uygularken tekrar konusalım/ Trend analizi, belirli bir zaman dilimindeki veri setlerindeki uzun vadeli eğilimleri belirlemek için kullanılan bir analiz yöntemidir. Bu analiz, veri setindeki değişkenlerin zamanla nasıl değiştiğini inceleyerek gelecekteki davranışlar hakkında tahminler yapmaya yardımcı olur.
+
+Trend analizinde genellikle zaman serisi verileri kullanılır. Temel olarak, zaman serisi verileri, belirli bir zaman diliminde belirli aralıklarla ölçülen veya gözlenen verilerdir (örneğin, aylık satış rakamları, günlük hisse senedi fiyatları). Bu veriler, bir trendin varlığını ve bu trendin ne yönde olduğunu belirlemek için analiz edilir.
+
+Trend analizi genellikle şu adımları içerir:
+
+Veri Görselleştirme: Zaman serisi verileri grafiğe dökülür. Bu, verinin nasıl davrandığını görsel olarak görmemize olanak tanır. Grafik üzerinde belirli bir eğilim olduğu gözlemlenebilir. Trendin Belirlenmesi: Veri setindeki eğilimin ne olduğunu belirlemek için çeşitli istatistiksel yöntemler kullanılır. Bu, veri setindeki değişkenliğin sabit bir eğilimle artıp artmadığını veya azaldığını belirler. Trendin Uygun Modellemesi: Veri setinin yapısına ve belirlenen trende bağlı olarak uygun bir model seçilir. Doğrusal, üstel veya polinomiyal trendler gibi farklı modeller kullanılabilir. Trendin Tahmin Edilmesi: Belirlenen trend modeli kullanılarak gelecekteki değerler tahmin edilir. Bu, trendin devam edip etmeyeceği veya tersine dönüp dönmediği hakkında fikir verebilir. Trend analizi, çeşitli endüstrilerde pazar trendlerini, tüketici davranışlarını, finansal piyasaları ve daha fazlasını anlamak için kullanılır. Örneğin, bir şirketin satışlarını analiz ederek gelecekteki satış trendlerini tahmin etmek veya bir yatırımcının belirli bir hisse senedinin fiyatının gelecekteki trendini belirlemek için trend analizi yapılabilir.
+
+## Model Uydurma
+
+chtagptden aldım bu aşamaya geldıgımızde tekrar konusalım Model uydurma (fitting), istatistik ve makine öğrenimi alanlarında bir modelin veriye uyum sağlaması veya veriyi en iyi şekilde açıklaması anlamına gelir. Bu, modelin gözlemlenen verilere ne kadar iyi uymakta olduğunu ifade eder.
+
+Model uydurma genellikle şu adımları içerir:
+
+1.  **Model Seçimi**: İncelenen veri seti için uygun bir model seçilir. Bu model, veri setinin yapısına ve hedeflenen sonuca bağlı olarak belirlenir. Örneğin, doğrusal regresyon, lojistik regresyon, karar ağaçları, destek vektör makineleri gibi çeşitli modeller arasından bir seçim yapılabilir.
+
+2.  **Model Parametrelerinin Belirlenmesi**: Seçilen modelin parametreleri belirlenir veya tahmin edilir. Bu parametreler, modelin veriye ne kadar iyi uyduğunu belirler. Bazı modellerde bu parametreler manuel olarak ayarlanabilirken, bazıları otomatik olarak ayarlanır.
+
+3.  **Model Uydurma**: Model, veri setine uydurulur. Bu, modelin gözlemlenen verilere ne kadar iyi uyduğunu ifade eder. Modelin parametreleri, veri setindeki gözlemlenen değerlerle uyumlu hale getirilir.
+
+4.  **Model Değerlendirme**: Uydurulan modelin performansı değerlendirilir. Bu, modelin ne kadar iyi olduğunu ve tahmin yeteneğini belirler. Doğruluk, hassasiyet, belirlilik katsayısı gibi metrikler kullanılarak değerlendirme yapılır.
+
+Model uydurma, veri setindeki desenleri ve ilişkileri açıklamak ve gelecekteki davranışları tahmin etmek için kullanılır. İyi bir model, veri setindeki değişkenliği ve yapıyı doğru bir şekilde yakalar ve bu sayede gelecekteki değerlerin tahmininde daha doğru sonuçlar verir. Ancak model uydurma sürecinde aşırı uydurma (overfitting) riski de vardır, bu da modelin eğitim verilerine çok iyi uyması ancak genelleme yapma yeteneğinin azalması anlamına gelir. Bu nedenle, modelin aşırı uydurma yapmaması için düzenleme teknikleri ve doğrulama yöntemleri kullanılır.
+
+## Sonuçlar
+
+xxxxxx
+
+# Sonuçlar ve Ana Çıkarımlar
+
+xxxxxx
+
+
+
+
