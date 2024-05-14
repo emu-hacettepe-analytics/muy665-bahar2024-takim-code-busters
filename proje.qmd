@@ -87,7 +87,7 @@ https://www.nba.com/players sayfasD1ndan ise 572 oyuncunun boy, kilo verisini an
 
 Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncularD1n verileri kullanmD1EtD1r. D0ncelenecek alt baElD1klar aEaDD1daki gibidir:
 
-## Rebound - Boy
+## Rebound - Boy (Aysu)
 
 ```{r}
 
@@ -111,13 +111,87 @@ library(conflicted)
 library(dplyr)
 
 #Veri görselleştirme
-veri |> ggplot()+ geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
+veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
+
+#veriyi sadeleştirme
+veri %>% dplyr::filter(MP >25) %>% ggplot() + geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
+
+#outliers grupları filtreleme
+veri %>% dplyr::filter(MP >25  & TRB>5 & TRB< 7.5) %>% ggplot() + geom_point(aes(x = Age, y = TRB), size = 2)+ scale_x_continuous(limits = c(18, 50)) +scale_y_continuous(limits = c(0, 15))
+
 
 ```
 Bu grafikte boy arttD1kC'a rebound sayD1sD1nD1n arttD1DD1nD1 gC6zlemledik. Beklenen sonuC' da buydu. Ancak grafikten C'D1karD1lmasD1 gereken bir diDer sonuC' ise 1.9 - 2.1 uzunluDundaki oyuncularD1n 60 TRB deDerinin altD1nda kalan kC<mesi. Bu oyuncular uzun olmasD1na raDmen diDer oyunculara gC6re dC<EC<k performans sergilemiEler. Bir sonraki baElD1kta bu kC<menin yaE ve kilo ile grafiDine bakD1p bunlarD1n sebep olma ihtimalini inceleyeceDiz. 
 
 
-## Block sayD1sD1 - Boy
+## Block sayısı - Boy (Selin)
+
+```{r}
+# Veri setini yükleme
+veri <- read.csv(file = "NBA_Dataset_yeni.csv", header = TRUE, sep = ",")
+
+# veriyi BLK sütununa göre sıralama
+blok_data <- veri[order(veri$BLK, decreasing = TRUE),]
+
+# BLK sütununa göre sıralanan veriyi alma
+BlokAnaliz <- subset(blok_data, select = c("Player", "BLK", "Height"))
+colnames(BlokAnaliz) <- c("oyuncu", "blok", "boy")
+
+# boy sütununu düzgün formata çevirme
+BlokAnaliz$boy <- as.numeric(gsub(",", ".", BlokAnaliz$boy))
+
+# ggplot2 kütüphanesini yükleme
+library(ggplot2)
+
+# Scatterplot çizimi
+ggplot(BlokAnaliz, aes(x = blok, y = boy)) +
+  geom_point() +
+  labs(title = "Blok Sayısı ve Boy Arasındaki İlişki",
+       x = "Blok Sayısı",
+       y = "Boy") +
+  theme_minimal()
+
+```
+
+  İlgili grafikte oyuncuların boylarının Blok sayıları ile ilşkisini inceledik. Grafiğe göre doğrudan bir ilişki kurulamıyor olsa da boydan bağımsız olarak her oyuncunun blok yapabildiğini görebiliyioruz. Boyu uzun olan oyuncuların blok sayılarında bir artış da gözlenmekle beraber, boyu uzun olan ama blok sayısı boyu kısa olan oyuncularla aynı olan oyuncular da var.
+
+  Ek olarak bir oyuncunun diğer oyunculara kıyasla uzun ve blok sayısının daha farkla yüksek olduğunu görüyoruz. Oyuncu 20 yaşındaki Victor Wembanyama'dır. Pivot olarak görev almakta yani pota altında görev almaktadır. Boyu uzun olduğu icin pota altında oynuyor olma ihtimali ve pota altında oynadığı için de blok oranın yüksek olduğunu yorumlayabiliriz.
+
+```{r}
+
+# Veri setini yükleme
+veri <- read.csv(file = "NBA_Dataset_yeni.csv", header = TRUE, sep = ",")
+
+# veriyi BLK sütununa göre sıralama
+blok_data <- veri[order(veri$BLK, decreasing = TRUE),]
+
+# BLK sütununa göre sıralanan veriyi alma
+BlokAnaliz <- subset(blok_data, select = c("Player", "BLK", "Weight"))
+colnames(BlokAnaliz) <- c("oyuncu", "blok", "kilo")
+
+# boy sütununu düzgün formata çevirme
+BlokAnaliz$kilo <- as.numeric(gsub(",", ".", BlokAnaliz$kilo))
+
+# ggplot2 kütüphanesini yükleme
+library(ggplot2)
+
+# Scatterplot çizimi
+ggplot(BlokAnaliz, aes(x = blok, y = kilo)) +
+  geom_point() +
+  labs(title = "Blok Sayısı ve Kilo Arasındaki İlişki",
+       x = "Blok Sayısı",
+       y = "Kilo") +
+  theme_minimal()
+```
+
+  Yukardaki grafikte oyuncuların kilolarının blok sayıları ile ilşkisini inceledik. Grafiğe göre blok sayıları olan oyuncuların kilo dağılımı 80 ile 110 arasında yoğunlaşmaktadır. 131 kilo olan iki oyuncu vardır ve ikisinin de blok sayısı 1.0 ve 1.1'dir. Aynı zamanda 128 ve 127 kilo oyuncuların da blok sayısının kilosu daha düşük olan oyunculara göre yüksek blok sayılarına ulaşabildiklerini görüyoruz.
+
+  Bunun yanında en düşük kiloya sahip olan oyunculardan Jacob Gilyard'ın blok oranı 1 iken, yakın kilolardaki oyuncuların blok sayılarının 0 olduğunu görüyoruz.
+
+  Boy karşılaştırmasındaki aynı oyuncunun ise kilosunun 100'ün altında olduğunu görüyoruz.
+
+Kilonun hareketi kısıtlayacağı icin blok sayısı ile ters orantılı olmasını beklerdik fakat, 2'ye yakın ve 2 üzerine çıkan Blok sayılarına ulaşan oyunların genelde ortalama kilonun üzerinde kilolara sahip olduğunu söyleyebiliriz Örneğin 1.5 ve sonraki blok sayısı skorları icin en düşük kilodaki oyuncu 94 kilodur.
+
 
 ## Asist - YaE
 
