@@ -91,25 +91,27 @@ Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncularD1n verileri kullan
 
 ```{r}
 
-# Veri setini yC<kleme
-veri <- read.csv(file = "nba_dataset.csv", head = TRUE, sep=";")
-boy_veri <- veri[1:280,]
+# Veri setini yükleme
+veri <- read.csv(file = "NBA_Dataset_yeni.csv", head = TRUE, sep=",")
 
-#veriyi TRB sC<tununa gC6re sD1ralama
-rebounds_data <- veri[order(boy_veri$TRB, decreasing = TRUE),]
+#veriyi TRB sütununa göre sıralama
+rebounds_data <- veri[order(veri$TRB, decreasing = TRUE),]
 
-#TRB sC<tununa gC6re sD1ralanan veriden ilk 50sini alma
-rebounds_top50 <- rebounds_data[1:50,]
+#Player-TRB list
 TRB <- rebounds_data[,c("Player", "TRB")]
+
+#Player-Height list
 Height <- rebounds_data[,c("Player", "Height")]
 
-#print(TRB,row.names = FALSE)
+#Gerekli kütüphaneleri yükleme
 library(ggplot2)
 library(tidyverse)
 library(dslabs)
+library(conflicted)
+library(dplyr)
 
-
-boy_veri |> ggplot()+ geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(25, 280))
+#Veri görselleştirme
+veri |> ggplot()+ geom_point(aes(x = Height, y = TRB), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15))
 
 ```
 Bu grafikte boy arttD1kC'a rebound sayD1sD1nD1n arttD1DD1nD1 gC6zlemledik. Beklenen sonuC' da buydu. Ancak grafikten C'D1karD1lmasD1 gereken bir diDer sonuC' ise 1.9 - 2.1 uzunluDundaki oyuncularD1n 60 TRB deDerinin altD1nda kalan kC<mesi. Bu oyuncular uzun olmasD1na raDmen diDer oyunculara gC6re dC<EC<k performans sergilemiEler. Bir sonraki baElD1kta bu kC<menin yaE ve kilo ile grafiDine bakD1p bunlarD1n sebep olma ihtimalini inceleyeceDiz. 
