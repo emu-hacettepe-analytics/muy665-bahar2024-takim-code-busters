@@ -34,7 +34,7 @@ Oyuncu istatistikleri ve oyuncu özellikleri arasındaki ilişki göründüğün
 
 ## Zaman Çizelgesi:
 
-Veri toplama ve temizleme, Analiz ve model oluşturma, Sonuçların derlenmesi ve sunumu adımları için atanmış süre 6 Nisan ile 15 Mayıs aralığıdır, tabiki son haftaya bırakmadık...  
+Veri toplama ve temizleme, incelenecek parametreler ve analizi , sonuçların derlenmesi ve sunumu adımları için atanmış süre 6 Nisan ile 15 Mayıs aralığıdır, tabiki son haftaya bırakmadık...  
 
 
 # VERİ
@@ -93,7 +93,7 @@ https://www.nba.com/players sayfasından ise 572 oyuncunun boy, kilo verisini an
 
 Bu analizde NBA 2023-24 sezonundaki ilk 50'ye giren oyuncuların verileri kullanılmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:
 
-## Rebound - Boy (Aysu)
+## Ribaund - Boy (Aysu)
 
 ```{r}
 
@@ -111,39 +111,38 @@ Height <- rebounds_data[,c("Player", "Height")]
 
 #Gerekli kütüphaneleri yükleme
 library(ggplot2)
-library(tidyverse)
 library(dslabs)
 library(conflicted)
-library(dplyr)
+# Library mesajlarını göstermeden yüklemek için eklendi
+suppressPackageStartupMessages(library(tidyverse))
 
 #Veri görselleştirme
-veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color= Pos), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Rebound-Boy Grafiği")
+veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color= Pos), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Ribaund-Boy Grafiği")
 
 #veriyi sadeleştirme
 veri %>% dplyr::filter(MP >25) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color =
 Pos), size = 2 )+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Oyunda Kalma Suresi ile Veriyi Sadeleştirme")
 
 #outliers grupları filtreleme
-veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos ), size = 2) + scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Rebound-Kilo Grafiği")
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos ), size = 2) + scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Ribaund-Kilo Grafiği")
 
-veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Age, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(16, 45)) +scale_y_continuous(limits = c(0, 15))+ ggtitle("Rebound-Yaş Grafiği")
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Age, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(16, 45)) +scale_y_continuous(limits = c(0, 15))+ ggtitle("Ribaund-Yaş Grafiği")
 
 
 ```
-  Rebound-Boy grafiğinde rebound sayısı ile boyun doğru orantılı bir şekilde arttığını gözlemledik.Aynı zamanda pozisyonlara göre renklendirme ekledik ve C ile PF (4 ve 5 numaralı mevkiler) pozisyonlarındaki oyuncuların rebound sayısının daha yüksek olduğunu gözlemledik.Bu grafiğe baktığımızda boyu uzun olmasına rağmen rebound sayısı düşük çıkan outlierslar mevcut. Ancak bu sonucu doğrudan çıkarmamız mümkün değildir. Bu karşılaştırmayı yapabilmek için oyuncuların belli bir süre üzerinde oynamış olması gerekmektedir.
+  Ribaund-Boy grafiğinde rebound sayısı ile boyun doğru orantılı bir şekilde arttığını gözlemledik.Aynı zamanda pozisyonlara göre renklendirme ekledik ve C ile PF (4 ve 5 numaralı mevkiler) pozisyonlarındaki oyuncuların ribaund sayısının daha yüksek olduğunu gözlemledik.Bu grafiğe baktığımızda boyu uzun olmasına rağmen ribaund sayısı düşük çıkan outlierslar mevcut. Ancak bu sonucu doğrudan çıkarmamız mümkün değildir. Bu karşılaştırmayı yapabilmek için oyuncuların belli bir süre üzerinde oynamış olması gerekmektedir.
   
   İkinci grafikte veri sadeleştirmesi yapmamız gerektiğinden MP değerini kullanarak sadeleştirmeye gittik. En az 25 dakika oyunda kalanları incelediğimizde bir önceki grafikteki outliersın kaybolduğunu gözlemliyoruz. İncelediğimiz bu durum aslında ilk incelememizin doğru bir kıyaslama olmadığını bize göstermektedir.
   
   Veriyi sadeleştirdikten sonra yeni parametrelerle inceleme yapabilmek için boy parametresinde sabit aralık belirledik. Boyu 2.0 ile 2.1 arası olan oyuncular için TRB verisini Kilo ve Yaş parametreleriyle tekrardan inceledik. Bunun sonucunda :
   
-  Rebound-Kilo grafiği bizlere oyuncuların kilosu ile rebound sayısının doğru orantılı olduğuu göstermektedir. 
+  Ribaund-Kilo grafiği bizlere oyuncuların kilosu ile rebound sayısının doğru orantılı olduğuu göstermektedir. 
   
-  Rebound-Yaş grafiğinde ise hiçbir çarpıcı gözleme rastlanmamıştır.
-  
+  Ribaund-Yaş grafiğinde ise hiçbir çarpıcı gözleme rastlanmamıştır.
   
 
 
-## Block sayısı - Boy (Selin)
+## Blok sayısı - Boy (Selin)
 
 ```{r}
 # Veri setini yükleme
@@ -243,10 +242,10 @@ Trend analizinde genellikle zaman serisi verileri kullanılır. Ancak bizim proj
 
 Model uydurma (fitting), istatistik ve makine öğrenimi alanlarında bir modelin veriye uyum sağlaması veya veriyi en iyi şekilde açıklaması anlamına gelir. Bu, modelin gözlemlenen verilere ne kadar iyi uymakta olduğunu ifade eder. Geçmiş veriler ile güncel verileri analiz ederek gelecek tahmini yapmamıza yarar. Biz projemizde model uydurma adımlarını tamamlamadık çünkü sabit zaman diliminde geçmiş veriler olmadan analiz edip gelecek tahmini yapmadık.
 
-## SonuC'lar
+## Sonuçlar
 
 xxxxxx
 
-# SonuC'lar ve Ana CD1karD1mlar
+# Sonuçlar ve Ana Çıkarımlar
 
 xxxxxx
