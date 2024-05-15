@@ -3,6 +3,8 @@ title: "CTRL - NBA"
 number-sections: true
 ---
 
+![](/assets/images/Image.JPG){fig-align="center"} 
+
 **Proje sayfamıza hoşgeldiniz.**
 
 *Projemizle ilgili güncellemelerden haberdar olmak için bu alanı takip edin.*
@@ -34,10 +36,11 @@ Oyuncu istatistikleri ve oyuncu özellikleri arasındaki ilişki göründüğün
 
 ## Zaman Çizelgesi:
 
-Veri toplama ve temizleme, Analiz ve model oluşturma, Sonuçların derlenmesi ve sunumu adımları için atanmış süre 6 Nisan ile 15 Mayıs aralığıdır, tabii ki son haftaya bırakmadık...  
+Veri toplama ve temizleme, incelenecek parametreler ve analizi , sonuçların derlenmesi ve sunumu adımları için atanmış süre 6 Nisan ile 15 Mayıs aralığıdır, tabiki son haftaya bırakmadık...   
 
 
-# VERİ
+# Veri
+
 
 ## Veri Kaynağı
 
@@ -45,7 +48,6 @@ https://www.basketball-reference.com/leagues/NBA_2024_totals.html sayfasından c
 Ancak ilişki kuracağımız alt başlıklardan kilo ve boy verisi bu data setinde yer almıyordu. Bu sebeple veriyi ön işlemeye tabi tuttuk.
 
 https://www.nba.com/players sayfasından oyuncuların boy ve kilo verisi alındı ve ana veri setine yeni bir sütun olarak eklendi.
-
 
 ## Veri Hakkında Genel Bilgiler
 
@@ -71,7 +73,6 @@ Pozisyon: Oyuncunun oynadığı pozisyon (örneğin, guard, forvet, pivot).
 
 NBA oyuncu istatistikleri ve özellikleri spor analizi, oyuncu performansının değerlendirilmesi ve takım stratejilerinin oluşturulmasında önemli bir rol oynar. Bu veriler, hem spor endüstrisi uzmanları hem de basketbol severler için değerli bir kaynaktır ve geniş bir analiz ve araştırma alanı sunar.
 
-
 ## Tercih Sebebi
 
 NBA, dünya genelinde büyük bir popülerliğe sahip olan profesyonel bir spor ligi olduğundan, oyuncu istatistikleri ve özellikleri genellikle kapsamlı, güvenilir ve güncel veri kaynaklarına sahiptir. 2023-2024 sezonu ile filtreleyerek analizimiz için ideal bir veri seti sağladık.
@@ -92,7 +93,8 @@ https://www.nba.com/players sayfasından ise 572 oyuncunun boy, kilo verisini an
 
 Bu analizde NBA 2023-24 sezonunda oynayan oyuncularin maç başı ortalama verileri kullanılmıştır. İncelenecek alt başlıklar aşağıdaki gibidir:
 
-## Rebound - Boy
+
+## Ribaund - Boy
 
 ```{r}
 
@@ -110,41 +112,41 @@ Height <- rebounds_data[,c("Player", "Height")]
 
 #Gerekli kütüphaneleri yükleme
 library(ggplot2)
-library(tidyverse)
 library(dslabs)
 library(conflicted)
-library(dplyr)
+# Library mesajlarını göstermeden yüklemek için eklendi
+suppressPackageStartupMessages(library(tidyverse))
 
 #Veri görselleştirme
-veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color= Pos), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Rebound-Boy Grafiği")
+veri %>% dplyr::filter(MP >0) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color= Pos), size = 2)+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Ribaund-Boy Grafiği")
 
 #veriyi sadeleştirme
 veri %>% dplyr::filter(MP >25) %>% ggplot() + geom_point(aes(x = Height, y = TRB, color =
 Pos), size = 2 )+ scale_x_continuous(limits = c(1.6, 2.3)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Oyunda Kalma Suresi ile Veriyi Sadeleştirme")
 
 #outliers grupları filtreleme
-veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos ), size = 2) + scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Rebound-Kilo Grafiği")
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Weight, y = TRB , color =Pos ), size = 2) + scale_x_continuous(limits = c(70, 140)) +scale_y_continuous(limits = c(0, 15)) + ggtitle("Ribaund-Kilo Grafiği")
 
-veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Age, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(16, 45)) +scale_y_continuous(limits = c(0, 15))+ ggtitle("Rebound-Yaş Grafiği")
+veri %>% dplyr::filter(MP >25  & Height>2.0 & Height< 2.1) %>% ggplot() + geom_point(aes(x = Age, y = TRB , color =Pos), size = 2)+ scale_x_continuous(limits = c(16, 45)) +scale_y_continuous(limits = c(0, 15))+ ggtitle("Ribaund-Yaş Grafiği")
 
 
 ```
   
-Rebound-Boy grafiğinde rebound sayısı ile boyun doğru orantılı bir şekilde arttığını gözlemledik.Aynı zamanda pozisyonlara göre renklendirme ekledik ve C ile PF (4 ve 5 numaralı mevkiler) pozisyonlarındaki oyuncuların rebound sayısının daha yüksek olduğunu gözlemledik.Bu grafiğe baktığımızda boyu uzun olmasına rağmen rebound sayısı düşük çıkan outlierslar mevcut. Ancak bu sonucu doğrudan çıkarmamız mümkün değildir. Bu karşılaştırmayı yapabilmek için oyuncuların belli bir süre üzerinde oynamış olması gerekmektedir.
+  Ribaund-Boy grafiğinde rebound sayısı ile boyun doğru orantılı bir şekilde arttığını gözlemledik.Aynı zamanda pozisyonlara göre renklendirme ekledik ve C ile PF (4 ve 5 numaralı mevkiler) pozisyonlarındaki oyuncuların ribaund sayısının daha yüksek olduğunu gözlemledik.Bu grafiğe baktığımızda boyu uzun olmasına rağmen ribaund sayısı düşük çıkan outlierslar mevcut. Ancak bu sonucu doğrudan çıkarmamız mümkün değildir. Bu karşılaştırmayı yapabilmek için oyuncuların belli bir süre üzerinde oynamış olması gerekmektedir.
   
-İkinci grafikte veri sadeleştirmesi yapmamız gerektiğinden MP değerini kullanarak sadeleştirmeye gittik. En az 25 dakika oyunda kalanları incelediğimizde bir önceki grafikteki outliersın kaybolduğunu gözlemliyoruz. İncelediğimiz bu durum aslında ilk incelememizin doğru bir kıyaslama olmadığını bize göstermektedir.
+  İkinci grafikte veri sadeleştirmesi yapmamız gerektiğinden MP değerini kullanarak sadeleştirmeye gittik. En az 25 dakika oyunda kalanları incelediğimizde bir önceki grafikteki outliersın kaybolduğunu gözlemliyoruz. İncelediğimiz bu durum aslında ilk incelememizin doğru bir kıyaslama olmadığını bize göstermektedir.
   
-Veriyi sadeleştirdikten sonra yeni parametrelerle inceleme yapabilmek için boy parametresinde sabit aralık belirledik. Boyu 2.0 ile 2.1 arası olan oyuncular için TRB verisini Kilo ve Yaş parametreleriyle tekrardan inceledik. Bunun sonucunda :
+  Veriyi sadeleştirdikten sonra yeni parametrelerle inceleme yapabilmek için boy parametresinde sabit aralık belirledik. Boyu 2.0 ile 2.1 arası olan oyuncular için TRB verisini Kilo ve Yaş parametreleriyle tekrardan inceledik. Bunun sonucunda :
   
-Rebound-Kilo grafiği bizlere oyuncuların kilosu ile rebound sayısının doğru orantılı olduğuu göstermektedir. 
+  Ribaund-Kilo grafiği bizlere oyuncuların kilosu ile rebound sayısının doğru orantılı olduğuu göstermektedir. 
   
-Rebound-Yaş grafiğinde ise hiçbir çarpıcı gözleme rastlanmamıştır.
+  Ribaund-Yaş grafiğinde ise hiçbir çarpıcı gözleme rastlanmamıştır.
   
 .
 .
 .  
 
-## Block sayısı - Boy 
+## Blok sayısı - Boy 
 
 ```{r}
 # Veri setini yükleme
@@ -154,29 +156,52 @@ veri <- read.csv(file = "NBA_Dataset_yeni.csv", header = TRUE, sep = ",")
 blok_data <- veri[order(veri$BLK, decreasing = TRUE),]
 
 # BLK sütununa göre sıralanan veriyi alma
-BlokAnaliz <- subset(blok_data, select = c("Player", "BLK", "Height"))
-colnames(BlokAnaliz) <- c("oyuncu", "blok", "boy")
+blok_top <- blok_data[1:572,]
+BlokAnaliz <- subset(blok_top, select = c("Player", "BLK", "Height","MP","Weight"))
+colnames(BlokAnaliz) <- c("oyuncu", "blok", "boy","süre","kilo")
 
 # boy sütununu düzgün formata çevirme
 BlokAnaliz$boy <- as.numeric(gsub(",", ".", BlokAnaliz$boy))
 
 # ggplot2 kütüphanesini yükleme
 library(ggplot2)
+library(dslabs)
+library(conflicted)
+# Library mesajlarını göstermeden yüklemek için eklendi
+suppressPackageStartupMessages(library(tidyverse))
+
+# MP'ye göre filtreleme yapalım
+filtreli_veri <- veri %>% dplyr::filter(MP > 20)
+
+# Filtrelenmiş veriyi ekrana yazdırın
+#print(filtreli_veri)
+
+# Ortalama blok hesaplama
+ortalama_blok <- mean(filtreli_veri$BLK)
+
 
 # Scatterplot çizimi
-ggplot(BlokAnaliz, aes(x = blok, y = boy)) +
+ggplot(filtreli_veri, aes(x = Height, y = BLK, color=Pos)) +
   geom_point() +
+  geom_abline(intercept = ortalama_blok, slope = 0, linetype = "dashed", color = "blue") +
   labs(title = "Blok Sayısı ve Boy Arasındaki İlişki",
-       x = "Blok Sayısı",
-       y = "Boy") +
+       x = "Boy",
+       y = "Blok Sayısı") +
   theme_minimal()
 
 ```
 
-İlgili grafikte oyuncuların boylarının Blok sayıları ile ilşkisini inceledik. Grafiğe göre doğrudan bir ilişki kurulamıyor olsa da boydan bağımsız olarak her oyuncunun blok yapabildiğini görebiliyioruz. Boyu uzun olan oyuncuların blok sayılarında bir artış da gözlenmekle beraber, boyu uzun olan ama blok sayısı boyu kısa olan oyuncularla aynı olan oyuncular da var.
+ Bu analizde NBA oyuncularından 20 dakikadan fazla oyunda kalmış oyuncuların Block başarılarının boyla ilgilisi analiz edilmiştir. Renkler pozisyonları göstermektedir. PF-Pivot oyuncuyu göstermektedir.
 
-Ek olarak bir oyuncunun diğer oyunculara kıyasla uzun ve blok sayısının daha farkla yüksek olduğunu görüyoruz. Oyuncu 20 yaşındaki Victor Wembanyama'dır. Pivot olarak görev almakta yani pota altında görev almaktadır. Boyu uzun olduğu icin pota altında oynuyor olma ihtimali ve pota altında oynadığı için de blok oranın yüksek olduğunu yorumlayabiliriz.
+Boy ile Blok sayısı arasındaki bağlantıyı grafik üzerinden değerlendirdiğimizde
 
+-   Boyu 1.95 ile 2.05 arasında olan oyuncuların blok sayıları benzerdir.
+
+-   Blok sayısı 1.5 ve üzerine olan oyuncuların hepsi 2 metreden uzundur.
+
+-   Pivot oyuncuların boyları 1.93 metre ve üzerindedir.
+
+İlk maddedeki yoğunluk nedeniyle bu oyuncuların yaş ve kilolarını da inceledik.
 .
 .
 .
@@ -190,31 +215,50 @@ veri <- read.csv(file = "NBA_Dataset_yeni.csv", header = TRUE, sep = ",")
 blok_data <- veri[order(veri$BLK, decreasing = TRUE),]
 
 # BLK sütununa göre sıralanan veriyi alma
-BlokAnaliz <- subset(blok_data, select = c("Player", "BLK", "Weight"))
-colnames(BlokAnaliz) <- c("oyuncu", "blok", "kilo")
-
-# boy sütununu düzgün formata çevirme
-BlokAnaliz$kilo <- as.numeric(gsub(",", ".", BlokAnaliz$kilo))
+blok_top <- blok_data[1:572,]
+BlokAnaliz <- subset(blok_top, select = c("Player", "BLK", "Height","MP","Weight"))
+colnames(BlokAnaliz) <- c("oyuncu", "blok", "boy","süre","kilo")
 
 # ggplot2 kütüphanesini yükleme
 library(ggplot2)
+library(dslabs)
+library(conflicted)
+# Library mesajlarını göstermeden yüklemek için eklendi
+suppressPackageStartupMessages(library(tidyverse))
+
+
+# MP'ye göre filtreleme yapalım
+filtreli_veri <- veri %>%
+  dplyr::filter(MP > 20)
+  
+  # Boya göre filtreleme yapalım
+filtreli_veri2 <- dplyr::filter(veri, Height >= 1.95 & Height <= 2.05)
+
+# Filtrelenmiş veriyi ekrana yazdırın
+#print(filtreli_veri)
+
+# Ortalama blok hesaplama
+ortalama_blok <- mean(filtreli_veri$BLK)
 
 # Scatterplot çizimi
-ggplot(BlokAnaliz, aes(x = blok, y = kilo)) +
+ggplot(filtreli_veri2, aes(x = Weight, y = BLK, color=Pos)) +
   geom_point() +
+  geom_abline(intercept = ortalama_blok, slope = 0, linetype = "dashed", color = "blue") +
   labs(title = "Blok Sayısı ve Kilo Arasındaki İlişki",
-       x = "Blok Sayısı",
-       y = "Kilo") +
+       x = "Kilo",
+       y = "Blok Sayısı") +
   theme_minimal()
 ```
 
-Yukardaki grafikte oyuncuların kilolarının blok sayıları ile ilşkisini inceledik. Grafiğe göre blok sayıları olan oyuncuların kilo dağılımı 80 ile 110 arasında yoğunlaşmaktadır. 131 kilo olan iki oyuncu vardır ve ikisinin de blok sayısı 1.0 ve 1.1'dir. Aynı zamanda 128 ve 127 kilo oyuncuların da blok sayısının kilosu daha düşük olan oyunculara göre yüksek blok sayılarına ulaşabildiklerini görüyoruz.
+  Bu analizde NBA oyuncularından 20 dakikadan fazla oyunda kalmış ve boyu 1.95 ile 2.05 arasında olan oyuncuların Block başarılarının kilo ile ilgisi analiz edilmiştir. Renkler pozisyonları göstermektedir.
 
-Bunun yanında en düşük kiloya sahip olan oyunculardan Jacob Gilyard'ın blok oranı 1 iken, yakın kilolardaki oyuncuların blok sayılarının 0 olduğunu görüyoruz.
+Kilo ile Blok sayısı arasındaki bağlantıyı grafik üzerinden değerlendirdiğimizde
 
-Boy karşılaştırmasındaki aynı oyuncunun ise kilosunun 100'ün altında olduğunu görüyoruz.
+-   Ortalama blok sayısının üzerinde blok başarısı elde eden oyuncuların 80-115 kg arasındadır.
 
-Kilonun hareketi kısıtlayacağı icin blok sayısı ile ters orantılı olmasını beklerdik fakat, 2'ye yakın ve 2 üzerine çıkan Blok sayılarına ulaşan oyunların genelde ortalama kilonun üzerinde kilolara sahip olduğunu söyleyebiliriz Örneğin 1.5 ve sonraki blok sayısı skorları icin en düşük kilodaki oyuncu 94 kilodur.
+-   Bir oyuncu 120 kilonun üzerinde olmasına rağmen ortalamanın üzerindedir
+
+-   Merkez oyuncular 78 ile 100 kg arasındadır.
 
 .
 .
@@ -281,7 +325,8 @@ assists_top10 %>%
   
 ```
 
-Grafikte oyuncuların asist sayısı arttıkça top kaybı sayısının da arttığını görüyoruz. Ligin en yüksek asist ortalamasına sahip olan oyuncusu Tyrese Haliburton, benzer sayıda asist yapan diğer oyunculara kıyasla çok daha az top kaybı ortalamasına sahip. En yüksek asist ortalamasına sahip oyuncuların pozisyonlarının guard ağırlıklı olması beklenen bir durum ancak Nikola Jokic ve Domantas Sabonis'in pivot pozisyonunda oynamalarına rağmen ligin maç başına en çok asist yapan ilk 10 oyuncusu arasına girmiş olmalari beklenenin üzerinde performans veren oyuncular olduklarını gösteriyor.
+  Grafikte oyuncuların asist sayısı arttıkça top kaybı sayısının da arttığını görüyoruz. Ligin en yüksek asist ortalamasına sahip olan oyuncusu Tyrese Haliburton, benzer sayıda asist yapan diğer oyunculara kıyasla çok daha az top kaybı ortalamasına sahip. En yüksek asist ortalamasına sahip oyuncuların pozisyonlarının guard ağırlıklı olması beklenen bir durum ancak Nikola Jokic ve Domantas Sabonis'in pivot pozisyonunda oynamalarına rağmen ligin maç başına en çok asist yapan ilk 10 oyuncusu arasına girmiş olmalari beklenenin üzerinde performans veren oyuncular olduklarını gösteriyor.
+
 
 .
 .
@@ -334,7 +379,7 @@ sade_veri_ast_to_ratio %>%
 
 ```
 
-Oyuncuların yaşları arttıkça, tecrübeleri de artacağı varsayılarak özellikle guard pozisyonunda oynayan oyuncuların daha az top kaybı yapacağı varsayımı üzerinden bu grafiği oluşturduk. Ancak artan yaş ve dolayısıyla tecrübe ile Asist/Top Kaybı oranı arasında anlamlı bir ilişki kurmanın tam olarak mümkün olmadığı çıkarımı grafikten yapılabilir. Yine de Chris Paul ve Tyus Jones gibi daha tecrübeli oyuncuların, ligin en çok asist yapan oyuncusu Tyrese Haliburton'a göre yaptıkları asist başına daha az top kaybettikleri göz önünde bulundurulmalı.
+  Oyuncuların yaşları arttıkça, tecrübeleri de artacağı varsayılarak özellikle guard pozisyonunda oynayan oyuncuların daha az top kaybı yapacağı varsayımı üzerinden bu grafiği oluşturduk. Ancak artan yaş ve dolayısıyla tecrübe ile Asist/Top Kaybı oranı arasında anlamlı bir ilişki kurmanın tam olarak mümkün olmadığı çıkarımı grafikten yapılabilir. Yine de Chris Paul ve Tyus Jones gibi daha tecrübeli oyuncuların, ligin en çok asist yapan oyuncusu Tyrese Haliburton'a göre yaptıkları asist başına daha az top kaybettikleri göz önünde bulundurulmalı.
 
 .
 .
@@ -381,7 +426,8 @@ sade_veri_sayi %>%
   )
 
 ```
-Grafikte ligin en çok sayı ortalamasına sahip oyuncularının 25-30 yaş aralığında daha yoğun olarak bulunduğunu gözlemliyoruz. 30 sayı üzerinde atan 4 oyuncu (Embiid, Doncic, Shai Gilgous-Alexander ve Giannis) kendilerini diğer oyunculardan ayırmış durumda. 30 yaşın üzerinde olup 30 sayı ve üzeri ortalama yakalayabilen oyuncu bulunmuyor. Bu durumun başlıca nedenlerinden biri daha yaşlı oyuncuların uzun sezonun yükünü kaldırabilmeleri için maç başına aldıkları dakikaların daha az olması gösterilebilir. Son olarak listede 35 yaş üzerinde sadece 1 oyuncu bulunmakta: LeBron James. Onun yaşındaki oyunculardan sezonda en çok sayı atan oyunculardan biri olmasını değil emekli olmasını beklediğimizi hesaba katarsak grafikteki yerinin anlamını daha iyi anlayabiliriz.
+  Grafikte ligin en çok sayı ortalamasına sahip oyuncularının 25-30 yaş aralığında daha yoğun olarak bulunduğunu gözlemliyoruz. 30 sayı üzerinde atan 4 oyuncu (Embiid, Doncic, Shai Gilgous-Alexander ve Giannis) kendilerini diğer oyunculardan ayırmış durumda. 30 yaşın üzerinde olup 30 sayı ve üzeri ortalama yakalayabilen oyuncu bulunmuyor. Bu durumun başlıca nedenlerinden biri daha yaşlı oyuncuların uzun sezonun yükünü kaldırabilmeleri için maç başına aldıkları dakikaların daha az olması gösterilebilir. Son olarak listede 35 yaş üzerinde sadece 1 oyuncu bulunmakta: LeBron James. Onun yaşındaki oyunculardan sezonda en çok sayı atan oyunculardan biri olmasını değil emekli olmasını beklediğimizi hesaba katarsak grafikteki yerinin anlamını daha iyi anlayabiliriz.
+
 
 .
 .
@@ -402,9 +448,9 @@ Keşifsel modelleme üzerine çok zaman kaybetmedik çünkü R studio veri için
 .
 .
 
-# SonuClar ve Ana Çıkarımlar
+# Sonuçlar ve Ana Çıkarımlar
 
-Rebound-Boy grafiğinde rebound sayısı ile boyun doğru orantılı bir şekilde arttığını gözlemledik.Aynı zamanda pozisyonlara göre renklendirme ekledik ve C ile PF (4 ve 5 numaralı mevkiler) pozisyonlarındaki oyuncuların rebound sayısının daha yüksek olduğunu gözlemledik. Uzun boylu olmalarına rağmen düşük ribaund alan oyuncuların outlier olduğunu ve altında yatan sebebin maç başı düşük dakikalar almaları olabileceğini keşfettik.
+Ribaund-Boy grafiğinde ribaund sayısı ile boyun doğru orantılı bir şekilde arttığını gözlemledik.Aynı zamanda pozisyonlara göre renklendirme ekledik ve C ile PF (4 ve 5 numaralı mevkiler) pozisyonlarındaki oyuncuların rebound sayısının daha yüksek olduğunu gözlemledik. Uzun boylu olmalarına rağmen düşük ribaund alan oyuncuların outlier olduğunu ve altında yatan sebebin maç başı düşük dakikalar almaları olabileceğini keşfettik.
 
 Boyu 2.0 ile 2.1 arası olan oyuncular için TRB verisini Kilo ve Yaş parametreleriyle karşılaştırdık Bunun sonucunda :
   
